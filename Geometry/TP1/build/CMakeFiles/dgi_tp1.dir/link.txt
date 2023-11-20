@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/dgi_tp1.dir/main.cpp.o -o dgi_tp1  /home/2ing2/stephane.vong/libs/lib/libDGtal.a /usr/lib/x86_64-linux-gnu/libz.so -lrt 

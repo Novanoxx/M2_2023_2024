@@ -1,0 +1,26 @@
+number of components (4_8):
+Japanese rice : 147
+Basmati rice : 141
+Camargue rice : 132
+
+number of components (8_4):
+Japanese rice : 135
+Basmati rice : 116
+Camargue rice : 111
+
+None are well-composed (check the difference between 4_8 and 8_4, if there are not the same, 
+it means that it is not well-composed)
+
+shape :
+Japanese rice : round + small
+Basmati rice : thin + long
+Camargue rice : thin + medium
+
+
+
+typedef KhalimskySpaceND<2, int> KSpace;
+
+    KSpace grid;
+    bool spaceOk = grid.init(image.domain().lowerBound(), image.domain().upperBound(), true);
+
+    auto aCell = Surfaces<Z2i::KSpace>::findABel(grid, set2d);

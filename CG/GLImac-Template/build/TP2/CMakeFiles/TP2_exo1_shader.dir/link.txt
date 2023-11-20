@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/TP2_exo1_shader.dir/exo1_shader.cpp.o -o TP2_exo1_shader  ../glimac/libglimac.a -Wl,-Bstatic -lSDLmain -Wl,-Bdynamic -lSDL -lpthread /usr/lib/x86_64-linux-gnu/libGL.so.1 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/third-party/libGLEW.a 
