@@ -53,10 +53,10 @@ RM = /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/CG/GLImac-Template
+CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build
+CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build
 
 # Include any dependencies generated for this target.
 include TP3/CMakeFiles/TP3_exo3_earth.dir/depend.make
@@ -70,18 +70,18 @@ include TP3/CMakeFiles/TP3_exo3_earth.dir/progress.make
 include TP3/CMakeFiles/TP3_exo3_earth.dir/flags.make
 
 TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o: TP3/CMakeFiles/TP3_exo3_earth.dir/flags.make
-TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3/exo3_earth.cpp
+TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3/exo3_earth.cpp
 TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o: TP3/CMakeFiles/TP3_exo3_earth.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o -MF CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o.d -o CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o -c /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3/exo3_earth.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o"
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o -MF CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o.d -o CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o -c /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3/exo3_earth.cpp
 
 TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.i"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3/exo3_earth.cpp > CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.i
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3/exo3_earth.cpp > CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.i
 
 TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.s"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3/exo3_earth.cpp -o CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.s
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3/exo3_earth.cpp -o CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.s
 
 # Object files for target TP3_exo3_earth
 TP3_exo3_earth_OBJECTS = \
@@ -96,20 +96,20 @@ TP3/TP3_exo3_earth: glimac/libglimac.a
 TP3/TP3_exo3_earth: /usr/lib/x86_64-linux-gnu/libSDLmain.a
 TP3/TP3_exo3_earth: /usr/lib/x86_64-linux-gnu/libSDL.so
 TP3/TP3_exo3_earth: /usr/lib/x86_64-linux-gnu/libGL.so.1
-TP3/TP3_exo3_earth: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/third-party/libGLEW.a
+TP3/TP3_exo3_earth: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/third-party/libGLEW.a
 TP3/TP3_exo3_earth: TP3/CMakeFiles/TP3_exo3_earth.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TP3_exo3_earth"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP3_exo3_earth.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TP3_exo3_earth"
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP3_exo3_earth.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 TP3/CMakeFiles/TP3_exo3_earth.dir/build: TP3/TP3_exo3_earth
 .PHONY : TP3/CMakeFiles/TP3_exo3_earth.dir/build
 
 TP3/CMakeFiles/TP3_exo3_earth.dir/clean:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && $(CMAKE_COMMAND) -P CMakeFiles/TP3_exo3_earth.dir/cmake_clean.cmake
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && $(CMAKE_COMMAND) -P CMakeFiles/TP3_exo3_earth.dir/cmake_clean.cmake
 .PHONY : TP3/CMakeFiles/TP3_exo3_earth.dir/clean
 
 TP3/CMakeFiles/TP3_exo3_earth.dir/depend:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/2ing2/stephane.vong/Documents/CG/GLImac-Template /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo3_earth.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3 /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo3_earth.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : TP3/CMakeFiles/TP3_exo3_earth.dir/depend
 

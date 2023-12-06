@@ -53,10 +53,10 @@ RM = /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/CG/GLImac-Template
+CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build
+CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build
 
 # Include any dependencies generated for this target.
 include TP3/CMakeFiles/TP3_exo5_multiShaders.dir/depend.make
@@ -70,18 +70,18 @@ include TP3/CMakeFiles/TP3_exo5_multiShaders.dir/progress.make
 include TP3/CMakeFiles/TP3_exo5_multiShaders.dir/flags.make
 
 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o: TP3/CMakeFiles/TP3_exo5_multiShaders.dir/flags.make
-TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3/exo5_multiShaders.cpp
+TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3/exo5_multiShaders.cpp
 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o: TP3/CMakeFiles/TP3_exo5_multiShaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o -MF CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o.d -o CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o -c /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3/exo5_multiShaders.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o"
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o -MF CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o.d -o CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o -c /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3/exo5_multiShaders.cpp
 
 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.i"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3/exo5_multiShaders.cpp > CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.i
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3/exo5_multiShaders.cpp > CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.i
 
 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.s"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3/exo5_multiShaders.cpp -o CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.s
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3/exo5_multiShaders.cpp -o CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.s
 
 # Object files for target TP3_exo5_multiShaders
 TP3_exo5_multiShaders_OBJECTS = \
@@ -96,20 +96,20 @@ TP3/TP3_exo5_multiShaders: glimac/libglimac.a
 TP3/TP3_exo5_multiShaders: /usr/lib/x86_64-linux-gnu/libSDLmain.a
 TP3/TP3_exo5_multiShaders: /usr/lib/x86_64-linux-gnu/libSDL.so
 TP3/TP3_exo5_multiShaders: /usr/lib/x86_64-linux-gnu/libGL.so.1
-TP3/TP3_exo5_multiShaders: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/third-party/libGLEW.a
+TP3/TP3_exo5_multiShaders: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/third-party/libGLEW.a
 TP3/TP3_exo5_multiShaders: TP3/CMakeFiles/TP3_exo5_multiShaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TP3_exo5_multiShaders"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP3_exo5_multiShaders.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TP3_exo5_multiShaders"
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP3_exo5_multiShaders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build: TP3/TP3_exo5_multiShaders
 .PHONY : TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build
 
 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/clean:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 && $(CMAKE_COMMAND) -P CMakeFiles/TP3_exo5_multiShaders.dir/cmake_clean.cmake
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 && $(CMAKE_COMMAND) -P CMakeFiles/TP3_exo5_multiShaders.dir/cmake_clean.cmake
 .PHONY : TP3/CMakeFiles/TP3_exo5_multiShaders.dir/clean
 
 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/depend:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/2ing2/stephane.vong/Documents/CG/GLImac-Template /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP3 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo5_multiShaders.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP3 /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3 /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo5_multiShaders.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : TP3/CMakeFiles/TP3_exo5_multiShaders.dir/depend
 

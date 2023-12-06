@@ -54,10 +54,10 @@ RM = /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/Geometry/TP1
+CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/Geometry/TP1/build
+CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/dgi_tp1.dir/clean
 CMakeFiles/dgi_tp1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dgi_tp1.dir/build.make CMakeFiles/dgi_tp1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dgi_tp1.dir/build.make CMakeFiles/dgi_tp1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles --progress-num=1,2 "Built target dgi_tp1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles --progress-num=1,2 "Built target dgi_tp1"
 .PHONY : CMakeFiles/dgi_tp1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dgi_tp1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dgi_tp1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles 0
 .PHONY : CMakeFiles/dgi_tp1.dir/rule
 
 # Convenience name for target.

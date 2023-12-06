@@ -1,4 +1,4 @@
-# Install script for directory: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template
+# Install script for directory: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,14 +44,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/glimac/cmake_install.cmake")
-  include("/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP1/cmake_install.cmake")
-  include("/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP2/cmake_install.cmake")
-  include("/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/cmake_install.cmake")
-  include("/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP4/cmake_install.cmake")
-  include("/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_Proj/cmake_install.cmake")
-  include("/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_garbage/cmake_install.cmake")
-  include("/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_template/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/glimac/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP1/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP2/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP3/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP4/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_garbage/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_template/cmake_install.cmake")
 
 endif()
 
@@ -63,5 +63,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

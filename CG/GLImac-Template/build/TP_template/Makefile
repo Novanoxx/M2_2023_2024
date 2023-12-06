@@ -57,10 +57,10 @@ RM = /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/CG/GLImac-Template
+CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build
+CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_template//CMakeFiles/progress.marks
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles 0
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_template//CMakeFiles/progress.marks
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/clean
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/preinstall
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/preinstall
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/rule:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/rule
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/rule
 .PHONY : TP_template/CMakeFiles/TP_template_SDLtemplate.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ TP_template_SDLtemplate: TP_template/CMakeFiles/TP_template_SDLtemplate.dir/rule
 
 # fast build rule for target.
 TP_template_SDLtemplate/fast:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
 .PHONY : TP_template_SDLtemplate/fast
 
 SDLtemplate.o: SDLtemplate.cpp.o
@@ -135,7 +135,7 @@ SDLtemplate.o: SDLtemplate.cpp.o
 
 # target to build an object file
 SDLtemplate.cpp.o:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.o
 .PHONY : SDLtemplate.cpp.o
 
 SDLtemplate.i: SDLtemplate.cpp.i
@@ -143,7 +143,7 @@ SDLtemplate.i: SDLtemplate.cpp.i
 
 # target to preprocess a source file
 SDLtemplate.cpp.i:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.i
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.i
 .PHONY : SDLtemplate.cpp.i
 
 SDLtemplate.s: SDLtemplate.cpp.s
@@ -151,7 +151,7 @@ SDLtemplate.s: SDLtemplate.cpp.s
 
 # target to generate assembly for a file
 SDLtemplate.cpp.s:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.s
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/SDLtemplate.cpp.s
 .PHONY : SDLtemplate.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

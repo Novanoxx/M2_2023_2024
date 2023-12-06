@@ -23,24 +23,26 @@ typedef ArithmeticalDSSComputer<Contour4::ConstIterator,int,4> DSS4;
 typedef GreedySegmentation<DSS4> Decomposition4;
 
 template<class T>
-Curve getBoundary(T & object)
+Curve getBoundary(T & object, DigitalSet set)
 {
     //Khalimsky space
     KSpace kSpace;
     // we need to add a margine to prevent situations such that an object touch the bourder of the domain
+    /*
     kSpace.init( object.domain().lowerBound() - Point(1,1),
                    object.domain().upperBound() + Point(1,1), true );
-
+    */
+    kSpace.init( set.domain().lowerBound() - Point(1,1),
+                   set.domain().upperBound() + Point(1,1), true );
     // 1) Call Surfaces::findABel() to find a cell which belongs to the border
     std::vector<Z2i::Point> boundaryPoints; // boundary points are going to be stored here
     auto set2d = object.pointSet();
-    auto aCell = Surfaces<Z2i::KSpace>::findABel(kSpace, set2d);
+    auto aCell = Surfaces<Z2i::KSpace>::findABel(kSpace, set2d, 10000);
     
     // 2) Call Surfece::track2DBoundaryPoints to extract the boundary of the object
     Curve boundaryCurve;
     SurfelAdjacency<2> SAdj( true );
     Surfaces<Z2i::KSpace>::track2DBoundaryPoints(boundaryPoints, kSpace, SAdj, set2d, aCell);
-
     // 3) Create a curve from a vector
     boundaryCurve.initFromPointsVector(boundaryPoints);
     return boundaryCurve;
@@ -52,7 +54,9 @@ void sendToBoard( Board2D & board, T & p_Object, DGtal::Color p_Color) {
     board << p_Object;
 }
 
-void step4and5(Board2D & aBoard, Curve boundaryCurve) {    
+template<class T>
+void step4and5(Board2D & aBoard, Curve boundaryCurve, T digitalObject) {
+    // Step 4
     stringstream freemanChain(stringstream::in | stringstream::out);
     string codeRange;
     for (auto it = boundaryCurve.getCodesRange().begin(); 
@@ -95,6 +99,7 @@ void step4and5(Board2D & aBoard, Curve boundaryCurve) {
         // std::cout << "full : " << a << " x : " << a[0] << " y : " << a[1] << std::endl;
         }
 
+    // Step 5
     int area = 0;
     vector<Integer> xPointArray;
     vector<Integer> yPointArray;
@@ -121,8 +126,8 @@ void step4and5(Board2D & aBoard, Curve boundaryCurve) {
     }
     area /= 2;
 
-    cout << "Number of 2-Cells : " << boundaryCurve.size() << endl;
-    cout << "Polygon area size : " << area << endl;
+    cout << "Number of 2-Cells : " << digitalObject.size() << endl;
+    cout << "Polygon area size : " << area  << "\n" << endl;
 }
 
 int main(int argc, char** argv)
@@ -158,9 +163,18 @@ int main(int argc, char** argv)
 
     // This is an example how to create a pdf file for each object
     Board2D aBoard;                                 // use "Board2D" to save output
-    auto boundaryCurve = getBoundary(digitalObject);
+    for(auto it = objects.begin(); it != objects.end(); ++it)
+    {
+        digitalObject = *(it);
+        auto boundaryCurve = getBoundary(digitalObject, set2d);
+        sendToBoard(aBoard, boundaryCurve, Color::Red);
+        step4and5(aBoard, boundaryCurve, digitalObject);
+    }
+    /*
+    auto boundaryCurve = getBoundary(digitalObject, set2d);
     sendToBoard(aBoard, boundaryCurve, Color::Red);
     step4and5(aBoard, boundaryCurve);
+    */
 
     //aBoard.saveEPS("out.eps");
     #ifdef WITH_CAIRO

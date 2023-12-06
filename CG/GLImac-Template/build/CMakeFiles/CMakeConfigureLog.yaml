@@ -7,7 +7,7 @@ events:
       - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      The system is: Linux - 5.13.10 - x86_64
+      The system is: Linux - 6.1.0-0.deb11.7-amd64 - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/3.26.3/CompilerIdC/a.out
+        /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/3.26.3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+        /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/3.26.3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -61,20 +61,20 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-SsUXnH"
-      binary: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-SsUXnH"
+      source: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-j0GxUa"
+      binary: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-j0GxUa"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-SsUXnH
+        Change Dir: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-j0GxUa
         
-        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2aaa7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2aaa7.dir/build.make CMakeFiles/cmTC_2aaa7.dir/build
-        gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-SsUXnH'
-        Building C object CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6a15a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a15a.dir/build.make CMakeFiles/cmTC_6a15a.dir/build
+        gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-j0GxUa'
+        Building C object CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
@@ -84,8 +84,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 10.2.1 20210110 (Debian 10.2.1-6) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -o /tmp/ccOIcp1D.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -o /tmp/ccJW3jIp.s
         GNU C17 (Debian 10.2.1-6) version 10.2.1 20210110 (x86_64-linux-gnu)
         	compiled by GNU C version 10.2.1 20210110, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
         
@@ -105,15 +105,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 1f803793fa2e3418c492b25e7d3eac2f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o /tmp/ccOIcp1D.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o /tmp/ccJW3jIp.s
         GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_2aaa7
-        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2aaa7.dir/link.txt --verbose=1
-        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o -o cmTC_2aaa7 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_6a15a
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a15a.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o -o cmTC_6a15a 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
@@ -126,10 +126,10 @@ events:
         gcc version 10.2.1 20210110 (Debian 10.2.1-6) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2aaa7' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCv7Rr3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2aaa7 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2aaa7' '-mtune=generic' '-march=x86-64'
-        gmake[1]: Leaving directory '/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-SsUXnH'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a15a' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8vmQc1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6a15a /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a15a' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-j0GxUa'
         
       exitCode: 0
   -
@@ -163,12 +163,12 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-SsUXnH]
+        ignore line: [Change Dir: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-j0GxUa]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2aaa7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2aaa7.dir/build.make CMakeFiles/cmTC_2aaa7.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-SsUXnH']
-        ignore line: [Building C object CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6a15a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a15a.dir/build.make CMakeFiles/cmTC_6a15a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-j0GxUa']
+        ignore line: [Building C object CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
@@ -178,8 +178,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 10.2.1 20210110 (Debian 10.2.1-6) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -o /tmp/ccOIcp1D.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -o /tmp/ccJW3jIp.s]
         ignore line: [GNU C17 (Debian 10.2.1-6) version 10.2.1 20210110 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 10.2.1 20210110  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.23-GMP]
         ignore line: []
@@ -199,15 +199,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 1f803793fa2e3418c492b25e7d3eac2f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o /tmp/ccOIcp1D.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o /tmp/ccJW3jIp.s]
         ignore line: [GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_2aaa7]
-        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2aaa7.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o -o cmTC_2aaa7 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_6a15a]
+        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a15a.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o -o cmTC_6a15a ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
@@ -220,13 +220,13 @@ events:
         ignore line: [gcc version 10.2.1 20210110 (Debian 10.2.1-6) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2aaa7' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCv7Rr3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2aaa7 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6a15a' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8vmQc1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6a15a /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccCv7Rr3.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc8vmQc1.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -243,7 +243,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_2aaa7] ==> ignore
+          arg [cmTC_6a15a] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o]
@@ -255,7 +255,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-          arg [CMakeFiles/cmTC_2aaa7.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_6a15a.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -295,20 +295,20 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-S2YXYK"
-      binary: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-S2YXYK"
+      source: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-Scc41b"
+      binary: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-Scc41b"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-S2YXYK
+        Change Dir: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-Scc41b
         
-        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d910/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0d910.dir/build.make CMakeFiles/cmTC_0d910.dir/build
-        gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-S2YXYK'
-        Building CXX object CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a269d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a269d.dir/build.make CMakeFiles/cmTC_a269d.dir/build
+        gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-Scc41b'
+        Building CXX object CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
@@ -318,8 +318,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 10.2.1 20210110 (Debian 10.2.1-6) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -o /tmp/ccD19dQY.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -o /tmp/ccB4Zo4F.s
         GNU C++14 (Debian 10.2.1-6) version 10.2.1 20210110 (x86_64-linux-gnu)
         	compiled by GNU C version 10.2.1 20210110, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
         
@@ -343,15 +343,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 048fcaee3460a99eb0d68522358720e1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccD19dQY.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccB4Zo4F.s
         GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_0d910
-        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d910.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0d910 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_a269d
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a269d.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a269d 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
@@ -364,10 +364,10 @@ events:
         gcc version 10.2.1 20210110 (Debian 10.2.1-6) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0d910' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOXvAdp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0d910 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0d910' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        gmake[1]: Leaving directory '/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-S2YXYK'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a269d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccI4PxU7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a269d /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a269d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-Scc41b'
         
       exitCode: 0
   -
@@ -407,12 +407,12 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-S2YXYK]
+        ignore line: [Change Dir: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-Scc41b]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d910/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0d910.dir/build.make CMakeFiles/cmTC_0d910.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-S2YXYK']
-        ignore line: [Building CXX object CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a269d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a269d.dir/build.make CMakeFiles/cmTC_a269d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-Scc41b']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
@@ -422,8 +422,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 10.2.1 20210110 (Debian 10.2.1-6) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -o /tmp/ccD19dQY.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -o /tmp/ccB4Zo4F.s]
         ignore line: [GNU C++14 (Debian 10.2.1-6) version 10.2.1 20210110 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 10.2.1 20210110  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.23-GMP]
         ignore line: []
@@ -447,15 +447,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 048fcaee3460a99eb0d68522358720e1]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccD19dQY.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccB4Zo4F.s]
         ignore line: [GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_0d910]
-        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d910.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0d910 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_a269d]
+        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a269d.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a269d ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
@@ -468,13 +468,13 @@ events:
         ignore line: [gcc version 10.2.1 20210110 (Debian 10.2.1-6) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0d910' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOXvAdp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0d910 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a269d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccI4PxU7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a269d /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccOXvAdp.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccI4PxU7.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -491,7 +491,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_0d910] ==> ignore
+          arg [cmTC_a269d] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o]
@@ -503,7 +503,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-          arg [CMakeFiles/cmTC_0d910.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_a269d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -542,33 +542,33 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-5YOkqK"
-      binary: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-5YOkqK"
+      source: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-VSCeIe"
+      binary: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-VSCeIe"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/CMake"
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/CMake"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-5YOkqK
+        Change Dir: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-VSCeIe
         
-        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_61dc3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_61dc3.dir/build.make CMakeFiles/cmTC_61dc3.dir/build
-        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-5YOkqK »
-        Building C object CMakeFiles/cmTC_61dc3.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_61dc3.dir/src.c.o -c /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-5YOkqK/src.c
-        Linking C executable cmTC_61dc3
-        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61dc3.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_61dc3.dir/src.c.o -o cmTC_61dc3 
-        /usr/bin/ld : CMakeFiles/cmTC_61dc3.dir/src.c.o : dans la fonction « main » :
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c9e6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c9e6.dir/build.make CMakeFiles/cmTC_8c9e6.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-VSCeIe »
+        Building C object CMakeFiles/cmTC_8c9e6.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8c9e6.dir/src.c.o -c /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-VSCeIe/src.c
+        Linking C executable cmTC_8c9e6
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c9e6.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_8c9e6.dir/src.c.o -o cmTC_8c9e6 
+        /usr/bin/ld : CMakeFiles/cmTC_8c9e6.dir/src.c.o : dans la fonction « main » :
         src.c:(.text+0x2f) : référence indéfinie vers « pthread_create »
         /usr/bin/ld : src.c:(.text+0x3b) : référence indéfinie vers « pthread_detach »
         /usr/bin/ld : src.c:(.text+0x47) : référence indéfinie vers « pthread_cancel »
         /usr/bin/ld : src.c:(.text+0x58) : référence indéfinie vers « pthread_join »
         collect2: error: ld returned 1 exit status
-        gmake[1]: *** [CMakeFiles/cmTC_61dc3.dir/build.make:99 : cmTC_61dc3] Erreur 1
-        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-5YOkqK »
-        gmake: *** [Makefile:127 : cmTC_61dc3/fast] Erreur 2
+        gmake[1]: *** [CMakeFiles/cmTC_8c9e6.dir/build.make:99 : cmTC_8c9e6] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-VSCeIe »
+        gmake: *** [Makefile:127 : cmTC_8c9e6/fast] Erreur 2
         
       exitCode: 2
   -
@@ -582,29 +582,29 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-GLxvzH"
-      binary: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-GLxvzH"
+      source: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-6kv0Pd"
+      binary: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-6kv0Pd"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/CMake"
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/CMake"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-GLxvzH
+        Change Dir: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-6kv0Pd
         
-        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9ee60/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ee60.dir/build.make CMakeFiles/cmTC_9ee60.dir/build
-        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-GLxvzH »
-        Building C object CMakeFiles/cmTC_9ee60.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_9ee60.dir/CheckFunctionExists.c.o -c /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-GLxvzH/CheckFunctionExists.c
-        Linking C executable cmTC_9ee60
-        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ee60.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_9ee60.dir/CheckFunctionExists.c.o -o cmTC_9ee60  -lpthreads 
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1ce89/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1ce89.dir/build.make CMakeFiles/cmTC_1ce89.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-6kv0Pd »
+        Building C object CMakeFiles/cmTC_1ce89.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_1ce89.dir/CheckFunctionExists.c.o -c /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-6kv0Pd/CheckFunctionExists.c
+        Linking C executable cmTC_1ce89
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ce89.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_1ce89.dir/CheckFunctionExists.c.o -o cmTC_1ce89  -lpthreads 
         /usr/bin/ld : ne peut trouver -lpthreads
         collect2: error: ld returned 1 exit status
-        gmake[1]: *** [CMakeFiles/cmTC_9ee60.dir/build.make:99 : cmTC_9ee60] Erreur 1
-        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-GLxvzH »
-        gmake: *** [Makefile:127 : cmTC_9ee60/fast] Erreur 2
+        gmake[1]: *** [CMakeFiles/cmTC_1ce89.dir/build.make:99 : cmTC_1ce89] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-6kv0Pd »
+        gmake: *** [Makefile:127 : cmTC_1ce89/fast] Erreur 2
         
       exitCode: 2
   -
@@ -618,25 +618,25 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-PyiQhL"
-      binary: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-PyiQhL"
+      source: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-g8fSVb"
+      binary: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-g8fSVb"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/CMake"
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/CMake"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-PyiQhL
+        Change Dir: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-g8fSVb
         
-        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b14a3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b14a3.dir/build.make CMakeFiles/cmTC_b14a3.dir/build
-        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-PyiQhL »
-        Building C object CMakeFiles/cmTC_b14a3.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_b14a3.dir/CheckFunctionExists.c.o -c /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-PyiQhL/CheckFunctionExists.c
-        Linking C executable cmTC_b14a3
-        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b14a3.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_b14a3.dir/CheckFunctionExists.c.o -o cmTC_b14a3  -lpthread 
-        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-PyiQhL »
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_132f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_132f5.dir/build.make CMakeFiles/cmTC_132f5.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-g8fSVb »
+        Building C object CMakeFiles/cmTC_132f5.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_132f5.dir/CheckFunctionExists.c.o -c /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-g8fSVb/CheckFunctionExists.c
+        Linking C executable cmTC_132f5
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_132f5.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_132f5.dir/CheckFunctionExists.c.o -o cmTC_132f5  -lpthread 
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles/CMakeScratch/TryCompile-g8fSVb »
         
       exitCode: 0
 ...

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/SDL -I/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include -I/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/third-party/include
+CXX_INCLUDES = -I/usr/include/SDL -I/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/glimac/include -I/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/third-party/include
 
 CXX_FLAGS =   -std=c++11
 

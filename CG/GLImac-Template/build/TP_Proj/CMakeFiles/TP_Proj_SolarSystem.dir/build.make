@@ -53,10 +53,10 @@ RM = /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/CG/GLImac-Template
+CMAKE_SOURCE_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build
+CMAKE_BINARY_DIR = /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build
 
 # Include any dependencies generated for this target.
 include TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/depend.make
@@ -70,18 +70,18 @@ include TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/progress.make
 include TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/flags.make
 
 TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o: TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/flags.make
-TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP_Proj/SolarSystem.cpp
+TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP_Proj/SolarSystem.cpp
 TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o: TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_Proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o -MF CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o.d -o CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o -c /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP_Proj/SolarSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o"
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o -MF CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o.d -o CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.o -c /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP_Proj/SolarSystem.cpp
 
 TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.i"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_Proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP_Proj/SolarSystem.cpp > CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.i
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP_Proj/SolarSystem.cpp > CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.i
 
 TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.s"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_Proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP_Proj/SolarSystem.cpp -o CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.s
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP_Proj/SolarSystem.cpp -o CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.s
 
 # Object files for target TP_Proj_SolarSystem
 TP_Proj_SolarSystem_OBJECTS = \
@@ -96,20 +96,20 @@ TP_Proj/TP_Proj_SolarSystem: glimac/libglimac.a
 TP_Proj/TP_Proj_SolarSystem: /usr/lib/x86_64-linux-gnu/libSDLmain.a
 TP_Proj/TP_Proj_SolarSystem: /usr/lib/x86_64-linux-gnu/libSDL.so
 TP_Proj/TP_Proj_SolarSystem: /usr/lib/x86_64-linux-gnu/libGL.so.1
-TP_Proj/TP_Proj_SolarSystem: /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/third-party/libGLEW.a
+TP_Proj/TP_Proj_SolarSystem: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/third-party/libGLEW.a
 TP_Proj/TP_Proj_SolarSystem: TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TP_Proj_SolarSystem"
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_Proj && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP_Proj_SolarSystem.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TP_Proj_SolarSystem"
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP_Proj_SolarSystem.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build: TP_Proj/TP_Proj_SolarSystem
 .PHONY : TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build
 
 TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/clean:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_Proj && $(CMAKE_COMMAND) -P CMakeFiles/TP_Proj_SolarSystem.dir/cmake_clean.cmake
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj && $(CMAKE_COMMAND) -P CMakeFiles/TP_Proj_SolarSystem.dir/cmake_clean.cmake
 .PHONY : TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/clean
 
 TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/depend:
-	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/2ing2/stephane.vong/Documents/CG/GLImac-Template /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP_Proj /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_Proj /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP_Proj /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/depend
 

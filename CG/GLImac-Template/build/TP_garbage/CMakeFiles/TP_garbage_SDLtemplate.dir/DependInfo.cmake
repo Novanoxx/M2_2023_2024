@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/TP_garbage/SDLtemplate.cpp" "TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/SDLtemplate.cpp.o" "gcc" "TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/SDLtemplate.cpp.o.d"
+  "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP_garbage/SDLtemplate.cpp" "TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/SDLtemplate.cpp.o" "gcc" "TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/SDLtemplate.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

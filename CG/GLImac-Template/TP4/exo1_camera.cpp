@@ -1,6 +1,7 @@
 #include <glimac/SDLWindowManager.hpp>
 #include <GL/glew.h>
 #include <iostream>
+#include <unistd.h>
 
 #include <glimac/Sphere.hpp>
 #include <glimac/common.hpp>
@@ -147,17 +148,16 @@ int main(int argc, char** argv) {
     // Application loop:
     bool done = false;
     while(!done) {
-        ProjMatrix = perspective(radians(70.f), largeur/hauteur, 0.1f, 100.f);
+        ProjMatrix = perspective(radians(70.f), largeur/hauteur, 0.1f, 10000.f);
         globalMVMatrix = translate(mat4(1.f), vec3(0.f, 0.f, -5.f));
-        auto MVOrigin = globalMVMatrix;
         NormalMatrix = transpose(inverse(globalMVMatrix));
         
         // Event loop:
         SDL_Event e;
         int xMouse, yMouse;
 
-        ProjMatrix += tracking.getViewMatrix();
-        //globalMVMatrix += tracking.getViewMatrix();
+        //ProjMatrix += tracking.getViewMatrix();
+        globalMVMatrix *= tracking.getViewMatrix();
 
         while(windowManager.pollEvent(e)) {
             if(e.type == SDL_MOUSEMOTION)
@@ -222,7 +222,6 @@ int main(int argc, char** argv) {
         glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
         glBindTexture(GL_TEXTURE_2D, 0);
 
-        sleep(500);
         // Moons
         moonProgram.m_Program.use();
         glUniform1i(moonProgram.uTexture, 0);
@@ -230,7 +229,7 @@ int main(int argc, char** argv) {
         glBindTexture(GL_TEXTURE_2D, textures[2]);
         for (int i = 0; i < 32; i++)
         {    
-            MVMatrixMoon = rotate(MVOrigin, 23.f, randArray[i]);
+            MVMatrixMoon = rotate(globalMVMatrix, 23.f, randArray[i]);
             MVMatrixMoon = rotate(MVMatrixMoon, windowManager.getTime(), vec3(0, 1, 0));
             MVMatrixMoon = translate(MVMatrixMoon, vec3(-2, 0, 0));
             MVMatrixMoon = scale(MVMatrixMoon, vec3(0.2, 0.2, 0.2));
@@ -239,7 +238,6 @@ int main(int argc, char** argv) {
             glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
         }
         glBindTexture(GL_TEXTURE_2D, 0);
-        sleep(500);
 
         glBindVertexArray(0);
         // END RENDERING
