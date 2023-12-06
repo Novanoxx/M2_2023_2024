@@ -1,3 +1,5 @@
+Step 2 :
+
 number of components (4_8):
 Japanese rice : 147
 Basmati rice : 141
@@ -16,11 +18,10 @@ Japanese rice : round + small
 Basmati rice : thin + long
 Camargue rice : thin + medium
 
+Step 3 :
+"Montrer le résultat pour chaque image"
 
+Step 4 :
+"Montrer le résultat pour chaque image"
 
-typedef KhalimskySpaceND<2, int> KSpace;
-
-    KSpace grid;
-    bool spaceOk = grid.init(image.domain().lowerBound(), image.domain().upperBound(), true);
-
-    auto aCell = Surfaces<Z2i::KSpace>::findABel(grid, set2d);
+Step 5 :

@@ -425,10 +425,54 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
   /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/Program.hpp \
   /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/Shader.hpp \
   /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/FilePath.hpp \
+  /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/Image.hpp \
+  /usr/include/c++/10/memory \
+  /usr/include/c++/10/bits/stl_tempbuf.h \
+  /usr/include/c++/10/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/10/bits/ranges_uninitialized.h \
+  /usr/include/c++/10/ext/concurrence.h \
+  /usr/include/c++/10/bits/shared_ptr.h \
+  /usr/include/c++/10/bits/shared_ptr_base.h \
+  /usr/include/c++/10/bits/allocated_ptr.h \
+  /usr/include/c++/10/bits/refwrap.h \
+  /usr/include/c++/10/ext/aligned_buffer.h \
+  /usr/include/c++/10/bits/shared_ptr_atomic.h \
+  /usr/include/c++/10/bits/atomic_base.h \
+  /usr/include/c++/10/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/10/backward/auto_ptr.h \
+  /usr/include/c++/10/unordered_map \
+  /usr/include/c++/10/bits/hashtable.h \
+  /usr/include/c++/10/bits/hashtable_policy.h \
+  /usr/include/c++/10/bits/unordered_map.h \
+  /usr/include/c++/10/bits/erase_if.h \
   /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/TrackballCamera.hpp
 
 
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/TrackballCamera.hpp:
+
+/usr/include/c++/10/bits/erase_if.h:
+
+/usr/include/c++/10/bits/unordered_map.h:
+
+/usr/include/c++/10/unordered_map:
+
+/usr/include/c++/10/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/10/ext/aligned_buffer.h:
+
+/usr/include/c++/10/bits/allocated_ptr.h:
+
+/usr/include/c++/10/bits/shared_ptr.h:
+
+/usr/include/c++/10/ext/concurrence.h:
+
+/usr/include/c++/10/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/10/bits/refwrap.h:
+
+/usr/include/c++/10/bits/stl_tempbuf.h:
+
+/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/Image.hpp:
 
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/Shader.hpp:
 
@@ -540,6 +584,8 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
 
 /usr/include/c++/10/bits/nested_exception.h:
 
+/usr/include/c++/10/backward/auto_ptr.h:
+
 /usr/include/c++/10/typeinfo:
 
 /usr/include/c++/10/bits/cxxabi_init_exception.h:
@@ -559,6 +605,8 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
 /usr/include/c++/10/cstdint:
 
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/third-party/include/glm/detail/func_geometric.hpp:
+
+/usr/include/c++/10/bits/ranges_uninitialized.h:
 
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/common.hpp:
 
@@ -644,6 +692,8 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
 
 /usr/include/SDL/SDL_audio.h:
 
+/usr/include/c++/10/bits/hashtable.h:
+
 /usr/include/SDL/SDL_mutex.h:
 
 /usr/include/c++/10/cstring:
@@ -676,6 +726,8 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
+/usr/include/c++/10/memory:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/SDL/SDL_platform.h:
@@ -689,6 +741,8 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
 /usr/include/c++/10/bits/locale_facets_nonio.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/c++/10/bits/shared_ptr_base.h:
 
 /usr/include/SDL/SDL_mouse.h:
 
@@ -722,6 +776,8 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
 
 /usr/include/endian.h:
 
+/usr/include/c++/10/bits/hashtable_policy.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h:
@@ -733,6 +789,8 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
 /usr/include/c++/10/ios:
 
 /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h:
+
+/usr/include/c++/10/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/10/locale:
 
@@ -1085,6 +1143,8 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: /home/2ing2/stephane.vong/
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/third-party/include/glm/detail/func_packing.inl:
 
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/third-party/include/glm/gtc/matrix_transform.hpp:
+
+/usr/include/c++/10/bits/atomic_base.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/10/include/float.h:
 

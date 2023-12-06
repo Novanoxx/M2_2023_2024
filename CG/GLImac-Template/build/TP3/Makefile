@@ -158,6 +158,48 @@ TP3_exo2_moon/fast:
 	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo2_moon.dir/build.make TP3/CMakeFiles/TP3_exo2_moon.dir/build
 .PHONY : TP3_exo2_moon/fast
 
+# Convenience name for target.
+TP3/CMakeFiles/TP3_exo3_earth.dir/rule:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3/CMakeFiles/TP3_exo3_earth.dir/rule
+.PHONY : TP3/CMakeFiles/TP3_exo3_earth.dir/rule
+
+# Convenience name for target.
+TP3_exo3_earth: TP3/CMakeFiles/TP3_exo3_earth.dir/rule
+.PHONY : TP3_exo3_earth
+
+# fast build rule for target.
+TP3_exo3_earth/fast:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo3_earth.dir/build.make TP3/CMakeFiles/TP3_exo3_earth.dir/build
+.PHONY : TP3_exo3_earth/fast
+
+# Convenience name for target.
+TP3/CMakeFiles/TP3_exo4_cloud.dir/rule:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3/CMakeFiles/TP3_exo4_cloud.dir/rule
+.PHONY : TP3/CMakeFiles/TP3_exo4_cloud.dir/rule
+
+# Convenience name for target.
+TP3_exo4_cloud: TP3/CMakeFiles/TP3_exo4_cloud.dir/rule
+.PHONY : TP3_exo4_cloud
+
+# fast build rule for target.
+TP3_exo4_cloud/fast:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo4_cloud.dir/build.make TP3/CMakeFiles/TP3_exo4_cloud.dir/build
+.PHONY : TP3_exo4_cloud/fast
+
+# Convenience name for target.
+TP3/CMakeFiles/TP3_exo5_multiShaders.dir/rule:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/rule
+.PHONY : TP3/CMakeFiles/TP3_exo5_multiShaders.dir/rule
+
+# Convenience name for target.
+TP3_exo5_multiShaders: TP3/CMakeFiles/TP3_exo5_multiShaders.dir/rule
+.PHONY : TP3_exo5_multiShaders
+
+# fast build rule for target.
+TP3_exo5_multiShaders/fast:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build.make TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build
+.PHONY : TP3_exo5_multiShaders/fast
+
 SDLtemplate.o: SDLtemplate.cpp.o
 .PHONY : SDLtemplate.o
 
@@ -230,6 +272,78 @@ exo2_moon.cpp.s:
 	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo2_moon.dir/build.make TP3/CMakeFiles/TP3_exo2_moon.dir/exo2_moon.cpp.s
 .PHONY : exo2_moon.cpp.s
 
+exo3_earth.o: exo3_earth.cpp.o
+.PHONY : exo3_earth.o
+
+# target to build an object file
+exo3_earth.cpp.o:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo3_earth.dir/build.make TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.o
+.PHONY : exo3_earth.cpp.o
+
+exo3_earth.i: exo3_earth.cpp.i
+.PHONY : exo3_earth.i
+
+# target to preprocess a source file
+exo3_earth.cpp.i:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo3_earth.dir/build.make TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.i
+.PHONY : exo3_earth.cpp.i
+
+exo3_earth.s: exo3_earth.cpp.s
+.PHONY : exo3_earth.s
+
+# target to generate assembly for a file
+exo3_earth.cpp.s:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo3_earth.dir/build.make TP3/CMakeFiles/TP3_exo3_earth.dir/exo3_earth.cpp.s
+.PHONY : exo3_earth.cpp.s
+
+exo4_cloud.o: exo4_cloud.cpp.o
+.PHONY : exo4_cloud.o
+
+# target to build an object file
+exo4_cloud.cpp.o:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo4_cloud.dir/build.make TP3/CMakeFiles/TP3_exo4_cloud.dir/exo4_cloud.cpp.o
+.PHONY : exo4_cloud.cpp.o
+
+exo4_cloud.i: exo4_cloud.cpp.i
+.PHONY : exo4_cloud.i
+
+# target to preprocess a source file
+exo4_cloud.cpp.i:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo4_cloud.dir/build.make TP3/CMakeFiles/TP3_exo4_cloud.dir/exo4_cloud.cpp.i
+.PHONY : exo4_cloud.cpp.i
+
+exo4_cloud.s: exo4_cloud.cpp.s
+.PHONY : exo4_cloud.s
+
+# target to generate assembly for a file
+exo4_cloud.cpp.s:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo4_cloud.dir/build.make TP3/CMakeFiles/TP3_exo4_cloud.dir/exo4_cloud.cpp.s
+.PHONY : exo4_cloud.cpp.s
+
+exo5_multiShaders.o: exo5_multiShaders.cpp.o
+.PHONY : exo5_multiShaders.o
+
+# target to build an object file
+exo5_multiShaders.cpp.o:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build.make TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.o
+.PHONY : exo5_multiShaders.cpp.o
+
+exo5_multiShaders.i: exo5_multiShaders.cpp.i
+.PHONY : exo5_multiShaders.i
+
+# target to preprocess a source file
+exo5_multiShaders.cpp.i:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build.make TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.i
+.PHONY : exo5_multiShaders.cpp.i
+
+exo5_multiShaders.s: exo5_multiShaders.cpp.s
+.PHONY : exo5_multiShaders.s
+
+# target to generate assembly for a file
+exo5_multiShaders.cpp.s:
+	cd /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build.make TP3/CMakeFiles/TP3_exo5_multiShaders.dir/exo5_multiShaders.cpp.s
+.PHONY : exo5_multiShaders.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -241,6 +355,9 @@ help:
 	@echo "... TP3_SDLtemplate"
 	@echo "... TP3_exo1_sphere"
 	@echo "... TP3_exo2_moon"
+	@echo "... TP3_exo3_earth"
+	@echo "... TP3_exo4_cloud"
+	@echo "... TP3_exo5_multiShaders"
 	@echo "... SDLtemplate.o"
 	@echo "... SDLtemplate.i"
 	@echo "... SDLtemplate.s"
@@ -250,6 +367,15 @@ help:
 	@echo "... exo2_moon.o"
 	@echo "... exo2_moon.i"
 	@echo "... exo2_moon.s"
+	@echo "... exo3_earth.o"
+	@echo "... exo3_earth.i"
+	@echo "... exo3_earth.s"
+	@echo "... exo4_cloud.o"
+	@echo "... exo4_cloud.i"
+	@echo "... exo4_cloud.s"
+	@echo "... exo5_multiShaders.o"
+	@echo "... exo5_multiShaders.i"
+	@echo "... exo5_multiShaders.s"
 .PHONY : help
 
 

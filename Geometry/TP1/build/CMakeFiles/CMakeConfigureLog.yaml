@@ -61,20 +61,20 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-TgMpDA"
-      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-TgMpDA"
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-nvt9OD"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-nvt9OD"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-TgMpDA
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-nvt9OD
         
-        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2516b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2516b.dir/build.make CMakeFiles/cmTC_2516b.dir/build
-        gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-TgMpDA'
-        Building C object CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6f7b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6f7b.dir/build.make CMakeFiles/cmTC_b6f7b.dir/build
+        gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-nvt9OD'
+        Building C object CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
@@ -84,8 +84,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 10.2.1 20210110 (Debian 10.2.1-6) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -o /tmp/ccIJfGlo.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -o /tmp/ccfTDDAo.s
         GNU C17 (Debian 10.2.1-6) version 10.2.1 20210110 (x86_64-linux-gnu)
         	compiled by GNU C version 10.2.1 20210110, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
         
@@ -105,15 +105,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 1f803793fa2e3418c492b25e7d3eac2f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o /tmp/ccIJfGlo.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o /tmp/ccfTDDAo.s
         GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_2516b
-        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2516b.dir/link.txt --verbose=1
-        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o -o cmTC_2516b 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_b6f7b
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6f7b.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o -o cmTC_b6f7b 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
@@ -126,10 +126,10 @@ events:
         gcc version 10.2.1 20210110 (Debian 10.2.1-6) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2516b' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIHp7NQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2516b /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2516b' '-mtune=generic' '-march=x86-64'
-        gmake[1]: Leaving directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-TgMpDA'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b6f7b' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6S1jBU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6f7b /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b6f7b' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-nvt9OD'
         
       exitCode: 0
   -
@@ -163,12 +163,12 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-TgMpDA]
+        ignore line: [Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-nvt9OD]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2516b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2516b.dir/build.make CMakeFiles/cmTC_2516b.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-TgMpDA']
-        ignore line: [Building C object CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6f7b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6f7b.dir/build.make CMakeFiles/cmTC_b6f7b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-nvt9OD']
+        ignore line: [Building C object CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
@@ -178,8 +178,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 10.2.1 20210110 (Debian 10.2.1-6) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -o /tmp/ccIJfGlo.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -o /tmp/ccfTDDAo.s]
         ignore line: [GNU C17 (Debian 10.2.1-6) version 10.2.1 20210110 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 10.2.1 20210110  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.23-GMP]
         ignore line: []
@@ -199,15 +199,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 1f803793fa2e3418c492b25e7d3eac2f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o /tmp/ccIJfGlo.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o /tmp/ccfTDDAo.s]
         ignore line: [GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_2516b]
-        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2516b.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o -o cmTC_2516b ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_b6f7b]
+        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6f7b.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o -o cmTC_b6f7b ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
@@ -220,13 +220,13 @@ events:
         ignore line: [gcc version 10.2.1 20210110 (Debian 10.2.1-6) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2516b' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIHp7NQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2516b /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b6f7b' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6S1jBU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6f7b /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccIHp7NQ.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc6S1jBU.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -243,7 +243,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_2516b] ==> ignore
+          arg [cmTC_b6f7b] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o]
@@ -255,7 +255,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-          arg [CMakeFiles/cmTC_2516b.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_b6f7b.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -295,20 +295,20 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AjwbDz"
-      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AjwbDz"
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pt3NUD"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pt3NUD"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AjwbDz
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pt3NUD
         
-        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e981d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e981d.dir/build.make CMakeFiles/cmTC_e981d.dir/build
-        gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AjwbDz'
-        Building CXX object CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6b434/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6b434.dir/build.make CMakeFiles/cmTC_6b434.dir/build
+        gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pt3NUD'
+        Building CXX object CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
@@ -318,8 +318,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 10.2.1 20210110 (Debian 10.2.1-6) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -o /tmp/ccRAMEpw.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -o /tmp/ccKV5eZA.s
         GNU C++14 (Debian 10.2.1-6) version 10.2.1 20210110 (x86_64-linux-gnu)
         	compiled by GNU C version 10.2.1 20210110, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.23-GMP
         
@@ -343,15 +343,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 048fcaee3460a99eb0d68522358720e1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccRAMEpw.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccKV5eZA.s
         GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_e981d
-        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e981d.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e981d 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_6b434
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b434.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6b434 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
@@ -364,10 +364,10 @@ events:
         gcc version 10.2.1 20210110 (Debian 10.2.1-6) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e981d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoJMgLZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e981d /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e981d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        gmake[1]: Leaving directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AjwbDz'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6b434' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/cccdX1a2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6b434 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6b434' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pt3NUD'
         
       exitCode: 0
   -
@@ -407,12 +407,12 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AjwbDz]
+        ignore line: [Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pt3NUD]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e981d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e981d.dir/build.make CMakeFiles/cmTC_e981d.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AjwbDz']
-        ignore line: [Building CXX object CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6b434/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6b434.dir/build.make CMakeFiles/cmTC_6b434.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pt3NUD']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
@@ -422,8 +422,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 10.2.1 20210110 (Debian 10.2.1-6) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -o /tmp/ccRAMEpw.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -o /tmp/ccKV5eZA.s]
         ignore line: [GNU C++14 (Debian 10.2.1-6) version 10.2.1 20210110 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 10.2.1 20210110  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.23-GMP]
         ignore line: []
@@ -447,15 +447,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 048fcaee3460a99eb0d68522358720e1]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccRAMEpw.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccKV5eZA.s]
         ignore line: [GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_e981d]
-        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e981d.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e981d ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_6b434]
+        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b434.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6b434 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
@@ -468,13 +468,13 @@ events:
         ignore line: [gcc version 10.2.1 20210110 (Debian 10.2.1-6) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e981d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoJMgLZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e981d /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6b434' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/cccdX1a2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6b434 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccoJMgLZ.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cccdX1a2.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -491,7 +491,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_e981d] ==> ignore
+          arg [cmTC_6b434] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o]
@@ -503,7 +503,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-          arg [CMakeFiles/cmTC_e981d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_6b434.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -530,4 +530,1638 @@ events:
         implicit fwks: []
       
       
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FriZcA"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FriZcA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FriZcA
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3935/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a3935.dir/build.make CMakeFiles/cmTC_a3935.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FriZcA »
+        Building C object CMakeFiles/cmTC_a3935.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_a3935.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_a3935.dir/build.make:78 : CMakeFiles/cmTC_a3935.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FriZcA »
+        gmake: *** [Makefile:127 : cmTC_a3935/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-UgZIsH"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-UgZIsH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-UgZIsH
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9428a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9428a.dir/build.make CMakeFiles/cmTC_9428a.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-UgZIsH »
+        Building C object CMakeFiles/cmTC_9428a.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_9428a.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_9428a.dir/build.make:78 : CMakeFiles/cmTC_9428a.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-UgZIsH »
+        gmake: *** [Makefile:127 : cmTC_9428a/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pqwvc1"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pqwvc1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pqwvc1
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df3cb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_df3cb.dir/build.make CMakeFiles/cmTC_df3cb.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pqwvc1 »
+        Building C object CMakeFiles/cmTC_df3cb.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_df3cb.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_df3cb.dir/build.make:78 : CMakeFiles/cmTC_df3cb.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pqwvc1 »
+        gmake: *** [Makefile:127 : cmTC_df3cb/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-s5JyGR"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-s5JyGR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-s5JyGR
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08732/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_08732.dir/build.make CMakeFiles/cmTC_08732.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-s5JyGR »
+        Building C object CMakeFiles/cmTC_08732.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_08732.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_08732.dir/build.make:78 : CMakeFiles/cmTC_08732.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-s5JyGR »
+        gmake: *** [Makefile:127 : cmTC_08732/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KRegOQ"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KRegOQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KRegOQ
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b433/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9b433.dir/build.make CMakeFiles/cmTC_9b433.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KRegOQ »
+        Building C object CMakeFiles/cmTC_9b433.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_9b433.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_9b433.dir/build.make:78 : CMakeFiles/cmTC_9b433.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KRegOQ »
+        gmake: *** [Makefile:127 : cmTC_9b433/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ygW5Ux"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ygW5Ux"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ygW5Ux
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ca2a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8ca2a.dir/build.make CMakeFiles/cmTC_8ca2a.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ygW5Ux »
+        Building C object CMakeFiles/cmTC_8ca2a.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_8ca2a.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_8ca2a.dir/build.make:78 : CMakeFiles/cmTC_8ca2a.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ygW5Ux »
+        gmake: *** [Makefile:127 : cmTC_8ca2a/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0MjACB"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0MjACB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0MjACB
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1267a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1267a.dir/build.make CMakeFiles/cmTC_1267a.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0MjACB »
+        Building C object CMakeFiles/cmTC_1267a.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_1267a.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_1267a.dir/build.make:78 : CMakeFiles/cmTC_1267a.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0MjACB »
+        gmake: *** [Makefile:127 : cmTC_1267a/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9YIMOD"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9YIMOD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9YIMOD
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1b094/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1b094.dir/build.make CMakeFiles/cmTC_1b094.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9YIMOD »
+        Building C object CMakeFiles/cmTC_1b094.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_1b094.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_1b094.dir/build.make:78 : CMakeFiles/cmTC_1b094.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9YIMOD »
+        gmake: *** [Makefile:127 : cmTC_1b094/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9E4ctq"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9E4ctq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9E4ctq
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_db00d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_db00d.dir/build.make CMakeFiles/cmTC_db00d.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9E4ctq »
+        Building C object CMakeFiles/cmTC_db00d.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_db00d.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_db00d.dir/build.make:78 : CMakeFiles/cmTC_db00d.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-9E4ctq »
+        gmake: *** [Makefile:127 : cmTC_db00d/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CdFP5x"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CdFP5x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CdFP5x
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7cce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7cce.dir/build.make CMakeFiles/cmTC_b7cce.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CdFP5x »
+        Building C object CMakeFiles/cmTC_b7cce.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_b7cce.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_b7cce.dir/build.make:78 : CMakeFiles/cmTC_b7cce.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CdFP5x »
+        gmake: *** [Makefile:127 : cmTC_b7cce/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-akHuGS"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-akHuGS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-akHuGS
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_64ec6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_64ec6.dir/build.make CMakeFiles/cmTC_64ec6.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-akHuGS »
+        Building C object CMakeFiles/cmTC_64ec6.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_64ec6.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_64ec6.dir/build.make:78 : CMakeFiles/cmTC_64ec6.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-akHuGS »
+        gmake: *** [Makefile:127 : cmTC_64ec6/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-thndst"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-thndst"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-thndst
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a60d7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a60d7.dir/build.make CMakeFiles/cmTC_a60d7.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-thndst »
+        Building C object CMakeFiles/cmTC_a60d7.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_a60d7.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_a60d7.dir/build.make:78 : CMakeFiles/cmTC_a60d7.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-thndst »
+        gmake: *** [Makefile:127 : cmTC_a60d7/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-eV3hfr"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-eV3hfr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-eV3hfr
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7e2ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7e2ce.dir/build.make CMakeFiles/cmTC_7e2ce.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-eV3hfr »
+        Building C object CMakeFiles/cmTC_7e2ce.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_7e2ce.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_7e2ce.dir/build.make:78 : CMakeFiles/cmTC_7e2ce.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-eV3hfr »
+        gmake: *** [Makefile:127 : cmTC_7e2ce/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KLGf5Y"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KLGf5Y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KLGf5Y
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_698cb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_698cb.dir/build.make CMakeFiles/cmTC_698cb.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KLGf5Y »
+        Building C object CMakeFiles/cmTC_698cb.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_698cb.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_698cb.dir/build.make:78 : CMakeFiles/cmTC_698cb.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KLGf5Y »
+        gmake: *** [Makefile:127 : cmTC_698cb/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FR1m3r"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FR1m3r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FR1m3r
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c6bc6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c6bc6.dir/build.make CMakeFiles/cmTC_c6bc6.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FR1m3r »
+        Building C object CMakeFiles/cmTC_c6bc6.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c6bc6.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c6bc6.dir/build.make:78 : CMakeFiles/cmTC_c6bc6.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-FR1m3r »
+        gmake: *** [Makefile:127 : cmTC_c6bc6/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-L8sUDB"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-L8sUDB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-L8sUDB
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ad45f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ad45f.dir/build.make CMakeFiles/cmTC_ad45f.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-L8sUDB »
+        Building C object CMakeFiles/cmTC_ad45f.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ad45f.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_ad45f.dir/build.make:78 : CMakeFiles/cmTC_ad45f.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-L8sUDB »
+        gmake: *** [Makefile:127 : cmTC_ad45f/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-GfXivl"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-GfXivl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-GfXivl
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3d91/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c3d91.dir/build.make CMakeFiles/cmTC_c3d91.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-GfXivl »
+        Building C object CMakeFiles/cmTC_c3d91.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c3d91.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c3d91.dir/build.make:78 : CMakeFiles/cmTC_c3d91.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-GfXivl »
+        gmake: *** [Makefile:127 : cmTC_c3d91/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AH4CM2"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AH4CM2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AH4CM2
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58303/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58303.dir/build.make CMakeFiles/cmTC_58303.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AH4CM2 »
+        Building C object CMakeFiles/cmTC_58303.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_58303.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_58303.dir/build.make:78 : CMakeFiles/cmTC_58303.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-AH4CM2 »
+        gmake: *** [Makefile:127 : cmTC_58303/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-3WORky"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-3WORky"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-3WORky
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eb418/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eb418.dir/build.make CMakeFiles/cmTC_eb418.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-3WORky »
+        Building C object CMakeFiles/cmTC_eb418.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_eb418.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_eb418.dir/build.make:78 : CMakeFiles/cmTC_eb418.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-3WORky »
+        gmake: *** [Makefile:127 : cmTC_eb418/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-T47Piv"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-T47Piv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-T47Piv
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_162d2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_162d2.dir/build.make CMakeFiles/cmTC_162d2.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-T47Piv »
+        Building C object CMakeFiles/cmTC_162d2.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_162d2.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_162d2.dir/build.make:78 : CMakeFiles/cmTC_162d2.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-T47Piv »
+        gmake: *** [Makefile:127 : cmTC_162d2/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-WoKJ9x"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-WoKJ9x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-WoKJ9x
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_81e43/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_81e43.dir/build.make CMakeFiles/cmTC_81e43.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-WoKJ9x »
+        Building C object CMakeFiles/cmTC_81e43.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_81e43.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_81e43.dir/build.make:78 : CMakeFiles/cmTC_81e43.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-WoKJ9x »
+        gmake: *** [Makefile:127 : cmTC_81e43/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-fUYqqx"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-fUYqqx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-fUYqqx
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_52666/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_52666.dir/build.make CMakeFiles/cmTC_52666.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-fUYqqx »
+        Building C object CMakeFiles/cmTC_52666.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_52666.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_52666.dir/build.make:78 : CMakeFiles/cmTC_52666.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-fUYqqx »
+        gmake: *** [Makefile:127 : cmTC_52666/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-vbllNC"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-vbllNC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-vbllNC
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a424a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a424a.dir/build.make CMakeFiles/cmTC_a424a.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-vbllNC »
+        Building C object CMakeFiles/cmTC_a424a.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_a424a.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_a424a.dir/build.make:78 : CMakeFiles/cmTC_a424a.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-vbllNC »
+        gmake: *** [Makefile:127 : cmTC_a424a/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-qXlYGd"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-qXlYGd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-qXlYGd
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d56f3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d56f3.dir/build.make CMakeFiles/cmTC_d56f3.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-qXlYGd »
+        Building C object CMakeFiles/cmTC_d56f3.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d56f3.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_d56f3.dir/build.make:78 : CMakeFiles/cmTC_d56f3.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-qXlYGd »
+        gmake: *** [Makefile:127 : cmTC_d56f3/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-V8Q4Ma"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-V8Q4Ma"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-V8Q4Ma
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4f893/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4f893.dir/build.make CMakeFiles/cmTC_4f893.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-V8Q4Ma »
+        Building C object CMakeFiles/cmTC_4f893.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_4f893.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_4f893.dir/build.make:78 : CMakeFiles/cmTC_4f893.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-V8Q4Ma »
+        gmake: *** [Makefile:127 : cmTC_4f893/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5H8mu1"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5H8mu1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5H8mu1
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7ee7e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7ee7e.dir/build.make CMakeFiles/cmTC_7ee7e.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5H8mu1 »
+        Building C object CMakeFiles/cmTC_7ee7e.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_7ee7e.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_7ee7e.dir/build.make:78 : CMakeFiles/cmTC_7ee7e.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5H8mu1 »
+        gmake: *** [Makefile:127 : cmTC_7ee7e/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KBdoS9"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KBdoS9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KBdoS9
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_11179/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_11179.dir/build.make CMakeFiles/cmTC_11179.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KBdoS9 »
+        Building C object CMakeFiles/cmTC_11179.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_11179.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_11179.dir/build.make:78 : CMakeFiles/cmTC_11179.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-KBdoS9 »
+        gmake: *** [Makefile:127 : cmTC_11179/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DnNL1j"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DnNL1j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DnNL1j
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_478cf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_478cf.dir/build.make CMakeFiles/cmTC_478cf.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DnNL1j »
+        Building C object CMakeFiles/cmTC_478cf.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_478cf.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_478cf.dir/build.make:78 : CMakeFiles/cmTC_478cf.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DnNL1j »
+        gmake: *** [Makefile:127 : cmTC_478cf/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-C1juEF"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-C1juEF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-C1juEF
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_922c9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_922c9.dir/build.make CMakeFiles/cmTC_922c9.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-C1juEF »
+        Building C object CMakeFiles/cmTC_922c9.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_922c9.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_922c9.dir/build.make:78 : CMakeFiles/cmTC_922c9.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-C1juEF »
+        gmake: *** [Makefile:127 : cmTC_922c9/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CEYGFM"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CEYGFM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CEYGFM
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c68d8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c68d8.dir/build.make CMakeFiles/cmTC_c68d8.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CEYGFM »
+        Building C object CMakeFiles/cmTC_c68d8.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c68d8.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c68d8.dir/build.make:78 : CMakeFiles/cmTC_c68d8.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-CEYGFM »
+        gmake: *** [Makefile:127 : cmTC_c68d8/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-I2qfkk"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-I2qfkk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-I2qfkk
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ffd58/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ffd58.dir/build.make CMakeFiles/cmTC_ffd58.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-I2qfkk »
+        Building C object CMakeFiles/cmTC_ffd58.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ffd58.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_ffd58.dir/build.make:78 : CMakeFiles/cmTC_ffd58.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-I2qfkk »
+        gmake: *** [Makefile:127 : cmTC_ffd58/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ixIRfA"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ixIRfA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ixIRfA
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a5fa4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a5fa4.dir/build.make CMakeFiles/cmTC_a5fa4.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ixIRfA »
+        Building C object CMakeFiles/cmTC_a5fa4.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_a5fa4.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_a5fa4.dir/build.make:78 : CMakeFiles/cmTC_a5fa4.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-ixIRfA »
+        gmake: *** [Makefile:127 : cmTC_a5fa4/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-EliYXD"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-EliYXD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-EliYXD
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df6f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_df6f1.dir/build.make CMakeFiles/cmTC_df6f1.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-EliYXD »
+        Building C object CMakeFiles/cmTC_df6f1.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_df6f1.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_df6f1.dir/build.make:78 : CMakeFiles/cmTC_df6f1.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-EliYXD »
+        gmake: *** [Makefile:127 : cmTC_df6f1/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-uQdgvb"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-uQdgvb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-uQdgvb
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9a4d1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9a4d1.dir/build.make CMakeFiles/cmTC_9a4d1.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-uQdgvb »
+        Building C object CMakeFiles/cmTC_9a4d1.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_9a4d1.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_9a4d1.dir/build.make:78 : CMakeFiles/cmTC_9a4d1.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-uQdgvb »
+        gmake: *** [Makefile:127 : cmTC_9a4d1/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pc8G64"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pc8G64"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pc8G64
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c7db6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c7db6.dir/build.make CMakeFiles/cmTC_c7db6.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pc8G64 »
+        Building C object CMakeFiles/cmTC_c7db6.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c7db6.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c7db6.dir/build.make:78 : CMakeFiles/cmTC_c7db6.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-Pc8G64 »
+        gmake: *** [Makefile:127 : cmTC_c7db6/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-dbxOa5"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-dbxOa5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-dbxOa5
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7c3dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7c3dc.dir/build.make CMakeFiles/cmTC_7c3dc.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-dbxOa5 »
+        Building C object CMakeFiles/cmTC_7c3dc.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_7c3dc.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_7c3dc.dir/build.make:78 : CMakeFiles/cmTC_7c3dc.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-dbxOa5 »
+        gmake: *** [Makefile:127 : cmTC_7c3dc/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0n0GOQ"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0n0GOQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0n0GOQ
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_75b3b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_75b3b.dir/build.make CMakeFiles/cmTC_75b3b.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0n0GOQ »
+        Building C object CMakeFiles/cmTC_75b3b.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_75b3b.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_75b3b.dir/build.make:78 : CMakeFiles/cmTC_75b3b.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-0n0GOQ »
+        gmake: *** [Makefile:127 : cmTC_75b3b/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pN3gHx"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pN3gHx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pN3gHx
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8e58/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d8e58.dir/build.make CMakeFiles/cmTC_d8e58.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pN3gHx »
+        Building C object CMakeFiles/cmTC_d8e58.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d8e58.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_d8e58.dir/build.make:78 : CMakeFiles/cmTC_d8e58.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-pN3gHx »
+        gmake: *** [Makefile:127 : cmTC_d8e58/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DJeZ5Y"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DJeZ5Y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DJeZ5Y
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_68399/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_68399.dir/build.make CMakeFiles/cmTC_68399.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DJeZ5Y »
+        Building C object CMakeFiles/cmTC_68399.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_68399.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_68399.dir/build.make:78 : CMakeFiles/cmTC_68399.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-DJeZ5Y »
+        gmake: *** [Makefile:127 : cmTC_68399/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-8YZryj"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-8YZryj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-8YZryj
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_61ca4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_61ca4.dir/build.make CMakeFiles/cmTC_61ca4.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-8YZryj »
+        Building C object CMakeFiles/cmTC_61ca4.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_61ca4.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_61ca4.dir/build.make:78 : CMakeFiles/cmTC_61ca4.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-8YZryj »
+        gmake: *** [Makefile:127 : cmTC_61ca4/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-u1w6Z1"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-u1w6Z1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-u1w6Z1
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_83eb9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_83eb9.dir/build.make CMakeFiles/cmTC_83eb9.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-u1w6Z1 »
+        Building C object CMakeFiles/cmTC_83eb9.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_83eb9.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_83eb9.dir/build.make:78 : CMakeFiles/cmTC_83eb9.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-u1w6Z1 »
+        gmake: *** [Makefile:127 : cmTC_83eb9/fast] Erreur 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindHDF5.cmake:584 (_HDF5_test_regular_compiler_C)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/DGtal/DGtalConfig.cmake:53 (find_dependency)"
+      - "CMakeLists.txt:7 (FIND_PACKAGE)"
+    directories:
+      source: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5EO1oe"
+      binary: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5EO1oe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CPM_modules;/usr/local/lib/DGtal/Modules"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5EO1oe
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_34798/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_34798.dir/build.make CMakeFiles/cmTC_34798.dir/build
+        gmake[1] : on entre dans le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5EO1oe »
+        Building C object CMakeFiles/cmTC_34798.dir/cmake_hdf5_test.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_34798.dir/cmake_hdf5_test.c.o -c /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: hdf5.h: Aucun fichier ou dossier de ce type
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_34798.dir/build.make:78 : CMakeFiles/cmTC_34798.dir/cmake_hdf5_test.c.o] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles/CMakeScratch/TryCompile-5EO1oe »
+        gmake: *** [Makefile:127 : cmTC_34798/fast] Erreur 2
+        
+      exitCode: 2
 ...

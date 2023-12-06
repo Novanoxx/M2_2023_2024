@@ -299,6 +299,45 @@ TP3_exo2_moon/fast:
 .PHONY : TP3_exo2_moon/fast
 
 #=============================================================================
+# Target rules for targets named TP3_exo3_earth
+
+# Build rule for target.
+TP3_exo3_earth: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3_exo3_earth
+.PHONY : TP3_exo3_earth
+
+# fast build rule for target.
+TP3_exo3_earth/fast:
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo3_earth.dir/build.make TP3/CMakeFiles/TP3_exo3_earth.dir/build
+.PHONY : TP3_exo3_earth/fast
+
+#=============================================================================
+# Target rules for targets named TP3_exo4_cloud
+
+# Build rule for target.
+TP3_exo4_cloud: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3_exo4_cloud
+.PHONY : TP3_exo4_cloud
+
+# fast build rule for target.
+TP3_exo4_cloud/fast:
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo4_cloud.dir/build.make TP3/CMakeFiles/TP3_exo4_cloud.dir/build
+.PHONY : TP3_exo4_cloud/fast
+
+#=============================================================================
+# Target rules for targets named TP3_exo5_multiShaders
+
+# Build rule for target.
+TP3_exo5_multiShaders: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3_exo5_multiShaders
+.PHONY : TP3_exo5_multiShaders
+
+# fast build rule for target.
+TP3_exo5_multiShaders/fast:
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build.make TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build
+.PHONY : TP3_exo5_multiShaders/fast
+
+#=============================================================================
 # Target rules for targets named TP4_SDLtemplate
 
 # Build rule for target.
@@ -410,6 +449,9 @@ help:
 	@echo "... TP3_SDLtemplate"
 	@echo "... TP3_exo1_sphere"
 	@echo "... TP3_exo2_moon"
+	@echo "... TP3_exo3_earth"
+	@echo "... TP3_exo4_cloud"
+	@echo "... TP3_exo5_multiShaders"
 	@echo "... TP4_SDLtemplate"
 	@echo "... TP4_exo1_camera"
 	@echo "... TP_Proj_SDLtemplate"

@@ -76,12 +76,6 @@ int main(int argc, char** argv) {
     mat4 MVMatrixMoon;
     mat4 NormalMatrix = transpose(inverse(MVMatrix));
 
-    vec3 randArray[32];
-    for (int i = 0; i < 32; i++)
-    {
-        randArray[i] = sphericalRand(1.f);
-    }
-
     // Application loop:
     bool done = false;
     while(!done) {
@@ -108,17 +102,13 @@ int main(int argc, char** argv) {
         // Earth
         glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
 
-        // Moons
-        for (int i = 0; i < 32; i++)
-        {   
-            MVMatrixMoon = rotate(MVMatrix, 23.f, randArray[i]);
-            MVMatrixMoon = rotate(MVMatrixMoon, windowManager.getTime(), vec3(0, 1, 0));
-            MVMatrixMoon = translate(MVMatrixMoon, vec3(-2, 0, 0));
-            MVMatrixMoon = scale(MVMatrixMoon, vec3(0.2, 0.2, 0.2));
-            glUniformMatrix4fv(locMVP, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrixMoon));
-            glUniformMatrix4fv(locMV, 1, GL_FALSE, value_ptr(MVMatrixMoon));
-            glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
-        }
+        // Moon
+        MVMatrixMoon = rotate(MVMatrix, windowManager.getTime(), vec3(0, 1, 0));
+        MVMatrixMoon = translate(MVMatrixMoon, vec3(-2, 0, 0));
+        MVMatrixMoon = scale(MVMatrixMoon, vec3(0.2, 0.2, 0.2));
+        glUniformMatrix4fv(locMVP, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrixMoon));
+        glUniformMatrix4fv(locMV, 1, GL_FALSE, value_ptr(MVMatrixMoon));
+        glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
         glBindVertexArray(0);
 
         // END RENDERING

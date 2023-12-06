@@ -42,6 +42,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/_deps/eigen-src/Eigen")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT STREQUAL "eigen" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/DGtal/3rdParties/" TYPE DIRECTORY FILES "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/_deps/eigen-src/Eigen")
 endif()

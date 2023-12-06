@@ -21,7 +21,7 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(eigen-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/libigl/eigen-git-mirror.git" "GIT_TAG" "tags/3.3.7" "GIT_SHALLOW" "TRUE"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://gitlab.com/libeigen/eigen.git" "GIT_TAG" "3.4.0"
                     SOURCE_DIR          "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/_deps/eigen-src"
                     BINARY_DIR          "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/_deps/eigen-build"
                     CONFIGURE_COMMAND   ""

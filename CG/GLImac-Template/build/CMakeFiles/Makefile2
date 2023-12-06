@@ -148,6 +148,9 @@ TP2/clean: TP2/CMakeFiles/TP2_exo3_vertex.dir/clean
 TP3/all: TP3/CMakeFiles/TP3_SDLtemplate.dir/all
 TP3/all: TP3/CMakeFiles/TP3_exo1_sphere.dir/all
 TP3/all: TP3/CMakeFiles/TP3_exo2_moon.dir/all
+TP3/all: TP3/CMakeFiles/TP3_exo3_earth.dir/all
+TP3/all: TP3/CMakeFiles/TP3_exo4_cloud.dir/all
+TP3/all: TP3/CMakeFiles/TP3_exo5_multiShaders.dir/all
 .PHONY : TP3/all
 
 # Recursive "preinstall" directory target.
@@ -158,6 +161,9 @@ TP3/preinstall:
 TP3/clean: TP3/CMakeFiles/TP3_SDLtemplate.dir/clean
 TP3/clean: TP3/CMakeFiles/TP3_exo1_sphere.dir/clean
 TP3/clean: TP3/CMakeFiles/TP3_exo2_moon.dir/clean
+TP3/clean: TP3/CMakeFiles/TP3_exo3_earth.dir/clean
+TP3/clean: TP3/CMakeFiles/TP3_exo4_cloud.dir/clean
+TP3/clean: TP3/CMakeFiles/TP3_exo5_multiShaders.dir/clean
 .PHONY : TP3/clean
 
 #=============================================================================
@@ -248,7 +254,7 @@ glimac/clean: glimac/CMakeFiles/glimac.dir/clean
 glimac/CMakeFiles/glimac.dir/all:
 	$(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/depend
 	$(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49 "Built target glimac"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=47,48,49,50,51,52,53,54,55 "Built target glimac"
 .PHONY : glimac/CMakeFiles/glimac.dir/all
 
 # Build rule for subdir invocation for target.
@@ -606,13 +612,91 @@ TP3/CMakeFiles/TP3_exo2_moon.dir/clean:
 .PHONY : TP3/CMakeFiles/TP3_exo2_moon.dir/clean
 
 #=============================================================================
+# Target rules for target TP3/CMakeFiles/TP3_exo3_earth.dir
+
+# All Build rule for target.
+TP3/CMakeFiles/TP3_exo3_earth.dir/all: glimac/CMakeFiles/glimac.dir/all
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo3_earth.dir/build.make TP3/CMakeFiles/TP3_exo3_earth.dir/depend
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo3_earth.dir/build.make TP3/CMakeFiles/TP3_exo3_earth.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=27,28 "Built target TP3_exo3_earth"
+.PHONY : TP3/CMakeFiles/TP3_exo3_earth.dir/all
+
+# Build rule for subdir invocation for target.
+TP3/CMakeFiles/TP3_exo3_earth.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3/CMakeFiles/TP3_exo3_earth.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles 0
+.PHONY : TP3/CMakeFiles/TP3_exo3_earth.dir/rule
+
+# Convenience name for target.
+TP3_exo3_earth: TP3/CMakeFiles/TP3_exo3_earth.dir/rule
+.PHONY : TP3_exo3_earth
+
+# clean rule for target.
+TP3/CMakeFiles/TP3_exo3_earth.dir/clean:
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo3_earth.dir/build.make TP3/CMakeFiles/TP3_exo3_earth.dir/clean
+.PHONY : TP3/CMakeFiles/TP3_exo3_earth.dir/clean
+
+#=============================================================================
+# Target rules for target TP3/CMakeFiles/TP3_exo4_cloud.dir
+
+# All Build rule for target.
+TP3/CMakeFiles/TP3_exo4_cloud.dir/all: glimac/CMakeFiles/glimac.dir/all
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo4_cloud.dir/build.make TP3/CMakeFiles/TP3_exo4_cloud.dir/depend
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo4_cloud.dir/build.make TP3/CMakeFiles/TP3_exo4_cloud.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=29,30 "Built target TP3_exo4_cloud"
+.PHONY : TP3/CMakeFiles/TP3_exo4_cloud.dir/all
+
+# Build rule for subdir invocation for target.
+TP3/CMakeFiles/TP3_exo4_cloud.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3/CMakeFiles/TP3_exo4_cloud.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles 0
+.PHONY : TP3/CMakeFiles/TP3_exo4_cloud.dir/rule
+
+# Convenience name for target.
+TP3_exo4_cloud: TP3/CMakeFiles/TP3_exo4_cloud.dir/rule
+.PHONY : TP3_exo4_cloud
+
+# clean rule for target.
+TP3/CMakeFiles/TP3_exo4_cloud.dir/clean:
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo4_cloud.dir/build.make TP3/CMakeFiles/TP3_exo4_cloud.dir/clean
+.PHONY : TP3/CMakeFiles/TP3_exo4_cloud.dir/clean
+
+#=============================================================================
+# Target rules for target TP3/CMakeFiles/TP3_exo5_multiShaders.dir
+
+# All Build rule for target.
+TP3/CMakeFiles/TP3_exo5_multiShaders.dir/all: glimac/CMakeFiles/glimac.dir/all
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build.make TP3/CMakeFiles/TP3_exo5_multiShaders.dir/depend
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build.make TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=31,32 "Built target TP3_exo5_multiShaders"
+.PHONY : TP3/CMakeFiles/TP3_exo5_multiShaders.dir/all
+
+# Build rule for subdir invocation for target.
+TP3/CMakeFiles/TP3_exo5_multiShaders.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP3/CMakeFiles/TP3_exo5_multiShaders.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles 0
+.PHONY : TP3/CMakeFiles/TP3_exo5_multiShaders.dir/rule
+
+# Convenience name for target.
+TP3_exo5_multiShaders: TP3/CMakeFiles/TP3_exo5_multiShaders.dir/rule
+.PHONY : TP3_exo5_multiShaders
+
+# clean rule for target.
+TP3/CMakeFiles/TP3_exo5_multiShaders.dir/clean:
+	$(MAKE) $(MAKESILENT) -f TP3/CMakeFiles/TP3_exo5_multiShaders.dir/build.make TP3/CMakeFiles/TP3_exo5_multiShaders.dir/clean
+.PHONY : TP3/CMakeFiles/TP3_exo5_multiShaders.dir/clean
+
+#=============================================================================
 # Target rules for target TP4/CMakeFiles/TP4_SDLtemplate.dir
 
 # All Build rule for target.
 TP4/CMakeFiles/TP4_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP4/CMakeFiles/TP4_SDLtemplate.dir/build.make TP4/CMakeFiles/TP4_SDLtemplate.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP4/CMakeFiles/TP4_SDLtemplate.dir/build.make TP4/CMakeFiles/TP4_SDLtemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=27,28 "Built target TP4_SDLtemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=33,34 "Built target TP4_SDLtemplate"
 .PHONY : TP4/CMakeFiles/TP4_SDLtemplate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -638,7 +722,7 @@ TP4/CMakeFiles/TP4_SDLtemplate.dir/clean:
 TP4/CMakeFiles/TP4_exo1_camera.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP4/CMakeFiles/TP4_exo1_camera.dir/build.make TP4/CMakeFiles/TP4_exo1_camera.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP4/CMakeFiles/TP4_exo1_camera.dir/build.make TP4/CMakeFiles/TP4_exo1_camera.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=29,30 "Built target TP4_exo1_camera"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=35,36 "Built target TP4_exo1_camera"
 .PHONY : TP4/CMakeFiles/TP4_exo1_camera.dir/all
 
 # Build rule for subdir invocation for target.
@@ -664,7 +748,7 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/clean:
 TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/build.make TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/build.make TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=31,32 "Built target TP_Proj_SDLtemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=37,38 "Built target TP_Proj_SDLtemplate"
 .PHONY : TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -690,7 +774,7 @@ TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/clean:
 TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=33,34 "Built target TP_Proj_SolarSystem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=39,40 "Built target TP_Proj_SolarSystem"
 .PHONY : TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/all
 
 # Build rule for subdir invocation for target.
@@ -716,7 +800,7 @@ TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/clean:
 TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/build.make TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/build.make TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=35,36 "Built target TP_garbage_SDLtemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=41,42 "Built target TP_garbage_SDLtemplate"
 .PHONY : TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -742,7 +826,7 @@ TP_garbage/CMakeFiles/TP_garbage_SDLtemplate.dir/clean:
 TP_garbage/CMakeFiles/TP_garbage_foo.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_foo.dir/build.make TP_garbage/CMakeFiles/TP_garbage_foo.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_foo.dir/build.make TP_garbage/CMakeFiles/TP_garbage_foo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=37,38 "Built target TP_garbage_foo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=43,44 "Built target TP_garbage_foo"
 .PHONY : TP_garbage/CMakeFiles/TP_garbage_foo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -768,7 +852,7 @@ TP_garbage/CMakeFiles/TP_garbage_foo.dir/clean:
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=39,40 "Built target TP_template_SDLtemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/CMakeFiles --progress-num=45,46 "Built target TP_template_SDLtemplate"
 .PHONY : TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all
 
 # Build rule for subdir invocation for target.

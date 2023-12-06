@@ -20,6 +20,9 @@
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_SDLtemplate.dir
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo1_sphere.dir
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo2_moon.dir
+/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo3_earth.dir
+/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo4_cloud.dir
+/home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/TP3_exo5_multiShaders.dir
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/edit_cache.dir
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP3/CMakeFiles/rebuild_cache.dir
 /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/build/TP4/CMakeFiles/TP4_SDLtemplate.dir

@@ -360,4 +360,22 @@ TP4/CMakeFiles/TP4_exo1_camera.dir/exo1_camera.cpp.o: \
  /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/Program.hpp \
  /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/Shader.hpp \
  /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/FilePath.hpp \
+ /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/Image.hpp \
+ /usr/include/c++/10/memory /usr/include/c++/10/bits/stl_tempbuf.h \
+ /usr/include/c++/10/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/10/bits/ranges_uninitialized.h \
+ /usr/include/c++/10/ext/concurrence.h \
+ /usr/include/c++/10/bits/shared_ptr.h \
+ /usr/include/c++/10/bits/shared_ptr_base.h \
+ /usr/include/c++/10/bits/allocated_ptr.h \
+ /usr/include/c++/10/bits/refwrap.h \
+ /usr/include/c++/10/ext/aligned_buffer.h \
+ /usr/include/c++/10/bits/shared_ptr_atomic.h \
+ /usr/include/c++/10/bits/atomic_base.h \
+ /usr/include/c++/10/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/10/backward/auto_ptr.h \
+ /usr/include/c++/10/unordered_map /usr/include/c++/10/bits/hashtable.h \
+ /usr/include/c++/10/bits/hashtable_policy.h \
+ /usr/include/c++/10/bits/unordered_map.h \
+ /usr/include/c++/10/bits/erase_if.h \
  /home/2ing2/stephane.vong/Documents/CG/GLImac-Template/glimac/include/glimac/TrackballCamera.hpp

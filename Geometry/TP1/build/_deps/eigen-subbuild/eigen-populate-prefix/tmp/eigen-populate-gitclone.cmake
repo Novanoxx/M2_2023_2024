@@ -26,7 +26,7 @@ set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/bin/git" 
-            clone --no-checkout --depth 1 --no-single-branch --config "advice.detachedHead=false" "https://github.com/libigl/eigen-git-mirror.git" "eigen-src"
+            clone --no-checkout --config "advice.detachedHead=false" "https://gitlab.com/libeigen/eigen.git" "eigen-src"
     WORKING_DIRECTORY "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/_deps"
     RESULT_VARIABLE error_code
   )
@@ -36,17 +36,17 @@ if(number_of_tries GREATER 1)
   message(STATUS "Had to git clone more than once: ${number_of_tries} times.")
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to clone repository: 'https://github.com/libigl/eigen-git-mirror.git'")
+  message(FATAL_ERROR "Failed to clone repository: 'https://gitlab.com/libeigen/eigen.git'")
 endif()
 
 execute_process(
   COMMAND "/usr/bin/git" 
-          checkout "tags/3.3.7" --
+          checkout "3.4.0" --
   WORKING_DIRECTORY "/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/_deps/eigen-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'tags/3.3.7'")
+  message(FATAL_ERROR "Failed to checkout tag: '3.4.0'")
 endif()
 
 set(init_submodules TRUE)

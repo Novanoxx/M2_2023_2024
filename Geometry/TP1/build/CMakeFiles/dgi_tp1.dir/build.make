@@ -92,8 +92,27 @@ dgi_tp1_EXTERNAL_OBJECTS =
 
 dgi_tp1: CMakeFiles/dgi_tp1.dir/main.cpp.o
 dgi_tp1: CMakeFiles/dgi_tp1.dir/build.make
-dgi_tp1: /home/2ing2/stephane.vong/libs/lib/libDGtal.a
+dgi_tp1: /usr/local/lib/libDGtal.a
 dgi_tp1: /usr/lib/x86_64-linux-gnu/libz.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libgmpxx.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libgmp.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libcairo.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libpthread.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libsz.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libz.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libdl.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libm.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5_hl.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.15.2
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.2
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.2
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libQt5Xml.so.5.15.2
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.2
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libQGLViewer-qt5.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libGLX.so
+dgi_tp1: /usr/lib/x86_64-linux-gnu/libGLU.so
 dgi_tp1: CMakeFiles/dgi_tp1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/2ing2/stephane.vong/Documents/Geometry/TP1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dgi_tp1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dgi_tp1.dir/link.txt --verbose=$(VERBOSE)
