@@ -25,3 +25,14 @@ Step 4 :
 "Montrer le résultat pour chaque image"
 
 Step 5 :
+
+Step 6 : 
+Once you calculate the perimeters for all grains in an image, observe the distribution of
+estimated perimeters for each rice type, and analyze it. Can the perimeter be a principal
+component for classifying grains into different types?
+--> est ce que ça suffit pour identifier le type de graine (si xx valeur, alors japonais ?)
+
+Setp 7 : 
+1. roundness = (perimeter * perimeter) / (4 * pi * area)
+This ratio will be 1 for a circle and greater than 1 for non-circular shapes.
+2. 

@@ -3,16 +3,7 @@
 
 CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/main.cpp \
   /usr/include/stdc-predef.h \
-  /usr/local/include/DGtal/base/Common.h \
-  /usr/include/QGLViewer/qglviewer.h \
-  /usr/include/QGLViewer/camera.h \
-  /usr/include/QGLViewer/keyFrameInterpolator.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/c++/10/type_traits \
+  /usr/include/c++/10/iostream \
   /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \
   /usr/include/features.h \
@@ -22,26 +13,45 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/cpu_defines.h \
-  /usr/include/c++/10/cstddef \
+  /usr/include/c++/10/ostream \
+  /usr/include/c++/10/ios \
+  /usr/include/c++/10/iosfwd \
+  /usr/include/c++/10/bits/stringfwd.h \
+  /usr/include/c++/10/bits/memoryfwd.h \
+  /usr/include/c++/10/bits/postypes.h \
+  /usr/include/c++/10/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/lib/gcc/x86_64-linux-gnu/10/include/stddef.h \
-  /usr/include/c++/10/utility \
-  /usr/include/c++/10/bits/stl_relops.h \
-  /usr/include/c++/10/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/10/exception \
+  /usr/include/c++/10/bits/exception.h \
+  /usr/include/c++/10/bits/exception_ptr.h \
+  /usr/include/c++/10/bits/exception_defines.h \
+  /usr/include/c++/10/bits/cxxabi_init_exception.h \
+  /usr/include/c++/10/typeinfo \
+  /usr/include/c++/10/bits/hash_bytes.h \
+  /usr/include/c++/10/new \
+  /usr/include/c++/10/bits/nested_exception.h \
   /usr/include/c++/10/bits/move.h \
-  /usr/include/c++/10/initializer_list \
-  /usr/include/assert.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/c++/10/algorithm \
+  /usr/include/c++/10/type_traits \
+  /usr/include/c++/10/bits/char_traits.h \
   /usr/include/c++/10/bits/stl_algobase.h \
   /usr/include/c++/10/bits/functexcept.h \
-  /usr/include/c++/10/bits/exception_defines.h \
   /usr/include/c++/10/bits/cpp_type_traits.h \
   /usr/include/c++/10/ext/type_traits.h \
   /usr/include/c++/10/ext/numeric_traits.h \
+  /usr/include/c++/10/bits/stl_pair.h \
   /usr/include/c++/10/bits/stl_iterator_base_types.h \
   /usr/include/c++/10/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/10/bits/concept_check.h \
@@ -50,138 +60,85 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
   /usr/include/c++/10/bits/ptr_traits.h \
   /usr/include/c++/10/debug/debug.h \
   /usr/include/c++/10/bits/predefined_ops.h \
-  /usr/include/c++/10/bits/stl_algo.h \
-  /usr/include/c++/10/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/c++/10/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h \
+  /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/c++/10/bits/std_abs.h \
-  /usr/include/c++/10/bits/algorithmfwd.h \
-  /usr/include/c++/10/bits/stl_heap.h \
-  /usr/include/c++/10/bits/stl_tempbuf.h \
-  /usr/include/c++/10/bits/stl_construct.h \
-  /usr/include/c++/10/new \
-  /usr/include/c++/10/exception \
-  /usr/include/c++/10/bits/exception.h \
-  /usr/include/c++/10/bits/exception_ptr.h \
-  /usr/include/c++/10/bits/cxxabi_init_exception.h \
-  /usr/include/c++/10/typeinfo \
-  /usr/include/c++/10/bits/hash_bytes.h \
-  /usr/include/c++/10/bits/nested_exception.h \
-  /usr/include/c++/10/bits/uniform_int_dist.h \
-  /usr/include/c++/10/limits \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/c++/10/atomic \
-  /usr/include/c++/10/bits/atomic_base.h \
-  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/10/bits/atomic_lockfree_defines.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/c++/10/stdlib.h \
-  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdarg.h \
-  /usr/include/c++/10/string \
-  /usr/include/c++/10/bits/stringfwd.h \
-  /usr/include/c++/10/bits/memoryfwd.h \
-  /usr/include/c++/10/bits/char_traits.h \
-  /usr/include/c++/10/bits/postypes.h \
-  /usr/include/c++/10/cwchar \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/c++/10/cstdint \
-  /usr/include/c++/10/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/10/bits/c++allocator.h \
-  /usr/include/c++/10/ext/new_allocator.h \
   /usr/include/c++/10/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/c++locale.h \
   /usr/include/c++/10/clocale \
   /usr/include/locale.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/10/iosfwd \
   /usr/include/c++/10/cctype \
   /usr/include/ctype.h \
-  /usr/include/c++/10/bits/ostream_insert.h \
-  /usr/include/c++/10/bits/cxxabi_forced.h \
-  /usr/include/c++/10/bits/stl_function.h \
-  /usr/include/c++/10/backward/binders.h \
-  /usr/include/c++/10/bits/range_access.h \
-  /usr/include/c++/10/bits/iterator_concepts.h \
-  /usr/include/c++/10/concepts \
-  /usr/include/c++/10/bits/range_cmp.h \
-  /usr/include/c++/10/bits/basic_string.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/10/bits/ios_base.h \
   /usr/include/c++/10/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/gthr-default.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/atomic_word.h \
+  /usr/include/c++/10/bits/locale_classes.h \
+  /usr/include/c++/10/string \
+  /usr/include/c++/10/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/10/bits/c++allocator.h \
+  /usr/include/c++/10/ext/new_allocator.h \
+  /usr/include/c++/10/bits/ostream_insert.h \
+  /usr/include/c++/10/bits/cxxabi_forced.h \
+  /usr/include/c++/10/bits/stl_function.h \
+  /usr/include/c++/10/backward/binders.h \
+  /usr/include/c++/10/bits/range_access.h \
+  /usr/include/c++/10/initializer_list \
+  /usr/include/c++/10/bits/iterator_concepts.h \
+  /usr/include/c++/10/concepts \
+  /usr/include/c++/10/bits/range_cmp.h \
+  /usr/include/c++/10/bits/basic_string.h \
   /usr/include/c++/10/ext/alloc_traits.h \
   /usr/include/c++/10/bits/alloc_traits.h \
+  /usr/include/c++/10/bits/stl_construct.h \
   /usr/include/c++/10/ext/string_conversions.h \
+  /usr/include/c++/10/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/10/bits/std_abs.h \
   /usr/include/c++/10/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -201,17 +158,75 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
   /usr/include/c++/10/bits/charconv.h \
   /usr/include/c++/10/bits/functional_hash.h \
   /usr/include/c++/10/bits/basic_string.tcc \
-  /usr/include/c++/10/iterator \
-  /usr/include/c++/10/bits/stream_iterator.h \
-  /usr/include/c++/10/bits/streambuf_iterator.h \
-  /usr/include/c++/10/streambuf \
-  /usr/include/c++/10/bits/ios_base.h \
-  /usr/include/c++/10/bits/locale_classes.h \
   /usr/include/c++/10/bits/locale_classes.tcc \
   /usr/include/c++/10/system_error \
   /usr/include/x86_64-linux-gnu/c++/10/bits/error_constants.h \
   /usr/include/c++/10/stdexcept \
+  /usr/include/c++/10/streambuf \
   /usr/include/c++/10/bits/streambuf.tcc \
+  /usr/include/c++/10/bits/basic_ios.h \
+  /usr/include/c++/10/bits/locale_facets.h \
+  /usr/include/c++/10/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_base.h \
+  /usr/include/c++/10/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_inline.h \
+  /usr/include/c++/10/bits/locale_facets.tcc \
+  /usr/include/c++/10/bits/basic_ios.tcc \
+  /usr/include/c++/10/bits/ostream.tcc \
+  /usr/include/c++/10/istream \
+  /usr/include/c++/10/bits/istream.tcc \
+  /usr/local/include/DGtal/base/Common.h \
+  /usr/include/QGLViewer/qglviewer.h \
+  /usr/include/QGLViewer/camera.h \
+  /usr/include/QGLViewer/keyFrameInterpolator.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
+  /usr/include/c++/10/cstddef \
+  /usr/include/c++/10/utility \
+  /usr/include/c++/10/bits/stl_relops.h \
+  /usr/include/assert.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
+  /usr/include/c++/10/algorithm \
+  /usr/include/c++/10/bits/stl_algo.h \
+  /usr/include/c++/10/bits/algorithmfwd.h \
+  /usr/include/c++/10/bits/stl_heap.h \
+  /usr/include/c++/10/bits/stl_tempbuf.h \
+  /usr/include/c++/10/bits/uniform_int_dist.h \
+  /usr/include/c++/10/limits \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h \
+  /usr/include/c++/10/atomic \
+  /usr/include/c++/10/bits/atomic_base.h \
+  /usr/include/c++/10/bits/atomic_lockfree_defines.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/c++/10/stdlib.h \
+  /usr/include/c++/10/iterator \
+  /usr/include/c++/10/bits/stream_iterator.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h \
@@ -286,21 +301,6 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/c++/10/iostream \
-  /usr/include/c++/10/ostream \
-  /usr/include/c++/10/ios \
-  /usr/include/c++/10/bits/basic_ios.h \
-  /usr/include/c++/10/bits/locale_facets.h \
-  /usr/include/c++/10/cwctype \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_inline.h \
-  /usr/include/c++/10/bits/locale_facets.tcc \
-  /usr/include/c++/10/bits/basic_ios.tcc \
-  /usr/include/c++/10/bits/ostream.tcc \
-  /usr/include/c++/10/istream \
-  /usr/include/c++/10/bits/istream.tcc \
   /usr/include/x86_64-linux-gnu/qt5/QtXml/QDomElement \
   /usr/include/x86_64-linux-gnu/qt5/QtXml/qdom.h \
   /usr/include/x86_64-linux-gnu/qt5/QtXml/qtxmlglobal.h \
@@ -3445,54 +3445,6 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/x86_64-linux-gnu/qt5/QtXml/qtxml-config.h:
 
-/usr/include/boost/mpl/void.hpp:
-
-/usr/include/boost/mpl/aux_/value_wknd.hpp:
-
-/usr/include/c++/10/bits/ostream.tcc:
-
-/usr/include/boost/icl/type_traits/codomain_type_of.hpp:
-
-/usr/include/c++/10/bits/basic_ios.tcc:
-
-/usr/include/boost/concept/detail/backward_compatibility.hpp:
-
-/usr/include/c++/10/ext/aligned_buffer.h:
-
-/usr/include/boost/container_hash/extensions.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/boost/core/pointer_traits.hpp:
-
-/usr/include/boost/preprocessor/logical/bool.hpp:
-
-/usr/local/include/DGtal/geometry/curves/CSegmentFactory.h:
-
-/usr/include/c++/10/deque:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h:
-
-/usr/include/boost/preprocessor/arithmetic/inc.hpp:
-
-/usr/local/include/DGtal/topology/DigitalTopology.ih:
-
-/usr/include/boost/predef/other.h:
-
-/usr/include/boost/type_traits/is_noncopyable.hpp:
-
-/usr/include/c++/10/bits/basic_ios.h:
-
-/usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp:
-
-/usr/include/boost/preprocessor/list/reverse.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:
-
-/usr/local/include/DGtal/graph/CVertexPredicate.h:
-
 /usr/include/boost/iostreams/detail/resolve.hpp:
 
 /usr/include/boost/numeric/conversion/cast.hpp:
@@ -3587,10 +3539,6 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/boost/mpl/aux_/begin_end_impl.hpp:
 
-/usr/include/boost/mpl/aux_/config/integral.hpp:
-
-/usr/include/c++/10/bits/stl_tree.h:
-
 /usr/include/boost/type_traits/has_post_increment.hpp:
 
 /usr/local/include/DGtal/kernel/sets/DigitalSetBySTLVector.ih:
@@ -3601,231 +3549,109 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/c++/10/map:
 
-/usr/include/QGLViewer/keyFrameInterpolator.h:
+/usr/include/c++/10/bits/stl_map.h:
 
-/usr/local/include/DGtal/base/Common.h:
+/usr/local/include/DGtal/io/colormaps/HueShadeColorMap.h:
 
-/usr/include/boost/predef/library.h:
+/usr/include/boost/detail/lcast_precision.hpp:
 
-/usr/local/include/DGtal/geometry/curves/ArithmeticalDSSCheck.h:
+/usr/include/boost/mpl/aux_/arg_typedef.hpp:
 
-/usr/include/boost/detail/is_incrementable.hpp:
+/usr/local/include/DGtal/graph/BreadthFirstVisitor.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h:
 
-/usr/include/boost/mpl/logical.hpp:
+/usr/include/boost/functional/hash_fwd.hpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h:
+/usr/include/boost/mpl/aux_/has_type.hpp:
 
-/usr/include/boost/core/swap.hpp:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h:
 
-/usr/include/boost/mpl/find_if.hpp:
+/usr/include/boost/move/iterator.hpp:
 
-/usr/include/boost/preprocessor/facilities/empty.hpp:
-
-/usr/local/include/DGtal/geometry/curves/AlphaThickSegmentComputer.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h:
-
-/usr/include/boost/preprocessor/arithmetic/add.hpp:
-
-/usr/include/c++/10/queue:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h:
-
-/usr/include/boost/version.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/local/include/DGtal/kernel/domains/HyperRectDomain.ih:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h:
-
-/usr/include/boost/mpl/aux_/arity.hpp:
-
-/usr/local/include/DGtal/io/colormaps/GradientColorMap.ih:
-
-/usr/include/c++/10/ios:
-
-/usr/include/boost/predef/platform/windows_uwp.h:
-
-/usr/include/boost/iostreams/output_sequence.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h:
-
-/usr/include/boost/mpl/list/aux_/include_preprocessed.hpp:
-
-/usr/include/boost/smart_ptr/detail/spinlock.hpp:
-
-/usr/include/boost/container/detail/std_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h:
+/usr/include/boost/type_traits/is_floating_point.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h:
 
-/usr/include/boost/mpl/if.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/10/include/syslimits.h:
-
-/usr/include/c++/10/bits/range_access.h:
-
-/usr/include/boost/preprocessor/tuple/rem.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h:
-
-/usr/include/c++/10/bits/locale_classes.tcc:
-
-/usr/include/boost/range/detail/safe_bool.hpp:
-
-/usr/local/include/DGtal/topology/DigitalTopology.h:
-
-/usr/include/boost/icl/associative_interval_container.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/10/bits/ctype_base.h:
-
-/usr/include/c++/10/bits/nested_exception.h:
-
-/usr/include/boost/predef/os/bsd/bsdi.h:
-
-/usr/local/include/DGtal/kernel/CSignedNumber.h:
-
-/usr/include/hdf5/serial/H5FDcore.h:
-
-/usr/include/boost/mpl/aux_/lambda_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/c++/10/bits/allocated_ptr.h:
-
-/usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
-
-/usr/include/c++/10/bits/exception.h:
-
-/usr/include/boost/iostreams/traits_fwd.hpp:
-
-/usr/include/boost/mpl/list/list20.hpp:
-
-/usr/include/boost/math/tools/big_constant.hpp:
-
-/usr/include/c++/10/exception:
-
-/usr/local/include/DGtal/geometry/tools/determinant/AvnaimEtAl2x2DetSignComputer.h:
-
-/usr/include/c++/10/bits/stl_pair.h:
-
-/usr/include/boost/predef/library/c/_prefix.h:
-
-/usr/include/c++/10/new:
-
-/usr/include/boost/math/special_functions/fpclassify.hpp:
-
-/usr/local/include/DGtal/dec/Duality.ih:
-
-/usr/include/boost/iostreams/detail/config/wide_streams.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h:
-
-/usr/include/boost/mpl/int.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/boost/mpl/aux_/nttp_decl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h:
-
-/usr/include/boost/type_traits/is_scalar.hpp:
-
-/usr/local/include/DGtal/base/CLabel.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/10/include/mm_malloc.h:
-
-/usr/include/boost/mpl/advance.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h:
-
-/usr/include/c++/10/bits/functexcept.h:
-
-/usr/include/boost/move/traits.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtXml/qtxmlglobal.h:
-
-/usr/include/boost/predef/compiler/kai.h:
-
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
-
-/usr/include/boost/mpl/push_front_fwd.hpp:
-
-/usr/include/boost/type_traits/detail/mp_defer.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/boost/mpl/lambda_fwd.hpp:
-
-/usr/include/c++/10/bits/atomic_base.h:
-
-/usr/include/c++/10/debug/debug.h:
-
-/usr/local/include/DGtal/math/linalg/SimpleMatrix.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
-
-/usr/include/boost/mpl/vector/aux_/vector0.hpp:
-
-/usr/include/boost/type_traits/integral_constant.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/boost/type_traits/is_destructible.hpp:
+/usr/include/linux/limits.h:
 
 /usr/include/boost/mpl/aux_/config/dtp.hpp:
 
 /usr/include/boost/type_traits/has_plus.hpp:
 
-/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/usr/include/boost/version.hpp:
 
-/usr/include/boost/mpl/aux_/integral_wrapper.hpp:
+/usr/local/include/DGtal/kernel/domains/HyperRectDomain.ih:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+/usr/include/limits.h:
 
-/usr/local/include/DGtal/base/CStack.h:
+/usr/include/boost/predef/library/c.h:
 
-/usr/include/boost/preprocessor/control/iif.hpp:
+/usr/include/c++/10/cstdlib:
 
-/usr/include/boost/type_traits/remove_reference.hpp:
+/usr/include/boost/icl/type_traits/is_element_container.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/usr/include/boost/mpl/equal_to.hpp:
 
-/usr/include/boost/mpl/contains.hpp:
+/usr/include/boost/mpl/vector/vector20.hpp:
 
-/usr/include/boost/predef/os/bsd/open.h:
+/usr/include/boost/config/detail/select_platform_config.hpp:
 
-/usr/include/c++/10/backward/auto_ptr.h:
+/usr/local/include/DGtal/images/ImageContainerBySTLVector.h:
 
-/usr/include/boost/mpl/pop_back_fwd.hpp:
+/usr/include/boost/move/detail/to_raw_pointer.hpp:
 
-/usr/include/c++/10/typeinfo:
+/usr/include/boost/lexical_cast.hpp:
 
-/usr/include/boost/predef/library/std/dinkumware.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/c++/10/ext/type_traits.h:
+/usr/include/c++/10/bits/range_cmp.h:
 
-/usr/include/c++/10/tuple:
+/usr/include/boost/math/tools/series.hpp:
 
-/usr/include/boost/bind/mem_fn.hpp:
+/usr/include/boost/type_traits/aligned_storage.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/c++/10/bits/stl_iterator_base_funcs.h:
 
-/usr/include/ctype.h:
+/usr/include/c++/10/bits/range_access.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+/usr/lib/gcc/x86_64-linux-gnu/10/include/syslimits.h:
+
+/usr/include/boost/preprocessor/detail/check.hpp:
+
+/usr/include/c++/10/bits/ostream_insert.h:
+
+/usr/local/include/DGtal/topology/KhalimskySpaceND.h:
+
+/usr/include/boost/mpl/aux_/lambda_spec.hpp:
+
+/usr/include/c++/10/clocale:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:
+
+/usr/local/include/DGtal/images/Image.h:
+
+/usr/include/boost/mpl/list/list10.hpp:
+
+/usr/include/boost/preprocessor/list/fold_right.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/local/include/Board/Board.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h:
+
+/usr/include/boost/iostreams/imbue.hpp:
+
+/usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
+
+/usr/include/boost/mpl/int.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h:
 
 /usr/local/include/DGtal/io/colormaps/ColorBrightnessColorMap.h:
 
@@ -3845,109 +3671,87 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/endian.h:
 
-/usr/include/boost/icl/type_traits/interval_type_default.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/10/iostream:
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/c++/10/list:
+/usr/include/c++/10/bits/basic_string.h:
 
-/usr/local/include/Board/Rect.h:
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
+/usr/include/ctype.h:
 
-/usr/include/boost/mpl/protect.hpp:
+/usr/include/boost/type_traits/detail/mp_defer.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
-/usr/include/boost/preprocessor/repetition/repeat.hpp:
+/usr/include/c++/10/debug/debug.h:
 
-/usr/include/boost/preprocessor/comma_if.hpp:
+/usr/include/boost/mpl/lambda_fwd.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/10/bits/error_constants.h:
+/usr/include/c++/10/bits/atomic_base.h:
 
-/usr/include/boost/preprocessor/list/fold_left.hpp:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/boost/math/special_functions/trigamma.hpp:
+/usr/include/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+/usr/include/pthread.h:
 
-/usr/include/boost/predef/architecture/pyramid.h:
+/usr/include/boost/type_traits/is_void.hpp:
 
-/usr/include/c++/10/functional:
+/usr/local/include/DGtal/base/FrontInsertionSequenceToStackAdapter.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/boost/icl/type_traits/rep_type_of.hpp:
+/usr/include/boost/predef/platform/windows_system.h:
 
-/usr/local/include/DGtal/geometry/curves/FreemanChain.h:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/usr/include/c++/10/bits/uses_allocator.h:
 
-/usr/include/c++/10/bits/hashtable_policy.h:
+/usr/include/boost/icl/iterator.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/boost/type_traits/has_trivial_copy.hpp:
 
-/usr/include/boost/preprocessor/slot/detail/shared.hpp:
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
-/usr/include/boost/iostreams/stream_buffer.hpp:
+/usr/include/boost/predef/library.h:
 
-/usr/include/boost/iostreams/detail/config/codecvt.hpp:
+/usr/local/include/DGtal/geometry/curves/ArithmeticalDSSCheck.h:
 
-/usr/include/c++/10/bits/stl_numeric.h:
+/usr/include/boost/detail/is_incrementable.hpp:
 
-/usr/include/boost/preprocessor/punctuation/comma.hpp:
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/boost/mpl/aux_/numeric_op.hpp:
+/usr/local/include/DGtal/base/Common.h:
 
-/usr/include/boost/range/difference_type.hpp:
+/usr/include/QGLViewer/keyFrameInterpolator.h:
 
-/usr/include/boost/preprocessor/comparison/less_equal.hpp:
+/usr/include/c++/10/bits/stl_multimap.h:
 
-/usr/include/boost/property_map/property_map.hpp:
+/usr/include/boost/core/typeinfo.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/include/boost/math/special_functions/detail/fp_traits.hpp:
 
-/usr/include/boost/smart_ptr/shared_ptr.hpp:
+/usr/include/boost/type_traits/has_nothrow_constructor.hpp:
 
-/usr/include/boost/mpl/aux_/config/intel.hpp:
+/usr/local/include/DGtal/kernel/BasicPointPredicates.ih:
 
-/usr/local/include/DGtal/geometry/surfaces/ParallelStrip.h:
+/usr/include/boost/type_traits/integral_constant.hpp:
 
-/usr/include/boost/range/range_fwd.hpp:
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
+/usr/include/boost/mpl/aux_/integral_wrapper.hpp:
 
-/usr/local/include/DGtal/base/BasicArchetypes.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:
+/usr/local/include/DGtal/base/CStack.h:
 
-/usr/include/QGLViewer/camera.h:
+/usr/include/boost/preprocessor/control/iif.hpp:
 
-/usr/include/boost/config/detail/select_platform_config.hpp:
-
-/usr/local/include/DGtal/images/ImageContainerBySTLVector.h:
-
-/usr/include/boost/move/detail/to_raw_pointer.hpp:
-
-/usr/include/boost/lexical_cast.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/hdf5/serial/H5Spublic.h:
-
-/usr/include/c++/10/bits/cxxabi_init_exception.h:
-
-/usr/include/boost/iostreams/operations_fwd.hpp:
-
-/usr/include/c++/10/bits/stl_uninitialized.h:
-
-/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
-
-/usr/local/include/DGtal/kernel/CPointFunctor.h:
-
-/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/main.cpp:
+/usr/include/boost/type_traits/remove_reference.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h:
 
@@ -3981,11 +3785,15 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/local/include/DGtal/base/Clock.ih:
 
-/usr/include/boost/type_traits/aligned_storage.hpp:
+/usr/include/c++/10/bits/stl_vector.h:
 
-/usr/include/c++/10/bits/stl_iterator_base_funcs.h:
+/usr/include/boost/mpl/contains_fwd.hpp:
 
-/usr/include/limits.h:
+/usr/include/x86_64-linux-gnu/c++/10/bits/gthr.h:
+
+/usr/local/include/DGtal/helpers/StdDefs.h:
+
+/usr/include/boost/mpl/aux_/config/lambda.hpp:
 
 /usr/include/boost/math/special_functions/log1p.hpp:
 
@@ -3995,71 +3803,37 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/boost/type_traits/is_pod.hpp:
 
-/usr/include/boost/iostreams/detail/ios.hpp:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:
 
-/usr/include/boost/move/algorithm.hpp:
+/usr/include/boost/mpl/aux_/config/intel.hpp:
 
-/usr/include/boost/type_traits/has_virtual_destructor.hpp:
+/usr/include/boost/property_map/property_map.hpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/boost/type_traits/is_member_function_pointer.hpp:
+/usr/local/include/DGtal/geometry/surfaces/ParallelStrip.h:
 
-/usr/include/boost/type_traits/has_trivial_move_constructor.hpp:
+/usr/include/boost/range/range_fwd.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-/usr/include/c++/10/string:
+/usr/local/include/DGtal/base/BasicArchetypes.h:
 
-/usr/include/c++/10/bits/std_function.h:
+/usr/include/c++/10/bits/ios_base.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainertools_impl.h:
+/usr/local/include/DGtal/shapes/fromPoints/StraightLineFrom2Points.ih:
 
-/usr/include/c++/10/bits/shared_ptr.h:
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h:
 
-/usr/include/QGLViewer/qglviewer.h:
+/usr/include/c++/10/bits/predefined_ops.h:
 
-/usr/include/c++/10/bits/hash_bytes.h:
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/boost/range/begin.hpp:
-
-/usr/include/c++/10/cwctype:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/c++/10/cxxabi.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/boost/preprocessor/iteration/local.hpp:
-
-/usr/include/c++/10/type_traits:
-
-/usr/include/boost/predef/library/c.h:
-
-/usr/include/c++/10/cstdlib:
-
-/usr/include/boost/icl/type_traits/is_element_container.hpp:
-
-/usr/include/boost/mpl/equal_to.hpp:
-
-/usr/include/boost/mpl/vector/vector20.hpp:
-
-/usr/include/c++/10/bits/exception_ptr.h:
-
-/usr/include/boost/type_traits/make_unsigned.hpp:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:
-
-/usr/include/c++/10/istream:
-
-/usr/include/boost/utility/enable_if.hpp:
 
 /usr/local/include/DGtal/math/linalg/CVector.h:
 
@@ -4079,289 +3853,27 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/c++/10/bits/char_traits.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h:
+/usr/include/c++/10/bits/streambuf.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/local/include/DGtal/kernel/sets/DigitalSetBySTLVector.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+/usr/include/boost/mpl/aux_/nttp_decl.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+/usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/c++/10/bits/basic_string.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h:
 
-/usr/include/boost/type_traits/is_function.hpp:
+/usr/include/boost/type_traits/is_scalar.hpp:
 
-/usr/include/c++/10/bits/stl_iterator.h:
+/usr/local/include/DGtal/base/CLabel.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/10/include/limits.h:
+/usr/lib/gcc/x86_64-linux-gnu/10/include/mm_malloc.h:
 
-/usr/local/include/DGtal/geometry/surfaces/ParallelStrip.ih:
+/usr/include/boost/mpl/advance.hpp:
 
-/usr/include/boost/type_traits/is_default_constructible.hpp:
+/usr/local/include/Board/Rect.h:
 
-/usr/local/include/DGtal/graph/BreadthFirstVisitor.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h:
-
-/usr/include/boost/functional/hash_fwd.hpp:
-
-/usr/include/boost/mpl/aux_/has_type.hpp:
-
-/usr/include/boost/icl/dynamic_interval_traits.hpp:
-
-/usr/include/string.h:
-
-/usr/include/c++/10/bits/stl_deque.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
-
-/usr/include/boost/noncopyable.hpp:
-
-/usr/include/boost/config.hpp:
-
-/usr/include/boost/iostreams/detail/adapter/concept_adapter.hpp:
-
-/usr/include/boost/preprocessor/repetition/detail/for.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h:
-
-/usr/include/boost/lexical_cast/try_lexical_convert.hpp:
-
-/usr/include/boost/predef.h:
-
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
-
-/usr/include/boost/mpl/vector/aux_/begin_end.hpp:
-
-/usr/include/boost/preprocessor/facilities/identity.hpp:
-
-/usr/include/math.h:
-
-/usr/include/boost/mpl/limits/vector.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h:
-
-/usr/include/assert.h:
-
-/usr/local/include/DGtal/io/writers/LongvolWriter.ih:
-
-/usr/include/boost/mpl/vector/aux_/back.hpp:
-
-/usr/include/c++/10/bits/stl_relops.h:
-
-/usr/include/c++/10/version:
-
-/usr/include/boost/predef/compiler/digitalmars.h:
-
-/usr/include/boost/utility/declval.hpp:
-
-/usr/include/c++/10/bits/exception_defines.h:
-
-/usr/local/include/DGtal/shapes/fromPoints/Point2ShapePredicate.h:
-
-/usr/include/boost/numeric/conversion/bounds.hpp:
-
-/usr/include/c++/10/bits/stl_tempbuf.h:
-
-/usr/include/boost/type_traits/has_multiplies_assign.hpp:
-
-/usr/include/c++/10/bits/refwrap.h:
-
-/usr/local/include/DGtal/shapes/fromPoints/StraightLineFrom2Points.ih:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h:
-
-/usr/include/c++/10/bits/predefined_ops.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/c++/10/bits/stl_heap.h:
-
-/usr/include/boost/move/detail/iterator_traits.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/mod.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
-
-/usr/local/include/DGtal/images/imagesSetsUtils/SetFromImage.h:
-
-/usr/include/c++/10/bits/stl_algo.h:
-
-/usr/include/boost/iostreams/detail/streambuf/indirect_streambuf.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/boost/type_traits/is_rvalue_reference.hpp:
-
-/usr/include/boost/math/tools/toms748_solve.hpp:
-
-/usr/include/boost/type_traits/alignment_of.hpp:
-
-/usr/include/c++/10/array:
-
-/usr/include/boost/range/size.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:
-
-/usr/include/boost/math/special_functions/detail/t_distribution_inv.hpp:
-
-/usr/include/c++/10/bits/locale_facets.tcc:
-
-/usr/include/c++/10/bits/stl_function.h:
-
-/usr/include/c++/10/bits/ptr_traits.h:
-
-/usr/include/boost/predef/os.h:
-
-/usr/include/c++/10/ext/string_conversions.h:
-
-/usr/include/boost/preprocessor/list/adt.hpp:
-
-/usr/include/boost/mpl/distance_fwd.hpp:
-
-/usr/include/boost/range/config.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/10/bits/gthr-default.h:
-
-/usr/include/boost/preprocessor/detail/check.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:
-
-/usr/include/boost/iostreams/pipeline.hpp:
-
-/usr/include/boost/type_traits/common_type.hpp:
-
-/usr/include/boost/ref.hpp:
-
-/usr/local/include/Board/Point.h:
-
-/usr/local/include/DGtal/kernel/PointHashFunctions.h:
-
-/usr/include/fenv.h:
-
-/usr/include/boost/mpl/aux_/na_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h:
-
-/usr/include/boost/config/no_tr1/complex.hpp:
-
-/usr/include/c++/10/bits/invoke.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h:
-
-/usr/include/boost/type_traits/is_integral.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/10/bits/cpu_defines.h:
-
-/usr/local/include/DGtal/geometry/curves/GridCurve.h:
-
-/usr/include/boost/predef/make.h:
-
-/usr/include/c++/10/bits/algorithmfwd.h:
-
-/usr/include/boost/math/special_functions/sqrt1pm1.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/10/include/stdarg.h:
-
-/usr/include/boost/preprocessor/cat.hpp:
-
-/usr/include/c++/10/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/10/iosfwd:
-
-/usr/include/QGLViewer/constraint.h:
-
-/usr/include/c++/10/bits/cpp_type_traits.h:
-
-/usr/include/boost/mpl/clear_fwd.hpp:
-
-/usr/include/boost/preprocessor/list/detail/fold_left.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h:
-
-/usr/include/c++/10/ext/numeric_traits.h:
-
-/usr/local/include/Board/Board.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h:
-
-/usr/include/boost/iostreams/imbue.hpp:
-
-/usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
-
-/usr/include/c++/10/bits/shared_ptr_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/boost/concept_check.hpp:
-
-/usr/include/boost/iostreams/filter/symmetric.hpp:
-
-/usr/include/c++/10/bits/std_abs.h:
-
-/usr/include/boost/config/helper_macros.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/10/include/quadmath.h:
-
-/usr/local/include/DGtal/topology/CubicalComplexFunctions.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
-
-/usr/include/boost/math/policies/error_handling.hpp:
-
-/usr/include/c++/10/bits/stl_map.h:
-
-/usr/local/include/DGtal/io/colormaps/HueShadeColorMap.h:
-
-/usr/include/boost/detail/lcast_precision.hpp:
-
-/usr/include/boost/mpl/aux_/arg_typedef.hpp:
-
-/usr/local/include/DGtal/geometry/curves/ArithmeticalDSS.h:
-
-/usr/include/alloca.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h:
-
-/usr/include/c++/10/bits/move.h:
-
-/usr/local/include/DGtal/geometry/curves/AlphaThickSegmentComputer.ih:
-
-/usr/include/stdlib.h:
-
-/usr/include/boost/config/stdlib/libstdcpp3.hpp:
-
-/usr/include/boost/mpl/numeric_cast.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h:
-
-/usr/include/boost/icl/concept/interval.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/dec.hpp:
-
-/usr/include/boost/function/detail/function_iterate.hpp:
-
-/usr/include/boost/type_traits/has_new_operator.hpp:
-
-/usr/include/boost/concept/requires.hpp:
-
-/usr/include/c++/10/bits/concept_check.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -4375,127 +3887,87 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/boost/predef/os/bsd/net.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
+/usr/include/boost/preprocessor/repetition/repeat.hpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:
+/usr/include/boost/preprocessor/comma_if.hpp:
 
-/usr/local/include/DGtal/images/Image.h:
+/usr/include/x86_64-linux-gnu/c++/10/bits/error_constants.h:
 
-/usr/include/boost/mpl/list/list10.hpp:
+/usr/include/boost/concept/detail/backward_compatibility.hpp:
 
-/usr/include/boost/preprocessor/list/fold_right.hpp:
+/usr/include/c++/10/ext/aligned_buffer.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/boost/icl/type_traits/codomain_type_of.hpp:
 
-/usr/include/c++/10/bits/functional_hash.h:
+/usr/include/c++/10/bits/basic_ios.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/boost/predef/hardware/simd/x86_amd/versions.h:
-
-/usr/include/c++/10/cstddef:
-
-/usr/include/boost/type_traits/add_rvalue_reference.hpp:
-
-/usr/include/inttypes.h:
-
-/usr/include/wctype.h:
-
-/usr/include/strings.h:
-
-/usr/include/boost/type_traits/is_enum.hpp:
-
-/usr/include/stdint.h:
-
-/usr/include/boost/numeric/conversion/conversion_traits.hpp:
-
-/usr/local/include/DGtal/kernel/sets/DigitalSetBySTLSet.h:
-
-/usr/include/x86_64-linux-gnu/c++/10/bits/c++locale.h:
-
-/usr/include/c++/10/bits/vector.tcc:
-
-/usr/include/c++/10/atomic:
-
-/usr/include/hdf5/serial/H5Opublic.h:
-
-/usr/include/boost/predef/os/macos.h:
-
-/usr/local/include/DGtal/images/DefaultConstImageRange.h:
-
-/usr/include/boost/type_traits/is_lvalue_reference.hpp:
-
-/usr/include/c++/10/bits/stringfwd.h:
-
-/usr/local/include/DGtal/arithmetic/IntegerComputer.ih:
-
-/usr/include/c++/10/bits/allocator.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
-
-/usr/local/include/DGtal/base/TraceWriterFile.h:
-
-/usr/include/c++/10/bits/memoryfwd.h:
-
-/usr/local/include/DGtal/base/CountedPtrOrPtr.h:
-
-/usr/include/boost/type_traits/is_complete.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/c++/10/numeric:
-
-/usr/include/c++/10/bits/postypes.h:
-
-/usr/include/c++/10/bits/list.tcc:
-
-/usr/include/boost/mpl/aux_/config/msvc.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+/usr/include/boost/container_hash/extensions.hpp:
 
 /usr/include/c++/10/cstdint:
 
-/usr/include/stdc-predef.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h:
 
-/usr/local/include/DGtal/math/AngleLinearMinimizer.ih:
+/usr/include/c++/10/bits/alloc_traits.h:
 
-/usr/include/boost/mpl/prior.hpp:
+/usr/include/boost/iostreams/detail/streambuf/linked_streambuf.hpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h:
+/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/10/bits/c++allocator.h:
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/boost/math/special_functions/beta.hpp:
+/usr/include/c++/10/iosfwd:
 
-/usr/include/boost/config/no_tr1/functional.hpp:
+/usr/include/boost/math/special_functions/sqrt1pm1.hpp:
 
-/usr/include/boost/preprocessor/enum.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/boost/preprocessor/control/detail/while.hpp:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/linux/errno.h:
+/usr/lib/gcc/x86_64-linux-gnu/10/include/stdarg.h:
 
-/usr/include/c++/10/clocale:
+/usr/include/boost/preprocessor/cat.hpp:
 
-/usr/include/c++/10/bits/ostream_insert.h:
+/usr/include/c++/10/bits/locale_classes.h:
 
-/usr/local/include/DGtal/topology/KhalimskySpaceND.h:
+/usr/include/c++/10/bits/algorithmfwd.h:
 
-/usr/include/boost/mpl/aux_/lambda_spec.hpp:
+/usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp:
 
-/usr/include/c++/10/bits/stl_multimap.h:
+/usr/include/boost/preprocessor/list/reverse.hpp:
 
-/usr/include/errno.h:
+/usr/include/boost/type_traits/is_integral.hpp:
 
-/usr/include/locale.h:
+/usr/include/x86_64-linux-gnu/c++/10/bits/cpu_defines.h:
 
-/usr/include/boost/core/typeinfo.hpp:
+/usr/local/include/DGtal/geometry/curves/GridCurve.h:
 
-/usr/include/boost/math/special_functions/detail/fp_traits.hpp:
+/usr/include/boost/predef/make.h:
 
-/usr/include/boost/type_traits/has_nothrow_constructor.hpp:
+/usr/include/c++/10/bits/exception_ptr.h:
 
-/usr/local/include/DGtal/kernel/BasicPointPredicates.ih:
+/usr/include/boost/type_traits/make_unsigned.hpp:
+
+/usr/include/boost/mpl/aux_/na_fwd.hpp:
+
+/usr/include/hdf5/serial/H5Spublic.h:
+
+/usr/include/c++/10/bits/cxxabi_init_exception.h:
+
+/usr/include/boost/iostreams/operations_fwd.hpp:
+
+/usr/include/c++/10/bits/stl_uninitialized.h:
+
+/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
+
+/usr/local/include/DGtal/kernel/CPointFunctor.h:
+
+/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/main.cpp:
+
+/usr/include/boost/mpl/aux_/arity.hpp:
+
+/usr/local/include/DGtal/io/colormaps/GradientColorMap.ih:
+
+/usr/include/c++/10/ios:
 
 /usr/include/boost/preprocessor/control/expr_iif.hpp:
 
@@ -4507,27 +3979,157 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/boost/mpl/vector/aux_/pop_back.hpp:
 
-/usr/include/boost/type_traits/remove_volatile.hpp:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h:
 
-/usr/include/c++/10/bits/cxxabi_forced.h:
+/usr/local/include/DGtal/geometry/curves/ArithmeticalDSS.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h:
+
+/usr/local/include/DGtal/base/Trace.h:
+
+/usr/include/boost/range/begin.hpp:
+
+/usr/include/c++/10/cwctype:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/boost/mpl/list/list0.hpp:
+
+/usr/include/boost/concept/detail/has_constraints.hpp:
+
+/usr/include/c++/10/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h:
+
+/usr/include/boost/preprocessor/arithmetic/inc.hpp:
+
+/usr/local/include/DGtal/topology/DigitalTopology.ih:
+
+/usr/include/boost/predef/other.h:
+
+/usr/include/boost/type_traits/is_noncopyable.hpp:
+
+/usr/include/c++/10/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/c++/10/cxxabi.h:
+
+/usr/include/boost/math/tools/big_constant.hpp:
+
+/usr/include/c++/10/exception:
+
+/usr/local/include/DGtal/geometry/tools/determinant/AvnaimEtAl2x2DetSignComputer.h:
+
+/usr/include/c++/10/bits/stl_pair.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/boost/mpl/protect.hpp:
+
+/usr/include/boost/predef/library/c/_prefix.h:
+
+/usr/include/hdf5/serial/H5Opublic.h:
+
+/usr/include/boost/predef/os/macos.h:
+
+/usr/local/include/DGtal/images/DefaultConstImageRange.h:
+
+/usr/include/boost/type_traits/is_lvalue_reference.hpp:
+
+/usr/include/c++/10/bits/stringfwd.h:
+
+/usr/include/boost/predef/compiler/digitalmars.h:
+
+/usr/include/boost/utility/declval.hpp:
+
+/usr/include/c++/10/bits/exception_defines.h:
+
+/usr/local/include/DGtal/shapes/fromPoints/Point2ShapePredicate.h:
+
+/usr/include/boost/numeric/conversion/bounds.hpp:
+
+/usr/include/c++/10/version:
+
+/usr/include/boost/mpl/aux_/config/msvc.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/c++/10/bits/list.tcc:
 
 /usr/include/boost/iostreams/input_sequence.hpp:
 
 /usr/include/boost/config/detail/select_stdlib_config.hpp:
 
-/usr/include/boost/predef/compiler/edg.h:
-
-/usr/local/include/DGtal/io/writers/STBWriter.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
 /usr/include/boost/mpl/vector/aux_/push_front.hpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:
+/usr/local/include/DGtal/math/linalg/SimpleMatrix.h:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
+
+/usr/include/boost/mpl/vector/aux_/vector0.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:
+
+/usr/include/boost/icl/type_traits/interval_type_default.hpp:
+
+/usr/include/c++/10/list:
+
+/usr/include/c++/10/iostream:
+
+/usr/local/include/DGtal/graph/CVertexPredicate.h:
+
+/usr/include/c++/10/new:
+
+/usr/include/boost/math/special_functions/fpclassify.hpp:
+
+/usr/include/boost/iostreams/detail/adapter/concept_adapter.hpp:
+
+/usr/include/boost/preprocessor/repetition/detail/for.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h:
+
+/usr/include/c++/10/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h:
+
+/usr/include/c++/10/bits/stl_tree.h:
+
+/usr/include/boost/mpl/aux_/config/integral.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/boost/predef/os.h:
+
+/usr/include/c++/10/ext/string_conversions.h:
+
+/usr/include/boost/preprocessor/list/adt.hpp:
+
+/usr/local/include/DGtal/arithmetic/IntegerComputer.ih:
+
+/usr/include/c++/10/bits/allocator.h:
+
+/usr/include/c++/10/ext/numeric_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -4545,19 +4147,69 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/c++/10/concepts:
 
-/usr/include/c++/10/bits/range_cmp.h:
+/usr/include/boost/type_traits/is_function.hpp:
 
-/usr/include/boost/math/tools/series.hpp:
+/usr/include/boost/predef/detail/_exception.h:
 
-/usr/include/boost/mpl/contains_fwd.hpp:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h:
 
-/usr/include/x86_64-linux-gnu/c++/10/bits/gthr.h:
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/local/include/DGtal/helpers/StdDefs.h:
+/usr/include/locale.h:
 
-/usr/include/boost/mpl/aux_/config/lambda.hpp:
+/usr/include/errno.h:
 
-/usr/include/c++/10/bits/stl_vector.h:
+/usr/include/c++/10/bits/stl_iterator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/10/include/limits.h:
+
+/usr/local/include/DGtal/io/writers/LongvolWriter.ih:
+
+/usr/include/c++/10/bits/stl_relops.h:
+
+/usr/include/boost/mpl/vector/aux_/back.hpp:
+
+/usr/local/include/DGtal/geometry/surfaces/ParallelStrip.ih:
+
+/usr/include/boost/type_traits/is_default_constructible.hpp:
+
+/usr/include/boost/type_traits/add_rvalue_reference.hpp:
+
+/usr/include/inttypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/10/bits/stl_heap.h:
+
+/usr/include/wctype.h:
+
+/usr/include/boost/math/special_functions/beta.hpp:
+
+/usr/include/boost/config/no_tr1/functional.hpp:
+
+/usr/include/stdc-predef.h:
+
+/usr/local/include/DGtal/math/AngleLinearMinimizer.ih:
+
+/usr/include/boost/mpl/prior.hpp:
+
+/usr/include/c++/10/bits/postypes.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainertools_impl.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h:
+
+/usr/include/boost/type_traits/remove_volatile.hpp:
+
+/usr/include/c++/10/bits/cxxabi_forced.h:
+
+/usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
+
+/usr/include/c++/10/bits/exception.h:
+
+/usr/include/boost/iostreams/traits_fwd.hpp:
+
+/usr/include/boost/mpl/list/list20.hpp:
 
 /usr/include/c++/10/ext/new_allocator.h:
 
@@ -4575,79 +4227,59 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/c++/10/system_error:
 
-/usr/include/linux/limits.h:
+/usr/include/c++/10/backward/auto_ptr.h:
 
-/usr/include/time.h:
+/usr/include/boost/mpl/pop_back_fwd.hpp:
 
-/usr/include/pthread.h:
+/usr/include/c++/10/typeinfo:
 
-/usr/include/boost/type_traits/is_void.hpp:
+/usr/include/boost/predef/library/std/dinkumware.h:
 
-/usr/local/include/DGtal/base/FrontInsertionSequenceToStackAdapter.h:
+/usr/include/c++/10/ext/type_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/usr/include/c++/10/tuple:
 
-/usr/include/boost/predef/platform/windows_system.h:
+/usr/include/boost/bind/mem_fn.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/include/hdf5/serial/H5FDcore.h:
 
-/usr/include/c++/10/bits/uses_allocator.h:
+/usr/include/boost/mpl/aux_/lambda_support.hpp:
 
-/usr/include/boost/icl/iterator.hpp:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/boost/type_traits/has_trivial_copy.hpp:
+/usr/include/c++/10/bits/allocated_ptr.h:
 
-/usr/include/boost/concept/detail/has_constraints.hpp:
+/usr/include/boost/icl/associative_interval_container.hpp:
 
-/usr/include/c++/10/bits/charconv.h:
+/usr/include/x86_64-linux-gnu/c++/10/bits/ctype_base.h:
 
-/usr/include/boost/lexical_cast/detail/converter_numeric.hpp:
+/usr/include/c++/10/bits/nested_exception.h:
 
-/usr/local/include/DGtal/base/Clock.h:
+/usr/include/boost/predef/os/bsd/bsdi.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h:
+/usr/local/include/DGtal/kernel/CSignedNumber.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+/usr/local/include/DGtal/geometry/curves/AlphaThickSegmentComputer.ih:
 
-/usr/include/boost/mpl/list/list0.hpp:
+/usr/include/stdlib.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
+/usr/include/boost/mpl/numeric_cast.hpp:
 
-/usr/include/c++/10/stdexcept:
+/usr/include/c++/10/bits/move.h:
 
-/usr/include/boost/iterator/iterator_adaptor.hpp:
+/usr/include/boost/preprocessor/iteration/local.hpp:
 
-/usr/include/c++/10/bits/locale_facets.h:
+/usr/include/c++/10/type_traits:
 
-/usr/include/boost/math/special_functions/digamma.hpp:
+/usr/include/boost/core/pointer_traits.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/10/bits/ctype_inline.h:
+/usr/include/boost/preprocessor/logical/bool.hpp:
 
-/usr/include/boost/math/special_functions/detail/lanczos_sse2.hpp:
+/usr/local/include/DGtal/geometry/curves/CSegmentFactory.h:
 
-/usr/include/c++/10/cerrno:
-
-/usr/include/boost/move/detail/meta_utils_core.hpp:
-
-/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:
-
-/usr/include/c++/10/bits/alloc_traits.h:
-
-/usr/include/boost/iostreams/detail/streambuf/linked_streambuf.hpp:
-
-/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
-
-/usr/include/c++/10/cstdio:
-
-/usr/local/include/DGtal/geometry/tools/Hull2DHelpers.ih:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h:
-
-/usr/local/include/DGtal/base/Trace.h:
+/usr/include/c++/10/deque:
 
 /usr/local/include/DGtal/images/ImageContainerBySTLMap.ih:
 
@@ -4661,9 +4293,177 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
 
+/usr/include/c++/10/bits/invoke.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h:
+
+/usr/include/QGLViewer/constraint.h:
+
+/usr/include/c++/10/bits/cpp_type_traits.h:
+
+/usr/include/boost/mpl/clear_fwd.hpp:
+
+/usr/local/include/DGtal/base/CountedPtrOrPtr.h:
+
+/usr/include/boost/type_traits/is_complete.hpp:
+
+/usr/local/include/DGtal/base/Clock.h:
+
+/usr/include/boost/lexical_cast/detail/converter_numeric.hpp:
+
+/usr/include/c++/10/numeric:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:
+
+/usr/include/boost/preprocessor/enum.hpp:
+
+/usr/include/boost/preprocessor/control/detail/while.hpp:
+
+/usr/include/linux/errno.h:
+
+/usr/include/boost/preprocessor/list/fold_left.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/boost/math/special_functions/trigamma.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/boost/predef/architecture/pyramid.h:
+
+/usr/include/c++/10/functional:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/boost/mpl/contains.hpp:
+
+/usr/include/boost/predef/os/bsd/open.h:
+
+/usr/local/include/DGtal/dec/Duality.ih:
+
+/usr/include/boost/iostreams/detail/config/wide_streams.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h:
+
+/usr/include/c++/10/bits/shared_ptr_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/boost/concept_check.hpp:
+
+/usr/include/boost/iostreams/filter/symmetric.hpp:
+
+/usr/include/c++/10/bits/std_abs.h:
+
+/usr/include/boost/icl/type_traits/rep_type_of.hpp:
+
+/usr/local/include/DGtal/geometry/curves/FreemanChain.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/10/bits/hashtable_policy.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/boost/preprocessor/slot/detail/shared.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h:
+
+/usr/local/include/DGtal/geometry/tools/Hull2DHelpers.ih:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/boost/iostreams/detail/streambuf/indirect_streambuf.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/boost/type_traits/is_rvalue_reference.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/10/bits/functional_hash.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
+
+/usr/include/c++/10/bits/memoryfwd.h:
+
+/usr/local/include/DGtal/base/TraceWriterFile.h:
+
+/usr/include/boost/math/tools/toms748_solve.hpp:
+
+/usr/include/boost/type_traits/alignment_of.hpp:
+
+/usr/include/boost/move/detail/iterator_traits.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/mod.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
+
+/usr/local/include/DGtal/images/imagesSetsUtils/SetFromImage.h:
+
+/usr/include/c++/10/bits/stl_algo.h:
+
+/usr/include/c++/10/array:
+
+/usr/include/boost/range/size.hpp:
+
 /usr/include/boost/type_traits/is_convertible.hpp:
 
 /usr/include/c++/10/bits/basic_string.tcc:
+
+/usr/include/boost/utility/enable_if.hpp:
+
+/usr/include/c++/10/istream:
+
+/usr/include/boost/mpl/void.hpp:
+
+/usr/include/c++/10/bits/locale_classes.tcc:
+
+/usr/include/boost/range/detail/safe_bool.hpp:
+
+/usr/local/include/DGtal/topology/DigitalTopology.h:
+
+/usr/include/boost/mpl/if.hpp:
+
+/usr/include/boost/preprocessor/tuple/rem.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h:
+
+/usr/include/boost/iterator/iterator_adaptor.hpp:
+
+/usr/include/c++/10/bits/locale_facets.h:
+
+/usr/include/c++/10/stdexcept:
+
+/usr/include/fenv.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:
+
+/usr/include/boost/predef/compiler/edg.h:
+
+/usr/local/include/DGtal/io/writers/STBWriter.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h:
+
+/usr/include/boost/iostreams/pipeline.hpp:
+
+/usr/include/boost/type_traits/common_type.hpp:
+
+/usr/include/boost/ref.hpp:
+
+/usr/local/include/Board/Point.h:
+
+/usr/local/include/DGtal/kernel/PointHashFunctions.h:
+
+/usr/include/c++/10/streambuf:
+
+/usr/include/boost/preprocessor/seq/fold_left.hpp:
 
 /usr/local/include/DGtal/geometry/tools/determinant/C2x2DetComputer.h:
 
@@ -4672,12 +4472,6 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 /usr/include/boost/icl/detail/design_config.hpp:
 
 /usr/include/boost/type_traits/detail/has_binary_operator.hpp:
-
-/usr/include/boost/icl/continuous_interval.hpp:
-
-/usr/include/boost/utility/binary.hpp:
-
-/usr/include/boost/numeric/conversion/detail/bounds.hpp:
 
 /usr/include/boost/icl/type_traits/is_discrete.hpp:
 
@@ -4689,15 +4483,241 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/plus.hpp:
 
-/usr/include/c++/10/streambuf:
+/usr/include/boost/move/detail/meta_utils_core.hpp:
 
-/usr/include/boost/preprocessor/seq/fold_left.hpp:
+/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:
 
-/usr/include/c++/10/bits/ios_base.h:
+/usr/include/boost/math/special_functions/detail/lanczos_sse2.hpp:
 
-/usr/local/include/DGtal/kernel/sets/DigitalSetBySTLVector.h:
+/usr/include/c++/10/cerrno:
 
-/usr/include/c++/10/bits/streambuf.tcc:
+/usr/include/boost/math/special_functions/digamma.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/10/bits/ctype_inline.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:
+
+/usr/include/c++/10/bits/stl_function.h:
+
+/usr/include/c++/10/bits/ptr_traits.h:
+
+/usr/include/boost/math/special_functions/detail/t_distribution_inv.hpp:
+
+/usr/include/c++/10/bits/locale_facets.tcc:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h:
+
+/usr/include/boost/preprocessor/list/detail/fold_left.hpp:
+
+/usr/include/boost/type_traits/is_destructible.hpp:
+
+/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/boost/mpl/aux_/value_wknd.hpp:
+
+/usr/include/c++/10/bits/ostream.tcc:
+
+/usr/include/boost/mpl/distance_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/10/bits/gthr-default.h:
+
+/usr/include/boost/range/config.hpp:
+
+/usr/include/boost/type_traits/has_new_operator.hpp:
+
+/usr/include/c++/10/bits/concept_check.h:
+
+/usr/include/boost/concept/requires.hpp:
+
+/usr/include/boost/lexical_cast/try_lexical_convert.hpp:
+
+/usr/include/c++/10/bits/shared_ptr.h:
+
+/usr/include/QGLViewer/qglviewer.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:
+
+/usr/include/QGLViewer/camera.h:
+
+/usr/include/c++/10/cstdio:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h:
+
+/usr/include/boost/type_traits/is_abstract.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:
+
+/usr/include/boost/iostreams/detail/ios.hpp:
+
+/usr/include/boost/move/algorithm.hpp:
+
+/usr/include/boost/type_traits/has_virtual_destructor.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h:
+
+/usr/include/boost/type_traits/is_member_function_pointer.hpp:
+
+/usr/include/boost/icl/concept/interval.hpp:
+
+/usr/include/boost/function/detail/function_iterate.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/dec.hpp:
+
+/usr/include/boost/iostreams/stream_buffer.hpp:
+
+/usr/include/boost/iostreams/detail/config/codecvt.hpp:
+
+/usr/include/c++/10/bits/stl_numeric.h:
+
+/usr/include/boost/preprocessor/punctuation/comma.hpp:
+
+/usr/include/boost/mpl/aux_/numeric_op.hpp:
+
+/usr/include/boost/range/difference_type.hpp:
+
+/usr/include/boost/preprocessor/comparison/less_equal.hpp:
+
+/usr/include/boost/predef.h:
+
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
+
+/usr/include/boost/mpl/vector/aux_/begin_end.hpp:
+
+/usr/include/boost/preprocessor/facilities/identity.hpp:
+
+/usr/include/math.h:
+
+/usr/include/boost/mpl/limits/vector.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h:
+
+/usr/include/assert.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h:
+
+/usr/include/boost/mpl/list/aux_/include_preprocessed.hpp:
+
+/usr/include/boost/config/helper_macros.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h:
+
+/usr/include/boost/type_traits/has_multiplies_assign.hpp:
+
+/usr/include/c++/10/bits/refwrap.h:
+
+/usr/include/c++/10/bits/stl_tempbuf.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
+
+/usr/include/boost/noncopyable.hpp:
+
+/usr/include/boost/config.hpp:
+
+/usr/include/boost/move/traits.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtXml/qtxmlglobal.h:
+
+/usr/include/boost/predef/compiler/kai.h:
+
+/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
+
+/usr/include/boost/mpl/push_front_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h:
+
+/usr/include/boost/config/no_tr1/complex.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h:
+
+/usr/include/x86_64-linux-gnu/c++/10/bits/c++allocator.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h:
+
+/usr/include/boost/smart_ptr/detail/spinlock.hpp:
+
+/usr/include/boost/container/detail/std_fwd.hpp:
+
+/usr/include/boost/predef/hardware/simd/x86_amd/versions.h:
+
+/usr/include/c++/10/cstddef:
+
+/usr/include/boost/predef/platform/windows_uwp.h:
+
+/usr/include/boost/iostreams/output_sequence.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h:
+
+/usr/local/include/DGtal/kernel/sets/DigitalSetBySTLSet.h:
+
+/usr/include/x86_64-linux-gnu/c++/10/bits/c++locale.h:
+
+/usr/include/c++/10/bits/vector.tcc:
+
+/usr/include/boost/type_traits/has_trivial_move_constructor.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/10/string:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/10/bits/hash_bytes.h:
+
+/usr/include/c++/10/bits/std_function.h:
+
+/usr/include/boost/type_traits/is_enum.hpp:
+
+/usr/include/stdint.h:
+
+/usr/include/boost/numeric/conversion/conversion_traits.hpp:
+
+/usr/include/c++/10/atomic:
+
+/usr/include/boost/preprocessor/arithmetic/add.hpp:
+
+/usr/include/c++/10/queue:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h:
+
+/usr/include/boost/mpl/logical.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/10/include/quadmath.h:
+
+/usr/local/include/DGtal/topology/CubicalComplexFunctions.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
+
+/usr/include/boost/math/policies/error_handling.hpp:
+
+/usr/include/boost/core/swap.hpp:
+
+/usr/include/boost/mpl/find_if.hpp:
+
+/usr/include/boost/preprocessor/facilities/empty.hpp:
+
+/usr/include/boost/icl/continuous_interval.hpp:
+
+/usr/include/boost/numeric/conversion/detail/bounds.hpp:
+
+/usr/include/boost/utility/binary.hpp:
+
+/usr/local/include/DGtal/geometry/curves/AlphaThickSegmentComputer.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h:
+
+/usr/include/boost/icl/dynamic_interval_traits.hpp:
+
+/usr/include/string.h:
+
+/usr/include/c++/10/bits/stl_deque.h:
+
+/usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -4729,33 +4749,13 @@ CMakeFiles/dgi_tp1.dir/main.cpp.o: /home/2ing2/stephane.vong/Documents/M2_2023_2
 
 /usr/include/c++/10/bits/stl_list.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
-
-/usr/include/boost/type_traits/is_abstract.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h:
-
-/usr/include/boost/predef/detail/_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h:
-
-/usr/include/boost/move/iterator.hpp:
-
-/usr/include/boost/type_traits/is_floating_point.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h:
-
 /usr/include/boost/mpl/aux_/na_assert.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp:
 
 /usr/include/boost/predef/other/endian.h:
 
 /usr/include/boost/type_traits/is_member_pointer.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp:
 
 /usr/include/boost/type_traits/add_const.hpp:
 

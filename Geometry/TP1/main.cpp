@@ -1,3 +1,4 @@
+#include <iostream>
 #include <DGtal/base/Common.h>
 #include <DGtal/helpers/StdDefs.h>
 #include <DGtal/images/ImageSelector.h>
@@ -13,6 +14,8 @@
 #include "DGtal/geometry/curves/ArithmeticalDSSComputer.h"
 #include "DGtal/geometry/curves/FreemanChain.h"
 #include "DGtal/geometry/curves/GreedySegmentation.h"
+
+#define _USE_MATH_DEFINES
 
 using namespace std;
 using namespace DGtal;
@@ -54,8 +57,14 @@ void sendToBoard( Board2D & board, T & p_Object, DGtal::Color p_Color) {
     board << p_Object;
 }
 
+double circularity(double perimeter, double area)
+{
+    // roundness = (perimeter * perimeter) / (4 * pi * area)
+    return pow(perimeter, 2) / (4 * M_PI * area);
+}
+
 template<class T>
-void step4and5(Board2D & aBoard, Curve boundaryCurve, T digitalObject) {
+void step4_5_6(Board2D & aBoard, Curve boundaryCurve, T digitalObject) {
     // Step 4
     stringstream freemanChain(stringstream::in | stringstream::out);
     string codeRange;
@@ -125,9 +134,24 @@ void step4and5(Board2D & aBoard, Curve boundaryCurve, T digitalObject) {
         }
     }
     area /= 2;
-
     cout << "Number of 2-Cells : " << digitalObject.size() << endl;
-    cout << "Polygon area size : " << area  << "\n" << endl;
+    cout << "Polygon area size : " << area << endl;
+
+    // Step 6
+    double perimeter = 0;
+
+    for (int i = 1; i < arraySize; i++)
+    {
+        if (i == arraySize - 1)
+        {
+            perimeter += sqrt( (pow(xPointArray[0] - xPointArray[i], 2) + pow(yPointArray[0] - yPointArray[i], 2)));
+        } else {
+            perimeter += sqrt( (pow(xPointArray[i] - xPointArray[i - 1], 2) + pow(yPointArray[i] - yPointArray[i - 1], 2)));
+        }
+    }
+    cout << "Number of 1-Cells : " << boundaryCurve.size() << endl;
+    cout << "Polygon perimeter size : " << perimeter << endl;
+    cout << "Circularity : " << circularity(perimeter, area) << endl << endl;
 }
 
 int main(int argc, char** argv)
@@ -168,7 +192,7 @@ int main(int argc, char** argv)
         digitalObject = *(it);
         auto boundaryCurve = getBoundary(digitalObject, set2d);
         sendToBoard(aBoard, boundaryCurve, Color::Red);
-        step4and5(aBoard, boundaryCurve, digitalObject);
+        step4_5_6(aBoard, boundaryCurve, digitalObject);
     }
     /*
     auto boundaryCurve = getBoundary(digitalObject, set2d);
