@@ -1,7 +1,0 @@
-/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles/dgi_tp1.dir
-/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles/edit_cache.dir
-/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles/rebuild_cache.dir
-/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles/list_install_components.dir
-/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles/install.dir
-/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles/install/local.dir
-/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/TP1/build/CMakeFiles/install/strip.dir

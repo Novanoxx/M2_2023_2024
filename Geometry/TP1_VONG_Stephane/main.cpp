@@ -40,7 +40,7 @@ Curve getBoundary(T & object, DigitalSet set)
     // 1) Call Surfaces::findABel() to find a cell which belongs to the border
     std::vector<Z2i::Point> boundaryPoints; // boundary points are going to be stored here
     auto set2d = object.pointSet();
-    auto aCell = Surfaces<Z2i::KSpace>::findABel(kSpace, set2d, 10000);
+    auto aCell = Surfaces<Z2i::KSpace>::findABel(kSpace, set2d, 100000);
     
     // 2) Call Surfece::track2DBoundaryPoints to extract the boundary of the object
     Curve boundaryCurve;
@@ -63,8 +63,29 @@ double circularity(double perimeter, double area)
     return pow(perimeter, 2) / (4 * M_PI * area);
 }
 
+double getAverage(vector<double> average)
+{
+    double ret = 0;
+    for (int i = 0; i < average.size(); i++)
+    {
+        ret += average.at(i);
+    }
+    return ret/average.size();
+}
+
+double getStandardDeviation(vector<double> values)
+{
+    double ret = 0;
+    double averageCal = getAverage(values);
+    for (int i = 0; i < values.size(); i++)
+    {
+        ret += abs(values.at(i) - averageCal);
+    }
+    return ret/values.size();
+}
+
 template<class T>
-void step4_5_6(Board2D & aBoard, Curve boundaryCurve, T digitalObject) {
+std::array<double, 2> step4_5_6(Board2D & aBoard, Curve boundaryCurve, T digitalObject) {
     // Step 4
     stringstream freemanChain(stringstream::in | stringstream::out);
     string codeRange;
@@ -133,13 +154,13 @@ void step4_5_6(Board2D & aBoard, Curve boundaryCurve, T digitalObject) {
             area += (xPointArray[i] * yPointArray[i + 1]) - (xPointArray[i + 1] * yPointArray[i]);
         }
     }
-    area /= 2;
+
+    cout << "-----------------STEP 5-----------------" << endl;
     cout << "Number of 2-Cells : " << digitalObject.size() << endl;
-    cout << "Polygon area size : " << area << endl;
+    cout << "Polygon area size : " << area/2 << endl;
 
     // Step 6
     double perimeter = 0;
-
     for (int i = 1; i < arraySize; i++)
     {
         if (i == arraySize - 1)
@@ -149,9 +170,14 @@ void step4_5_6(Board2D & aBoard, Curve boundaryCurve, T digitalObject) {
             perimeter += sqrt( (pow(xPointArray[i] - xPointArray[i - 1], 2) + pow(yPointArray[i] - yPointArray[i - 1], 2)));
         }
     }
+    cout << "-----------------STEP 6-----------------" << endl;
     cout << "Number of 1-Cells : " << boundaryCurve.size() << endl;
     cout << "Polygon perimeter size : " << perimeter << endl;
+    
+    cout << "-----------------STEP 7-----------------" << endl;
     cout << "Circularity : " << circularity(perimeter, area) << endl << endl;
+
+    return std::array<double, 2> {{area/2, perimeter}};
 }
 
 int main(int argc, char** argv)
@@ -183,22 +209,27 @@ int main(int argc, char** argv)
 
     // 4) Set the adjacency pair and obtain the connected components using "writeComponents"
     uint nbc = digitalObject.writeComponents(inserter);
-    cout << "number of components : " << objects.size() << endl; // Right now size of "objects" is the number of conected components
+    cout << "number of components : " << objects.size() << endl << endl; // Right now size of "objects" is the number of conected components
 
     // This is an example how to create a pdf file for each object
     Board2D aBoard;                                 // use "Board2D" to save output
+    vector<double> averageArea;
+    vector<double> averagePerimeter;
+    vector<double> averageCircularity;
     for(auto it = objects.begin(); it != objects.end(); ++it)
     {
         digitalObject = *(it);
         auto boundaryCurve = getBoundary(digitalObject, set2d);
         sendToBoard(aBoard, boundaryCurve, Color::Red);
-        step4_5_6(aBoard, boundaryCurve, digitalObject);
+        auto result = step4_5_6(aBoard, boundaryCurve, digitalObject);
+        averageArea.push_back(result[0]);
+        averagePerimeter.push_back(result[1]);
+        averageCircularity.push_back(circularity(result[1], result[0]));
     }
-    /*
-    auto boundaryCurve = getBoundary(digitalObject, set2d);
-    sendToBoard(aBoard, boundaryCurve, Color::Red);
-    step4and5(aBoard, boundaryCurve);
-    */
+    
+    cout << "Average area and standard deviation : " << getAverage(averageArea) << " +/- " << getStandardDeviation(averageArea) << endl;
+    cout << "Average perimeter and standard deviation : " << getAverage(averagePerimeter) << " +/- " << getStandardDeviation(averagePerimeter) << endl;
+    cout << "Average circularity and standard deviation : " << getAverage(averageCircularity) << " +/- " << getStandardDeviation(averageCircularity) << endl << endl;
 
     //aBoard.saveEPS("out.eps");
     #ifdef WITH_CAIRO
