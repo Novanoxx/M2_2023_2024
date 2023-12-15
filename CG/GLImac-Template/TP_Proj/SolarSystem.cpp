@@ -182,16 +182,12 @@ int main(int argc, char** argv) {
         glUniform1i(planetProgram.uTexture, 0);
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, textures[2]);
-        for (int i = 0; i < 32; i++)
-        {    
-            MVMatrixMoon = rotate(MVOrigin, 23.f, randArray[i]);
-            MVMatrixMoon = rotate(MVMatrixMoon, windowManager.getTime(), vec3(0, 1, 0));
-            MVMatrixMoon = translate(MVMatrixMoon, vec3(-2, 0, 0));
-            MVMatrixMoon = scale(MVMatrixMoon, vec3(0.2, 0.2, 0.2));
-            glUniformMatrix4fv(planetProgram.uMVPMatrix, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrixMoon));
-            glUniformMatrix4fv(planetProgram.uMVMatrix, 1, GL_FALSE, value_ptr(MVMatrixMoon));
-            glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
-        }
+        MVMatrixMoon = rotate(globalMVMatrix, windowManager.getTime(), vec3(0, 1, 0));
+        MVMatrixMoon = translate(MVMatrixMoon, vec3(-2, 0, 0));
+        MVMatrixMoon = scale(MVMatrixMoon, vec3(0.2, 0.2, 0.2));
+        glUniformMatrix4fv(planetProgram.uMVPMatrix, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrixMoon));
+        glUniformMatrix4fv(planetProgram.uMVMatrix, 1, GL_FALSE, value_ptr(MVMatrixMoon));
+        glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
         glBindTexture(GL_TEXTURE_2D, 0);
 
         glBindVertexArray(0);
