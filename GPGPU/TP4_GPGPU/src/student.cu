@@ -1,12 +1,3 @@
-/*
-* TP 1 - Premiers pas en CUDA
-* --------------------------
-* Ex 3: Filtre d'images sepia
-*
-* File: student.cu
-* Author: Maxime MARIA
-*/
-
 #include "student.hpp"
 #include "chronoGPU.hpp"
 
@@ -117,8 +108,10 @@ namespace IMAC
 				{
 					dev_output[id + 1] = 0;
 				}
+				// Etape 1
 				//dev_output[id] = L;
 				//dev_output[id + 1] = a;
+				//dev_output[id + 2] = b;
 				dev_output[id + 2] = 0;
 				idX += offsetX;
 			}

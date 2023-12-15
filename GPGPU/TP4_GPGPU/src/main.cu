@@ -1,12 +1,3 @@
-/*
-* TP 1 - Premiers pas en CUDA
-* --------------------------
-* Ex 3: Filtre d'images sepia
-*
-* File: main.cpp
-* Author: Maxime MARIA
-*/
-
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
