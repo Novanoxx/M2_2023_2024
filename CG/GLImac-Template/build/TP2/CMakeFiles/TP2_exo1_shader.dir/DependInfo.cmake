@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP2/exo1_shader.cpp" "TP2/CMakeFiles/TP2_exo1_shader.dir/exo1_shader.cpp.o" "gcc" "TP2/CMakeFiles/TP2_exo1_shader.dir/exo1_shader.cpp.o.d"
+  "/home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/TP2/exo1_shader.cpp" "TP2/CMakeFiles/TP2_exo1_shader.dir/exo1_shader.cpp.o" "gcc" "TP2/CMakeFiles/TP2_exo1_shader.dir/exo1_shader.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/glimac/CMakeFiles/glimac.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

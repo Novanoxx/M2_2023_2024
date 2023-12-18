@@ -7,8 +7,8 @@ class TrackballCamera
     public:
         TrackballCamera()
         {
-            m_fDistance = 5.f;
-            m_fAngleX = 0.f;
+            m_fDistance = -10.f;
+            m_fAngleX = 25.f;
             m_fAngleY = 0.f;
         }
 

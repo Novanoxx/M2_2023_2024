@@ -8,11 +8,57 @@
 #include <glimac/FilePath.hpp>
 #include <glimac/glm.hpp>
 #include <glimac/Image.hpp>
+#include <glimac/TrackballCamera.hpp>
+#include <unistd.h>
 
 using namespace glimac;
 using namespace glm;
 
-void loadTexture(GLuint *textureArray, int idTexture, std::string image) {
+struct PlanetProgram
+{
+    GLint uMVPMatrix;
+    GLint uMVMatrix;
+    GLint uNormalMatrix;
+};
+
+struct TwoLayersPlanetProgram : PlanetProgram
+{
+    Program m_Program;
+
+    GLuint uMainTexture;
+    GLuint uSecondaryexture;
+
+    TwoLayersPlanetProgram(const FilePath& applicationPath):
+        m_Program(loadProgram(applicationPath.dirPath() + "shaders/3D.vs.glsl",
+                        applicationPath.dirPath() + "shaders/multiTex3D.fs.glsl"))
+    {
+        uMVPMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVPMatrix");
+        uMVMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVMatrix");
+        uNormalMatrix = glGetUniformLocation(m_Program.getGLId(), "uNormalMatrix");
+        uMainTexture = glGetUniformLocation(m_Program.getGLId(), "uMainTexture");
+        uSecondaryexture = glGetUniformLocation(m_Program.getGLId(), "uSecondaryTexture");
+    }
+};
+
+struct OneLayerPlanetProgram : PlanetProgram
+{
+    Program m_Program;
+
+    GLuint uTexture;
+
+    OneLayerPlanetProgram(const FilePath& applicationPath):
+        m_Program(loadProgram(applicationPath.dirPath() + "shaders/3D.vs.glsl",
+                              applicationPath.dirPath() + "shaders/tex3D.fs.glsl"))
+    {
+        uMVPMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVPMatrix");
+        uMVMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVMatrix");
+        uNormalMatrix = glGetUniformLocation(m_Program.getGLId(), "uNormalMatrix");
+        uTexture = glGetUniformLocation(m_Program.getGLId(), "uTexture");
+    }
+};
+
+void loadTexture(GLuint *textureArray, int idTexture, std::string image)
+{
     glBindTexture(GL_TEXTURE_2D, textureArray[idTexture]);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -26,49 +72,41 @@ void loadTexture(GLuint *textureArray, int idTexture, std::string image) {
     glBindTexture(GL_TEXTURE_2D, 0);
 }
 
-struct EarthProgram {
-    Program m_Program;
-    GLint uMVPMatrix;
-    GLint uMVMatrix;
-    GLint uNormalMatrix;
-    GLuint uEarthTexture;
-    GLuint uCloudTexture;
+void updatePlanetUniform(PlanetProgram star, mat4 MVMatrix, mat4 NormalMatrix, mat4 ProjMatrix)
+{
+    glUniformMatrix4fv(star.uMVMatrix, 1, GL_FALSE, value_ptr(MVMatrix));
+    glUniformMatrix4fv(star.uNormalMatrix, 1, GL_FALSE, value_ptr(NormalMatrix));
+    glUniformMatrix4fv(star.uMVPMatrix, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrix));
+}
 
-    EarthProgram(const FilePath& applicationPath):
-    m_Program(loadProgram(applicationPath.dirPath() + "shaders/3D.vs.glsl",
-                        applicationPath.dirPath() + "shaders/multiTex3D.fs.glsl"))
-    {
-        uMVPMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVPMatrix");
-        uMVMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVMatrix");
-        uNormalMatrix = glGetUniformLocation(m_Program.getGLId(), "uNormalMatrix");
-        uEarthTexture = glGetUniformLocation(m_Program.getGLId(), "uMainTexture");
-        uCloudTexture = glGetUniformLocation(m_Program.getGLId(), "uSecondaryTexture");
-    }
-};
+void updateSatelliteUniform(PlanetProgram star, mat4 MVMatrix, mat4 ProjMatrix)
+{
+    glUniformMatrix4fv(star.uMVPMatrix, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrix));
+    glUniformMatrix4fv(star.uMVMatrix, 1, GL_FALSE, value_ptr(MVMatrix));
+}
 
-struct PlanetProgram {
-    Program m_Program;
+void drawOneLayer(GLuint texture, Sphere sphere)
+{
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
+    glBindTexture(GL_TEXTURE_2D, 0);
+}
 
-    GLint uMVPMatrix;
-    GLint uMVMatrix;
-    GLint uNormalMatrix;
-    GLuint uTexture;
-
-    PlanetProgram(const FilePath& applicationPath):
-        m_Program(loadProgram(applicationPath.dirPath() + "shaders/3D.vs.glsl",
-                              applicationPath.dirPath() + "shaders/tex3D.fs.glsl"))
-    {
-        uMVPMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVPMatrix");
-        uMVMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVMatrix");
-        uNormalMatrix = glGetUniformLocation(m_Program.getGLId(), "uNormalMatrix");
-        uTexture = glGetUniformLocation(m_Program.getGLId(), "uTexture");
-    }
-};
+void drawTwoLayers(GLuint textureA, GLuint textureB, Sphere sphere)
+{
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, textureA);
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, textureB);
+    glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
+    glBindTexture(GL_TEXTURE_2D, 0);
+}
 
 int main(int argc, char** argv) {
     // Initialize SDL and open a window
-    float largeur = 800.f;
-    float hauteur = 600.f;
+    float largeur = 1000.f;
+    float hauteur = 800.f;
     SDLWindowManager windowManager(largeur, hauteur, "GLImac");
 
     // Initialize glew for OpenGL3+ support
@@ -82,16 +120,62 @@ int main(int argc, char** argv) {
     std::cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << std::endl;
 
     FilePath applicationPath(argv[0]);
-    EarthProgram earthProgram(applicationPath);
-    PlanetProgram planetProgram(applicationPath);
+    // Planet
+    OneLayerPlanetProgram sunProgram(applicationPath);
+    TwoLayersPlanetProgram mercuryProgram(applicationPath);
+    TwoLayersPlanetProgram venusProgram(applicationPath);
+    TwoLayersPlanetProgram earthProgram(applicationPath);
+
+    // Satellite
+    OneLayerPlanetProgram moonProgram(applicationPath);
 
     // Load and bind texture
-    int nbTextures = 3;
+    int nbTextures = 8;
     GLuint textures[nbTextures];
     glGenTextures(nbTextures, textures);
-    loadTexture(textures, 0, "EarthMap");
-    loadTexture(textures, 1, "CloudMap");
-    loadTexture(textures, 2, "MoonMap");
+
+    // Sun
+    loadTexture(textures, 0, "Sun/sunmap");
+
+    // Mercury
+    loadTexture(textures, 1, "Mercury/mercurybump");
+    loadTexture(textures, 2, "Mercury/mercurymap");
+
+    // Venus
+    loadTexture(textures, 3, "Venus/venusbump");
+    loadTexture(textures, 4, "Venus/venusmap");
+
+    // Earth
+    loadTexture(textures, 5, "Earth/EarthMap");
+    loadTexture(textures, 6, "Earth/CloudMap");
+    loadTexture(textures, 7, "Earth/MoonMap");
+
+    /*
+    // Mars
+    loadTexture(textures, 8, "Mars/mars_1k_color");
+    loadTexture(textures, 9, "Mars/deimosbump");
+    loadTexture(textures, 10, "Mars/phobosbump");
+
+    // Jupiter
+    loadTexture(textures, 11, "Jupiter/jupiter2_1k");
+    loadTexture(textures, 12, "Jupiter/jupitermap");
+
+    // Saturn
+    loadTexture(textures, 13, "Saturn/saturnmap");
+    loadTexture(textures, 14, "Saturn/saturnringcolor");
+
+    // Uranus
+    loadTexture(textures, 15, "Uranus/uranusmap");
+    loadTexture(textures, 16, "Uranus/uranusringcoulour");
+
+    // Neptune
+    loadTexture(textures, 17, "Neptune/neptunemap");
+
+    // Pluto
+    loadTexture(textures, 18, "Pluto/plutobump1k");
+    loadTexture(textures, 19, "Pluto/plutomap1k");
+    */
+
     // END OF LOADING TEXTURE
 
     glEnable(GL_DEPTH_TEST);
@@ -129,27 +213,45 @@ int main(int argc, char** argv) {
     glBindVertexArray(0);
     // END INITIALIZATION
 
-    vec3 randArray[32];
-    for (int i = 0; i < 32; i++)
-    {
-        randArray[i] = sphericalRand(1.f);
-    }
-
-    mat4 ProjMatrix = perspective(radians(70.f), largeur/hauteur, 0.1f, 100.f);
-    mat4 globalMVMatrix = translate(mat4(1.f), vec3(0.f, 0.f, -5.f));
-    auto MVOrigin = globalMVMatrix;
-    mat4 MVMatrixMoon;
-    mat4 NormalMatrix = transpose(inverse(globalMVMatrix));
-    mat4 earthMVMatrix;
-
     // Application loop:
     bool done = false;
+    TrackballCamera tracking;
+
     while(!done) {
+        // Init matrix
+        mat4 ProjMatrix = perspective(radians(70.f), largeur/hauteur, 0.1f, 1000.f);
+        mat4 globalMVMatrix = translate(mat4(1.f), vec3(0.f, 0.f, -5.f));
+        mat4 NormalMatrix = transpose(inverse(globalMVMatrix));
+
         // Event loop:
         SDL_Event e;
+        int xMouse, yMouse;
+        
+        globalMVMatrix *= tracking.getViewMatrix();
         while(windowManager.pollEvent(e)) {
             if(e.type == SDL_QUIT) {
                 done = true; // Leave the loop after this iteration
+            }
+            if (e.type == SDL_KEYDOWN)
+            {
+                switch(e.key.keysym.sym)
+                {
+                    case 122:          // z key 
+                        tracking.moveFront(1);
+                        break;
+                    case 273 :         // up key
+                        tracking.moveFront(1);
+                        break;
+                    case 115 :          // s key 
+                        tracking.moveFront(-1);
+                        break;
+                    case 274 :          // down key
+                        tracking.moveFront(-1);
+                        break;
+                    default :
+                        break;
+                }
+                std::cout << e.key.keysym.sym << std::endl;
             }
         }
 
@@ -161,34 +263,72 @@ int main(int argc, char** argv) {
         
         glBindVertexArray(vao);
 
+        sleep(0.5);
+        // Sun
+        sunProgram.m_Program.use();
+        glUniform1i(sunProgram.uTexture, 0);
+        mat4 sunMVMatrix = rotate(globalMVMatrix, windowManager.getTime()/2, vec3(0, 1, 0));
+        updatePlanetUniform(sunProgram, sunMVMatrix, NormalMatrix, ProjMatrix);
+
+        drawOneLayer(textures[0], sphere);
+        sleep(0.5);
+
+        // Mercury
+        mercuryProgram.m_Program.use();
+        glUniform1i(mercuryProgram.uMainTexture, 0);
+        glUniform1i(mercuryProgram.uSecondaryexture, 1);
+        mat4 mercuryMVMatrix = rotate(sunMVMatrix, windowManager.getTime()/2, vec3(0, 1, 0));
+        mercuryMVMatrix = translate(mercuryMVMatrix, vec3(-2, 0, 0));
+        mercuryMVMatrix = scale(mercuryMVMatrix, vec3(0.3, 0.3, 0.3));
+        updatePlanetUniform(mercuryProgram, mercuryMVMatrix, NormalMatrix, ProjMatrix);
+        
+        drawTwoLayers(textures[1], textures[2], sphere);
+        sleep(0.5);
+
+        // Venus
+        venusProgram.m_Program.use();
+        glUniform1i(venusProgram.uMainTexture, 0);
+        glUniform1i(venusProgram.uSecondaryexture, 1);
+        mat4 venusMVMatrix = rotate(sunMVMatrix, windowManager.getTime()/2, vec3(0, 1, 0));
+        venusMVMatrix = translate(venusMVMatrix, vec3(-4, 0, 0));
+        venusMVMatrix = scale(venusMVMatrix, vec3(0.6, 0.6, 0.6));
+        updatePlanetUniform(venusProgram, venusMVMatrix, NormalMatrix, ProjMatrix);
+        
+        drawTwoLayers(textures[3], textures[4], sphere);
+        sleep(0.5);
+
         // Earth
         earthProgram.m_Program.use();
-        glUniform1i(earthProgram.uEarthTexture, 0);
-        glUniform1i(earthProgram.uCloudTexture, 1);
-        earthMVMatrix = rotate(globalMVMatrix, windowManager.getTime(), vec3(0, 1, 0));
-        glUniformMatrix4fv(earthProgram.uMVMatrix, 1, GL_FALSE, value_ptr(earthMVMatrix));
-        glUniformMatrix4fv(earthProgram.uNormalMatrix, 1, GL_FALSE, value_ptr(NormalMatrix));
-        glUniformMatrix4fv(earthProgram.uMVPMatrix, 1, GL_FALSE, value_ptr(ProjMatrix * earthMVMatrix));
+        glUniform1i(earthProgram.uMainTexture, 0);
+        glUniform1i(earthProgram.uSecondaryexture, 1);
+        mat4 earthMVMatrix = rotate(sunMVMatrix, windowManager.getTime()/2, vec3(0, 1, 0));
+        earthMVMatrix = translate(earthMVMatrix, vec3(-6, 0, 0));
+        earthMVMatrix = scale(earthMVMatrix, vec3(0.5, 0.5, 0.5));
+        updatePlanetUniform(earthProgram, earthMVMatrix, NormalMatrix, ProjMatrix);
         
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, textures[0]);
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, textures[1]);
-        glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
-        glBindTexture(GL_TEXTURE_2D, 0);
+        drawTwoLayers(textures[5], textures[6], sphere);
+        sleep(0.5);
 
-        // Moons
-        planetProgram.m_Program.use();
-        glUniform1i(planetProgram.uTexture, 0);
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, textures[2]);
-        MVMatrixMoon = rotate(globalMVMatrix, windowManager.getTime(), vec3(0, 1, 0));
+        // Moon (satellite)
+        moonProgram.m_Program.use();
+        glUniform1i(moonProgram.uTexture, 0);
+        mat4 MVMatrixMoon = rotate(earthMVMatrix, 23.f, vec3(0.2, 0.2, 0.2));
+        MVMatrixMoon = rotate(MVMatrixMoon, windowManager.getTime(), vec3(0, 1, 0));
         MVMatrixMoon = translate(MVMatrixMoon, vec3(-2, 0, 0));
         MVMatrixMoon = scale(MVMatrixMoon, vec3(0.2, 0.2, 0.2));
-        glUniformMatrix4fv(planetProgram.uMVPMatrix, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrixMoon));
-        glUniformMatrix4fv(planetProgram.uMVMatrix, 1, GL_FALSE, value_ptr(MVMatrixMoon));
-        glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
-        glBindTexture(GL_TEXTURE_2D, 0);
+        updateSatelliteUniform(moonProgram, MVMatrixMoon, ProjMatrix);
+
+        drawOneLayer(textures[7], sphere);
+
+        // Mars
+        // Deimos (satellite)
+        // Phobos (satellite)
+        // Jupiter
+        // Saturn
+        // Saturn ring
+        // Uranus
+        // Uranus ring
+        // Neptune
 
         glBindVertexArray(0);
         // END RENDERING

@@ -1,4 +1,4 @@
-# Install script for directory: /home/2ing2/stephane.vong/Documents/M2_2023_2024/CG/GLImac-Template/TP2
+# Install script for directory: /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/TP2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
