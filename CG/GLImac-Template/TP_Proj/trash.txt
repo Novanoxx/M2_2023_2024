@@ -1,0 +1,79 @@
+earthProgram.m_Program.use();
+glUniform1i(earthProgram.uMainTexture, 0);
+glUniform1i(earthProgram.uSecondaryTexture, 1);
+mat4 earthMVMatrix = RTS(sunMVMatrix, sunSpeed*29.8f, -7.5f, 1.f, 0.5f, 0.5f, 0.5f);
+
+updateUniform(earthProgram, earthMVMatrix, NormalMatrix, ProjMatrix);
+
+drawTwoLayers(textures[5], textures[6], sphere);
+sleep(0.5);
+
+
+marsProgram.m_Program.use();
+glUniform1i(marsProgram.uTexture, 0);
+mat4 marsMVMatrix = RTS(sunMVMatrix, sunSpeed*24.1f, -11.4f, 1.8f, 0.3f, 0.3f, 0.3f);
+// mat4 marsMVMatrix = RTS(sunMVMatrix, sunSpeed, -11.4f, 1.8f, 0.068f, 0.068f, 0.068f);
+updateUniform(marsProgram, marsMVMatrix, NormalMatrix, ProjMatrix);
+
+drawOneLayer(textures[8], sphere);
+sleep(0.5);
+
+
+jupiterProgram.m_Program.use();
+glUniform1i(jupiterProgram.uTexture, 0);
+mat4 jupiterMVMatrix = RTS(sunMVMatrix, sunSpeed*13.1f, -38.9f, 1.3f, 0.9f, 0.9f, 0.9f);
+// mat4 jupiterMVMatrix = RTS(sunMVMatrix, sunSpeed, -38.9f, 1.3f, 0.143f, 0.143f, 0.143f);
+updateUniform(jupiterProgram, jupiterMVMatrix, NormalMatrix, ProjMatrix);
+
+drawOneLayer(textures[11], sphere);
+sleep(0.5);
+
+
+saturnProgram.m_Program.use();
+glUniform1i(saturnProgram.uTexture, 0);
+mat4 saturnMVMatrix = RTS(sunMVMatrix, sunSpeed*9.7f, -71.6f, 2.5f, 0.8f, 0.8f, 0.8f);
+// mat4 saturnMVMatrix = RTS(sunMVMatrix, sunSpeed, -71.6f, 2.5f, 0.12f, 0.12f, 0.12f);
+updateUniform(saturnProgram, saturnMVMatrix, NormalMatrix, ProjMatrix);
+
+drawOneLayer(textures[12], sphere);
+sleep(0.5);
+
+
+uranusProgram.m_Program.use();
+glUniform1i(uranusProgram.uTexture, 0);
+mat4 uranusMVMatrix = RTS(sunMVMatrix, sunSpeed*6.8f, -143.4f, 0.8f, 0.7f, 0.7f, 0.7f);
+// mat4 uranusMVMatrix = RTS(sunMVMatrix, sunSpeed, -143.4f, 0.8f, 0.511f, 0.511f, 0.511f);
+updateUniform(uranusProgram, uranusMVMatrix, NormalMatrix, ProjMatrix);
+
+drawOneLayer(textures[14], sphere);
+sleep(0.5);
+
+
+neptuneProgram.m_Program.use();
+glUniform1i(neptuneProgram.uTexture, 0);
+mat4 neptuneMVMatrix = RTS(sunMVMatrix, sunSpeed*5.4f, -225.8f, 1.8f, 0.6f, 0.6f, 0.6f);
+// mat4 neptuneMVMatrix = RTS(sunMVMatrix, sunSpeed, -225.8f, 1.8f, 0.495f, 0.495f, 0.495f);
+updateUniform(neptuneProgram, neptuneMVMatrix, NormalMatrix, ProjMatrix);
+
+drawOneLayer(textures[16], sphere);
+sleep(0.5);
+
+
+plutoProgram.m_Program.use();
+glUniform1i(plutoProgram.uMainTexture, 0);
+glUniform1i(plutoProgram.uSecondaryTexture, 1);
+mat4 plutoMVMatrix = RTS(sunMVMatrix, sunSpeed*4.7f, -295.3f, 17.2f, 0.1f, 0.1f, 0.1f);
+// mat4 plutoMVMatrix = RTS(sunMVMatrix, sunSpeed, -295.3f, 17.2f, 0.024f, 0.024f, 0.024f);
+updateUniform(plutoProgram, plutoMVMatrix, NormalMatrix, ProjMatrix);
+
+drawTwoLayers(textures[17], textures[18], sphere);
+sleep(0.5);
+
+
+moonProgram.m_Program.use();
+glUniform1i(moonProgram.uTexture, 0);
+mat4 MVMatrixMoon = rotate(earthMVMatrix, 23.f, vec3(0.2f, 5.1f, 0.2f));    // without this, there is no satellite
+MVMatrixMoon = RTS(MVMatrixMoon, 1.f, -2.f, 1.f, 0.2f, 0.2f, 0.2f);
+// MVMatrixMoon = RTS(MVMatrixMoon, sunSpeed, -2.f, 5.1f, 0.035f, 0.035f, 0.035f);
+updateUniform(moonProgram, MVMatrixMoon, NormalMatrix, ProjMatrix);
+drawOneLayer(textures[7], sphere);

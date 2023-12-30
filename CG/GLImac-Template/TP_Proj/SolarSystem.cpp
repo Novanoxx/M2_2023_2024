@@ -26,7 +26,7 @@ struct TwoLayersPlanetProgram : PlanetProgram
     Program m_Program;
 
     GLuint uMainTexture;
-    GLuint uSecondaryexture;
+    GLuint uSecondaryTexture;
 
     TwoLayersPlanetProgram(const FilePath& applicationPath):
         m_Program(loadProgram(applicationPath.dirPath() + "shaders/3D.vs.glsl",
@@ -36,7 +36,7 @@ struct TwoLayersPlanetProgram : PlanetProgram
         uMVMatrix = glGetUniformLocation(m_Program.getGLId(), "uMVMatrix");
         uNormalMatrix = glGetUniformLocation(m_Program.getGLId(), "uNormalMatrix");
         uMainTexture = glGetUniformLocation(m_Program.getGLId(), "uMainTexture");
-        uSecondaryexture = glGetUniformLocation(m_Program.getGLId(), "uSecondaryTexture");
+        uSecondaryTexture = glGetUniformLocation(m_Program.getGLId(), "uSecondaryTexture");
     }
 };
 
@@ -72,11 +72,11 @@ void loadTexture(GLuint *textureArray, int idTexture, std::string image)
     glBindTexture(GL_TEXTURE_2D, 0);
 }
 
-void updateUniform(PlanetProgram star, mat4 MVMatrix, mat4 NormalMatrix, mat4 ProjMatrix)
+void updateUniform(PlanetProgram planet, mat4 MVMatrix, mat4 NormalMatrix, mat4 ProjMatrix)
 {
-    glUniformMatrix4fv(star.uMVMatrix, 1, GL_FALSE, value_ptr(MVMatrix));
-    glUniformMatrix4fv(star.uNormalMatrix, 1, GL_FALSE, value_ptr(NormalMatrix));
-    glUniformMatrix4fv(star.uMVPMatrix, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrix));
+    glUniformMatrix4fv(planet.uMVMatrix, 1, GL_FALSE, value_ptr(MVMatrix));
+    glUniformMatrix4fv(planet.uNormalMatrix, 1, GL_FALSE, value_ptr(NormalMatrix));
+    glUniformMatrix4fv(planet.uMVPMatrix, 1, GL_FALSE, value_ptr(ProjMatrix * MVMatrix));
 }
 
 void drawOneLayer(GLuint texture, Sphere sphere)
@@ -106,41 +106,8 @@ mat4 RTS(mat4 origin, float time, float tX, float angle, float sX, float sY, flo
     return ret;
 }
 
-int main(int argc, char** argv) {
-    // Initialize SDL and open a window
-    float largeur = 1000.f;
-    float hauteur = 800.f;
-    SDLWindowManager windowManager(largeur, hauteur, "GLImac");
-
-    // Initialize glew for OpenGL3+ support
-    GLenum glewInitError = glewInit();
-    if(GLEW_OK != glewInitError) {
-        std::cerr << glewGetErrorString(glewInitError) << std::endl;
-        return EXIT_FAILURE;
-    }
-
-    std::cout << "OpenGL Version : " << glGetString(GL_VERSION) << std::endl;
-    std::cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << std::endl;
-
-    FilePath applicationPath(argv[0]);
-    // Planet
-    OneLayerPlanetProgram sunProgram(applicationPath);
-    TwoLayersPlanetProgram mercuryProgram(applicationPath);
-    TwoLayersPlanetProgram venusProgram(applicationPath);
-    TwoLayersPlanetProgram earthProgram(applicationPath);
-    OneLayerPlanetProgram marsProgram(applicationPath);
-    OneLayerPlanetProgram jupiterProgram(applicationPath);
-    OneLayerPlanetProgram saturnProgram(applicationPath);
-    OneLayerPlanetProgram uranusProgram(applicationPath);
-    OneLayerPlanetProgram neptuneProgram(applicationPath);
-    TwoLayersPlanetProgram plutoProgram(applicationPath);
-
-    // Satellite
-    OneLayerPlanetProgram moonProgram(applicationPath);
-
-    // Load and bind texture
-    int nbTextures = 19;
-    GLuint textures[nbTextures];
+void loadAllTextures(int nbTextures, GLuint *textures)
+{
     glGenTextures(nbTextures, textures);
 
     // Sun
@@ -172,14 +139,123 @@ int main(int argc, char** argv) {
     // Pluto
     loadTexture(textures, 17, "Pluto/plutobump1k");
     loadTexture(textures, 18, "Pluto/plutomap1k");
+}
 
-    // END OF LOADING TEXTURE
+mat4 drawOLP(OneLayerPlanetProgram &planet, mat4 origin, mat4 NormalMatrix, mat4 ProjMatrix, float time, float tX, float angle, float sX, float sY, float sZ, GLuint texture, Sphere sphere)
+{
+    planet.m_Program.use();
+    glUniform1i(planet.uTexture, 0);
+    mat4 MVMatrix = RTS(origin, time, tX, angle, sX, sY, sZ);
+    updateUniform(planet, MVMatrix, NormalMatrix, ProjMatrix);
+    
+    drawOneLayer(texture, sphere);
+    sleep(0.5);
+
+    return MVMatrix;
+}
+
+mat4 drawTLP(TwoLayersPlanetProgram &planet, mat4 origin, mat4 NormalMatrix, mat4 ProjMatrix, float time, float tX, float angle, float sX, float sY, float sZ, GLuint textureA, GLuint textureB, Sphere sphere)
+{
+    planet.m_Program.use();
+    glUniform1i(planet.uMainTexture, 0);
+    glUniform1i(planet.uSecondaryTexture, 1);
+    mat4 MVMatrix = RTS(origin, time, tX, angle, sX, sY, sZ);
+    updateUniform(planet, MVMatrix, NormalMatrix, ProjMatrix);
+    
+    drawTwoLayers(textureA, textureB, sphere);
+    sleep(0.5);
+
+    return MVMatrix;
+}
+
+mat4 drawOLPZoom(OneLayerPlanetProgram &planet, mat4 origin, mat4 NormalMatrix, mat4 ProjMatrix, float time, GLuint texture, Sphere sphere)
+{
+    planet.m_Program.use();
+    glUniform1i(planet.uTexture, 0);
+    mat4 MVMatrix = rotate(origin, time, vec3(0, 1, 0));
+    updateUniform(planet, MVMatrix, NormalMatrix, ProjMatrix);
+
+    drawOneLayer(texture, sphere);
+    sleep(0.5);
+
+    return MVMatrix;
+}
+
+mat4 drawTLPZoom(TwoLayersPlanetProgram &planet, mat4 origin, mat4 NormalMatrix, mat4 ProjMatrix, float time, GLuint textureA, GLuint textureB, Sphere sphere)
+{
+    planet.m_Program.use();
+    glUniform1i(planet.uMainTexture, 0);
+    glUniform1i(planet.uSecondaryTexture, 1);
+    
+    mat4 MVMatrix = rotate(origin, time, vec3(0, 1, 0));
+    updateUniform(planet, MVMatrix, NormalMatrix, ProjMatrix);
+
+    drawTwoLayers(textureA, textureB, sphere);
+    sleep(0.5);
+
+    return MVMatrix;
+}
+
+void showPlanet(std::vector<bool> &planets, int index, bool &all)
+{
+    for (int i = 0; i < planets.size(); i++)
+    {
+        planets.at(i) = false;
+    }
+    planets.at(index) = true;
+    all = false;
+}
+
+void cameraZoom(TrackballCamera &camera)
+{
+    camera.reset();
+    camera.rotateUp(-65.f);
+    camera.moveFront(10.f);
+}
+
+int main(int argc, char** argv) {
+    // Initialize SDL and open a window
+    float largeur = 1000.f;
+    float hauteur = 800.f;
+    SDLWindowManager windowManager(largeur, hauteur, "GLImac");
+
+    // Initialize glew for OpenGL3+ support
+    GLenum glewInitError = glewInit();
+    if(GLEW_OK != glewInitError) {
+        std::cerr << glewGetErrorString(glewInitError) << std::endl;
+        return EXIT_FAILURE;
+    }
+
+    std::cout << "OpenGL Version : " << glGetString(GL_VERSION) << std::endl;
+    std::cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << std::endl;
 
     glEnable(GL_DEPTH_TEST);
 
     /*********************************
      * HERE SHOULD COME THE INITIALIZATION CODE
      *********************************/
+    FilePath applicationPath(argv[0]);
+
+    // Planet
+    OneLayerPlanetProgram sunProgram(applicationPath);
+    TwoLayersPlanetProgram mercuryProgram(applicationPath);
+    TwoLayersPlanetProgram venusProgram(applicationPath);
+    TwoLayersPlanetProgram earthProgram(applicationPath);
+    OneLayerPlanetProgram marsProgram(applicationPath);
+    OneLayerPlanetProgram jupiterProgram(applicationPath);
+    OneLayerPlanetProgram saturnProgram(applicationPath);
+    OneLayerPlanetProgram uranusProgram(applicationPath);
+    OneLayerPlanetProgram neptuneProgram(applicationPath);
+    TwoLayersPlanetProgram plutoProgram(applicationPath);
+
+    // Satellite
+    OneLayerPlanetProgram moonProgram(applicationPath);
+
+    // Load and bind texture
+    int nbTextures = 19;
+    GLuint textures[nbTextures];
+    loadAllTextures(nbTextures, textures);
+    // END OF LOADING TEXTURE
 
     Sphere sphere(1, 32, 16);
     
@@ -213,6 +289,9 @@ int main(int argc, char** argv) {
     // Application loop:
     bool done = false;
     bool pause = false;
+    bool all = true;
+    // bool sun, mercury, venus, earth, march, jupiter, saturn, uranus, neptune, pluto = false;
+    std::vector<bool> planets = {false, false, false, false, false, false, false, false, false, false};
     TrackballCamera tracking;
 
     while(!done) {
@@ -234,20 +313,62 @@ int main(int argc, char** argv) {
             {
                 switch(e.key.keysym.sym)
                 {
-                    case 122:          // z key 
-                        tracking.moveFront(1);
-                        break;
                     case 273 :         // up key
                         tracking.moveFront(1);
-                        break;
-                    case 115 :          // s key 
-                        tracking.moveFront(-1);
                         break;
                     case 274 :          // down key
                         tracking.moveFront(-1);
                         break;
                     case 112 :          // p key
                         pause = !pause;
+                        break;
+                    case 119 :          // w key for all
+                        all = true;
+                        for (int i = 0; i < planets.size(); i++)
+                        {
+                            planets.at(i) = false;
+                        }
+                        tracking.reset();
+                        break;
+                    case 113 :          // q key for the Sun
+                        cameraZoom(tracking);
+                        showPlanet(planets, 0, all);
+                        break;
+                    case 115 :          // s key for Mercury
+                        cameraZoom(tracking);
+                        showPlanet(planets, 1, all);
+                        break;
+                    case 100 :          // d key for Venus
+                        cameraZoom(tracking);
+                        showPlanet(planets, 2, all);
+                        break;
+                    case 102 :          // f key for Earth
+                        cameraZoom(tracking);
+                        showPlanet(planets, 3, all);
+                        break;
+                    case 103 :          // g key for March
+                        cameraZoom(tracking);
+                        showPlanet(planets, 4, all);
+                        break;
+                    case 104 :          // h key for Jupiter
+                        cameraZoom(tracking);
+                        showPlanet(planets, 5, all);
+                        break;
+                    case 106 :          // j key for Saturn
+                        cameraZoom(tracking);
+                        showPlanet(planets, 6, all);
+                        break;
+                    case 107 :          // k key for Uranus
+                        cameraZoom(tracking);
+                        showPlanet(planets, 7, all);
+                        break;
+                    case 108 :          // l key for Neptune
+                        cameraZoom(tracking);
+                        showPlanet(planets, 8, all);
+                        break;
+                    case 109 :          // m key for Pluto
+                        cameraZoom(tracking);
+                        showPlanet(planets, 9, all);
                         break;
                     default :
                         break;
@@ -271,64 +392,114 @@ int main(int argc, char** argv) {
             Size : 
             Jupiter, Saturn, Uranus, Nepturne, Earth, Venus, Mars, Mercury, Pluto
             ***/
+            if (all)
+            {
+                float sunSpeed = windowManager.getTime()/50;
+                mat4 sunMVMatrix = drawOLPZoom(sunProgram, globalMVMatrix, NormalMatrix, ProjMatrix, sunSpeed, textures[0], sphere);
 
+                drawTLP(mercuryProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 47.4f,
+                                    -2.9f, 9.f, 0.2f, 0.2f, 0.2f, textures[1], textures[2], sphere);
+
+                drawTLP(venusProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 35.f,
+                                    -5.4f, 3.4f, 0.4f, 0.4f, 0.4f, textures[3], textures[4], sphere);
+                
+                mat4 earthMVMatrix = drawTLP(earthProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 29.8f,
+                                    -7.5f, 1.f, 0.5f, 0.5f, 0.5f, textures[5], textures[6], sphere);
+                
+                mat4 MVMatrixMoon = rotate(earthMVMatrix, 23.f, vec3(0.2f, 5.1f, 0.2f));    // without this, there is no satellite
+                drawOLP(moonProgram, MVMatrixMoon, NormalMatrix, ProjMatrix, 1.f,
+                                    -2.f, 1.f, 0.2f, 0.2f, 0.2f, textures[7], sphere);
+
+                drawOLP(marsProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 24.1f,
+                                    -11.4f, 1.8f, 0.3f, 0.3f, 0.3f, textures[8], sphere);
+
+                drawOLP(jupiterProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 13.1f,
+                                    -38.9f, 1.3f, 0.9f, 0.9f, 0.9f, textures[11], sphere);                                    
+
+                drawOLP(saturnProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 9.7f,
+                                    -71.6f, 2.5f, 0.8f, 0.8f, 0.8f, textures[12], sphere); 
+
+                drawOLP(uranusProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 6.8f,
+                                    -143.4f, 0.8f, 0.7f, 0.7f, 0.7f, textures[14], sphere);  
+
+                drawOLP(neptuneProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 5.4f,
+                                    -225.8f, 1.8f, 0.6f, 0.6f, 0.6f, textures[14], sphere);                                      
+
+                drawTLP(plutoProgram, sunMVMatrix, NormalMatrix, ProjMatrix, sunSpeed * 4.7f,
+                                    -295.3f, 17.2f, 0.1f, 0.1f, 0.1f, textures[17], textures[18], sphere);
+            } else
+            {
+                if (planets.at(0))
+                {
+                    drawOLPZoom(sunProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[0], sphere);
+                }
+                if (planets.at(1))
+                {
+                    drawTLPZoom(mercuryProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[1], textures[2], sphere);
+                }
+                if (planets.at(2))
+                {
+                    drawTLPZoom(venusProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[3], textures[4], sphere);
+                }
+                if (planets.at(3))
+                {
+                    mat4 earthMVMatrix = drawTLPZoom(earthProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[5], textures[6], sphere);
+                    mat4 MVMatrixMoon = rotate(earthMVMatrix, 23.f, vec3(0.2f, 5.1f, 0.2f));    // without this, there is no satellite
+                    drawOLP(moonProgram, MVMatrixMoon, NormalMatrix, ProjMatrix, windowManager.getTime(),
+                                        -2.f, 1.f, 0.2f, 0.2f, 0.2f, textures[7], sphere);
+                }
+                if (planets.at(4))
+                {
+                    drawOLPZoom(marsProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[8], sphere);
+                }
+                if (planets.at(5))
+                {
+                    drawOLPZoom(jupiterProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[11], sphere);
+                }
+                if (planets.at(6))
+                {
+                    drawOLPZoom(saturnProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[12], sphere);
+                }
+                if (planets.at(7))
+                {
+                    drawOLPZoom(uranusProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[14], sphere);
+                }
+                if (planets.at(8))
+                {
+                    drawOLPZoom(neptuneProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[16], sphere);
+                }
+                if (planets.at(9))
+                {
+                    drawTLPZoom(plutoProgram, globalMVMatrix, NormalMatrix, ProjMatrix, windowManager.getTime(), textures[17], textures[18], sphere);
+                }
+            }
             // Sun
-            float sunSpeed = windowManager.getTime()/50;
-            sunProgram.m_Program.use();
-            glUniform1i(sunProgram.uTexture, 0);
-            mat4 sunMVMatrix = rotate(globalMVMatrix, sunSpeed, vec3(0, 1, 0));
-            updateUniform(sunProgram, sunMVMatrix, NormalMatrix, ProjMatrix);
-
-            drawOneLayer(textures[0], sphere);
-            sleep(0.5);
 
             /**** Mercury
             distance from sun : 57.9 --> /20 --> 2,9
             diameter : 4879 --> 0,49
             orbital velocity : 47.4 km/s
             orbital angle : 9°
+            // mat4 mercuryMVMatrix = RTS(sunMVMatrix, sunSpeed * 47.4f, -2.9f, 9.f, 0.049f, 0.049f, 0.049f);
             ****/
-            mercuryProgram.m_Program.use();
-            glUniform1i(mercuryProgram.uMainTexture, 0);
-            glUniform1i(mercuryProgram.uSecondaryexture, 1);
-            mat4 mercuryMVMatrix = RTS(sunMVMatrix, sunSpeed*47.4f, -2.9f, 9.f, 0.2f, 0.2f, 0.2f);
-            // mat4 mercuryMVMatrix = RTS(sunMVMatrix, sunSpeed*47.4f, -2.9f, 9.f, 0.049f, 0.049f, 0.049f);
-            updateUniform(mercuryProgram, mercuryMVMatrix, NormalMatrix, ProjMatrix);
-            
-            drawTwoLayers(textures[1], textures[2], sphere);
-            sleep(0.5);
 
             /**** Venus
             distance from sun : 108.2 --> 5,4
             diameter : 12,104 --> 1,21
             orbital velocity : 35.0 km/s
             orbital angle : 3.4°
+            // mat4 venusMVMatrix = RTS(sunMVMatrix, sunSpeed * 35.f, -5.4f, 3.4f, 0.121f, 0.121f, 0.121f);
             ****/
-            venusProgram.m_Program.use();
-            glUniform1i(venusProgram.uMainTexture, 0);
-            glUniform1i(venusProgram.uSecondaryexture, 1);
-            mat4 venusMVMatrix = RTS(sunMVMatrix, sunSpeed*35.f, -5.4f, 3.4f, 0.4f, 0.4f, 0.4f);
-            // mat4 venusMVMatrix = RTS(sunMVMatrix, sunSpeed, -5.4f, 3.4f, 0.121f, 0.121f, 0.121f);
-            updateUniform(venusProgram, venusMVMatrix, NormalMatrix, ProjMatrix);
             
-            drawTwoLayers(textures[3], textures[4], sphere);
-            sleep(0.5);
 
             /**** Earth
             distance from sun : 149.6 --> 7,5
             diameter : 12,756  --> 1,28
             orbital velocity : 29.8 km/s
             orbital angle : 0° (based from Earth so 0)
-            ****/
-            earthProgram.m_Program.use();
-            glUniform1i(earthProgram.uMainTexture, 0);
-            glUniform1i(earthProgram.uSecondaryexture, 1);
-            mat4 earthMVMatrix = RTS(sunMVMatrix, sunSpeed*29.8f, -7.5f, 1.f, 0.5f, 0.5f, 0.5f);
             // mat4 earthMVMatrix = RTS(sunMVMatrix, sunSpeed, -7.5f, 1.f, 0.128f, 0.128f, 0.128f);
-            updateUniform(earthProgram, earthMVMatrix, NormalMatrix, ProjMatrix);
+            ****/
             
-            drawTwoLayers(textures[5], textures[6], sphere);
-            sleep(0.5);
 
             /**** Moon (satellite)
             distance from Earth : 0.384
@@ -336,14 +507,7 @@ int main(int argc, char** argv) {
             orbital velocity : 1 km/s
             orbital angle : 5.1°
             ****/
-            moonProgram.m_Program.use();
-            glUniform1i(moonProgram.uTexture, 0);
-            mat4 MVMatrixMoon = rotate(earthMVMatrix, 23.f, vec3(0.2f, 5.1f, 0.2f));    // without this, there is no satellite
-            MVMatrixMoon = RTS(MVMatrixMoon, 1.f, -2.f, 1.f, 0.2f, 0.2f, 0.2f);
-            // MVMatrixMoon = RTS(MVMatrixMoon, sunSpeed, -2.f, 5.1f, 0.035f, 0.035f, 0.035f);
-            updateUniform(moonProgram, MVMatrixMoon, NormalMatrix, ProjMatrix);
-
-            drawOneLayer(textures[7], sphere);
+            
 
             /**** Mars
             distance from sun : 228.0 --> 11,4
@@ -351,14 +515,7 @@ int main(int argc, char** argv) {
             orbital velocity : 24.1 km/s
             orbital angle : 1.8°
             ****/
-            marsProgram.m_Program.use();
-            glUniform1i(marsProgram.uTexture, 0);
-            mat4 marsMVMatrix = RTS(sunMVMatrix, sunSpeed*24.1f, -11.4f, 1.8f, 0.3f, 0.3f, 0.3f);
-            // mat4 marsMVMatrix = RTS(sunMVMatrix, sunSpeed, -11.4f, 1.8f, 0.068f, 0.068f, 0.068f);
-            updateUniform(marsProgram, marsMVMatrix, NormalMatrix, ProjMatrix);
-
-            drawOneLayer(textures[8], sphere);
-            sleep(0.5);
+            
             // Deimos (satellite)
             // Phobos (satellite)
 
@@ -368,28 +525,14 @@ int main(int argc, char** argv) {
             orbital velocity : 13.1 km/s
             orbital angle : 1.3°
             ****/ 
-            jupiterProgram.m_Program.use();
-            glUniform1i(jupiterProgram.uTexture, 0);
-            mat4 jupiterMVMatrix = RTS(sunMVMatrix, sunSpeed*13.1f, -38.9f, 1.3f, 0.9f, 0.9f, 0.9f);
-            // mat4 jupiterMVMatrix = RTS(sunMVMatrix, sunSpeed, -38.9f, 1.3f, 0.143f, 0.143f, 0.143f);
-            updateUniform(jupiterProgram, jupiterMVMatrix, NormalMatrix, ProjMatrix);
 
-            drawOneLayer(textures[11], sphere);
-            sleep(0.5);
             /**** Saturn
             distance from sun : 1432.0 --> 71,6
             diameter : 120,536 --> 12,05
             orbital velocity : 9.7 km/s
             orbital angle : 2.5°
             ****/
-            saturnProgram.m_Program.use();
-            glUniform1i(saturnProgram.uTexture, 0);
-            mat4 saturnMVMatrix = RTS(sunMVMatrix, sunSpeed*9.7f, -71.6f, 2.5f, 0.8f, 0.8f, 0.8f);
-            // mat4 saturnMVMatrix = RTS(sunMVMatrix, sunSpeed, -71.6f, 2.5f, 0.12f, 0.12f, 0.12f);
-            updateUniform(saturnProgram, saturnMVMatrix, NormalMatrix, ProjMatrix);
 
-            drawOneLayer(textures[12], sphere);
-            sleep(0.5);
             // Saturn ring
 
             /**** Uranus
@@ -398,14 +541,7 @@ int main(int argc, char** argv) {
             orbital velocity : 6.8 km/s
             orbital angle : 0.8°
             ****/ 
-            uranusProgram.m_Program.use();
-            glUniform1i(uranusProgram.uTexture, 0);
-            mat4 uranusMVMatrix = RTS(sunMVMatrix, sunSpeed*6.8f, -143.4f, 0.8f, 0.7f, 0.7f, 0.7f);
-            // mat4 uranusMVMatrix = RTS(sunMVMatrix, sunSpeed, -143.4f, 0.8f, 0.511f, 0.511f, 0.511f);
-            updateUniform(uranusProgram, uranusMVMatrix, NormalMatrix, ProjMatrix);
 
-            drawOneLayer(textures[14], sphere);
-            sleep(0.5);
             // Uranus ring
 
             /**** Neptune
@@ -414,14 +550,7 @@ int main(int argc, char** argv) {
             orbital velocity : 5.4 km/s
             orbital angle : 1.8°
             ****/
-            neptuneProgram.m_Program.use();
-            glUniform1i(neptuneProgram.uTexture, 0);
-            mat4 neptuneMVMatrix = RTS(sunMVMatrix, sunSpeed*5.4f, -225.8f, 1.8f, 0.6f, 0.6f, 0.6f);
-            // mat4 neptuneMVMatrix = RTS(sunMVMatrix, sunSpeed, -225.8f, 1.8f, 0.495f, 0.495f, 0.495f);
-            updateUniform(neptuneProgram, neptuneMVMatrix, NormalMatrix, ProjMatrix);
 
-            drawOneLayer(textures[16], sphere);
-            sleep(0.5);
 
             /**** Pluto
             distance from sun : 5906.4 --> 295,3
@@ -429,15 +558,7 @@ int main(int argc, char** argv) {
             orbital velocity : 4.7 km/s
             orbital angle : 17.2°
             ****/
-            plutoProgram.m_Program.use();
-            glUniform1i(plutoProgram.uMainTexture, 0);
-            glUniform1i(plutoProgram.uSecondaryexture, 1);
-            mat4 plutoMVMatrix = RTS(sunMVMatrix, sunSpeed*4.7f, -295.3f, 17.2f, 0.1f, 0.1f, 0.1f);
-            // mat4 plutoMVMatrix = RTS(sunMVMatrix, sunSpeed, -295.3f, 17.2f, 0.024f, 0.024f, 0.024f);
-            updateUniform(plutoProgram, plutoMVMatrix, NormalMatrix, ProjMatrix);
             
-            drawTwoLayers(textures[17], textures[18], sphere);
-            sleep(0.5);
 
             glBindVertexArray(0);
             // END RENDERING
@@ -445,7 +566,7 @@ int main(int argc, char** argv) {
             // Update the display
             windowManager.swapBuffers();
         }
-        }
+    }
         
     glDeleteBuffers(1, &vbo);
     glDeleteVertexArrays(1, &vao);

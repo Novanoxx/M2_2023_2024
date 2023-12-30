@@ -144,6 +144,20 @@ TP_Proj_SolarSystem/fast:
 	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build
 .PHONY : TP_Proj_SolarSystem/fast
 
+# Convenience name for target.
+TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule
+.PHONY : TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule
+
+# Convenience name for target.
+TP_Proj_Torus: TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule
+.PHONY : TP_Proj_Torus
+
+# fast build rule for target.
+TP_Proj_Torus/fast:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build
+.PHONY : TP_Proj_Torus/fast
+
 SDLtemplate.o: SDLtemplate.cpp.o
 .PHONY : SDLtemplate.o
 
@@ -192,6 +206,30 @@ SolarSystem.cpp.s:
 	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.s
 .PHONY : SolarSystem.cpp.s
 
+Torus.o: Torus.cpp.o
+.PHONY : Torus.o
+
+# target to build an object file
+Torus.cpp.o:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/Torus.cpp.o
+.PHONY : Torus.cpp.o
+
+Torus.i: Torus.cpp.i
+.PHONY : Torus.i
+
+# target to preprocess a source file
+Torus.cpp.i:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/Torus.cpp.i
+.PHONY : Torus.cpp.i
+
+Torus.s: Torus.cpp.s
+.PHONY : Torus.s
+
+# target to generate assembly for a file
+Torus.cpp.s:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/Torus.cpp.s
+.PHONY : Torus.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +240,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TP_Proj_SDLtemplate"
 	@echo "... TP_Proj_SolarSystem"
+	@echo "... TP_Proj_Torus"
 	@echo "... SDLtemplate.o"
 	@echo "... SDLtemplate.i"
 	@echo "... SDLtemplate.s"
 	@echo "... SolarSystem.o"
 	@echo "... SolarSystem.i"
 	@echo "... SolarSystem.s"
+	@echo "... Torus.o"
+	@echo "... Torus.i"
+	@echo "... Torus.s"
 .PHONY : help
 
 

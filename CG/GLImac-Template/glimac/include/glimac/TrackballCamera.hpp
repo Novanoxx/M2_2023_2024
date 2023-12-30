@@ -8,7 +8,7 @@ class TrackballCamera
         TrackballCamera()
         {
             m_fDistance = -10.f;
-            m_fAngleX = 25.f;
+            m_fAngleX = 67.5f;
             m_fAngleY = 0.f;
         }
 
@@ -32,6 +32,13 @@ class TrackballCamera
         void rotateUp(float degree)
         {
             m_fAngleX += degree;
+        }
+
+        void reset()
+        {
+            m_fDistance = -10.f;
+            m_fAngleX = 67.5f;
+            m_fAngleY = 0.f;
         }
 
         glm::mat4 getViewMatrix() const

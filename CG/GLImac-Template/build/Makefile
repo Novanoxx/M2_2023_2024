@@ -389,6 +389,19 @@ TP_Proj_SolarSystem/fast:
 	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build
 .PHONY : TP_Proj_SolarSystem/fast
 
+#=============================================================================
+# Target rules for targets named TP_Proj_Torus
+
+# Build rule for target.
+TP_Proj_Torus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Proj_Torus
+.PHONY : TP_Proj_Torus
+
+# fast build rule for target.
+TP_Proj_Torus/fast:
+	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build
+.PHONY : TP_Proj_Torus/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -417,6 +430,7 @@ help:
 	@echo "... TP4_exo1_camera"
 	@echo "... TP_Proj_SDLtemplate"
 	@echo "... TP_Proj_SolarSystem"
+	@echo "... TP_Proj_Torus"
 	@echo "... glimac"
 .PHONY : help
 

@@ -31,5 +31,6 @@
 /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/TP4/CMakeFiles/rebuild_cache.dir
 /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir
 /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir
+/home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj/CMakeFiles/TP_Proj_Torus.dir
 /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj/CMakeFiles/edit_cache.dir
 /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/TP_Proj/CMakeFiles/rebuild_cache.dir
