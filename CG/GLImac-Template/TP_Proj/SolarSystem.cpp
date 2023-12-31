@@ -215,9 +215,9 @@ void cameraZoom(TrackballCamera &camera)
 
 int main(int argc, char** argv) {
     // Initialize SDL and open a window
-    float largeur = 1000.f;
-    float hauteur = 800.f;
-    SDLWindowManager windowManager(largeur, hauteur, "GLImac");
+    float width = 1000.f;
+    float height = 800.f;
+    SDLWindowManager windowManager(width, height, "GLImac");
 
     // Initialize glew for OpenGL3+ support
     GLenum glewInitError = glewInit();
@@ -292,11 +292,14 @@ int main(int argc, char** argv) {
     bool all = true;
     // bool sun, mercury, venus, earth, march, jupiter, saturn, uranus, neptune, pluto = false;
     std::vector<bool> planets = {false, false, false, false, false, false, false, false, false, false};
+    
     TrackballCamera tracking;
+    float lastX = 0.0f;
+    float lastY = 0.0f;
 
     while(!done) {
         // Init matrix
-        mat4 ProjMatrix = perspective(radians(70.f), largeur/hauteur, 0.1f, 1000.f);
+        mat4 ProjMatrix = perspective(radians(70.f), width/height, 0.1f, 1000.f);
         mat4 globalMVMatrix = translate(mat4(1.f), vec3(0.f, 0.f, -5.f));
         mat4 NormalMatrix = transpose(inverse(globalMVMatrix));
 
@@ -373,7 +376,31 @@ int main(int argc, char** argv) {
                     default :
                         break;
                 }
-                std::cout << e.key.keysym.sym << std::endl;
+                //std::cout << e.key.keysym.sym << std::endl;
+            }
+            if (e.type == SDL_MOUSEMOTION)
+            {
+                if(e.motion.state & SDL_BUTTON_LMASK)
+                {
+                    int xpos, ypos;
+                    xpos = e.motion.x;
+                    ypos = e.motion.y;
+
+                    float xOffset = xpos - lastX;
+                    float yOffset = lastY - ypos;
+
+                    if (xOffset != 0)
+                    {
+                        xOffset > 0 ? tracking.rotateLeft(cos(radians(xOffset))) : tracking.rotateLeft(-cos(radians(xOffset)));
+                    }
+                    if (yOffset != 0)
+                    {
+                        yOffset > 0 ? tracking.rotateUp(-cos(radians(yOffset))) : tracking.rotateUp(cos(radians(yOffset)));
+                    }
+
+                    lastX = xpos;
+                    lastY = ypos;
+                }
             }
         }
 
