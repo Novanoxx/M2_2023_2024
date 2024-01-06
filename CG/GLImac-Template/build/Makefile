@@ -390,17 +390,17 @@ TP_Proj_SolarSystem/fast:
 .PHONY : TP_Proj_SolarSystem/fast
 
 #=============================================================================
-# Target rules for targets named TP_Proj_Torus
+# Target rules for targets named TP_Proj_TESTSystem
 
 # Build rule for target.
-TP_Proj_Torus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Proj_Torus
-.PHONY : TP_Proj_Torus
+TP_Proj_TESTSystem: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Proj_TESTSystem
+.PHONY : TP_Proj_TESTSystem
 
 # fast build rule for target.
-TP_Proj_Torus/fast:
-	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build
-.PHONY : TP_Proj_Torus/fast
+TP_Proj_TESTSystem/fast:
+	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build
+.PHONY : TP_Proj_TESTSystem/fast
 
 # Help Target
 help:
@@ -430,7 +430,7 @@ help:
 	@echo "... TP4_exo1_camera"
 	@echo "... TP_Proj_SDLtemplate"
 	@echo "... TP_Proj_SolarSystem"
-	@echo "... TP_Proj_Torus"
+	@echo "... TP_Proj_TESTSystem"
 	@echo "... glimac"
 .PHONY : help
 

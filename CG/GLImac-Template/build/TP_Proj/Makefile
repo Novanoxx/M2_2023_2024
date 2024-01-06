@@ -145,18 +145,18 @@ TP_Proj_SolarSystem/fast:
 .PHONY : TP_Proj_SolarSystem/fast
 
 # Convenience name for target.
-TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule:
-	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule
-.PHONY : TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule
+TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/rule:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/rule
+.PHONY : TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/rule
 
 # Convenience name for target.
-TP_Proj_Torus: TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule
-.PHONY : TP_Proj_Torus
+TP_Proj_TESTSystem: TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/rule
+.PHONY : TP_Proj_TESTSystem
 
 # fast build rule for target.
-TP_Proj_Torus/fast:
-	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build
-.PHONY : TP_Proj_Torus/fast
+TP_Proj_TESTSystem/fast:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build
+.PHONY : TP_Proj_TESTSystem/fast
 
 SDLtemplate.o: SDLtemplate.cpp.o
 .PHONY : SDLtemplate.o
@@ -206,29 +206,29 @@ SolarSystem.cpp.s:
 	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/SolarSystem.cpp.s
 .PHONY : SolarSystem.cpp.s
 
-Torus.o: Torus.cpp.o
-.PHONY : Torus.o
+TESTSystem.o: TESTSystem.cpp.o
+.PHONY : TESTSystem.o
 
 # target to build an object file
-Torus.cpp.o:
-	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/Torus.cpp.o
-.PHONY : Torus.cpp.o
+TESTSystem.cpp.o:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/TESTSystem.cpp.o
+.PHONY : TESTSystem.cpp.o
 
-Torus.i: Torus.cpp.i
-.PHONY : Torus.i
+TESTSystem.i: TESTSystem.cpp.i
+.PHONY : TESTSystem.i
 
 # target to preprocess a source file
-Torus.cpp.i:
-	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/Torus.cpp.i
-.PHONY : Torus.cpp.i
+TESTSystem.cpp.i:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/TESTSystem.cpp.i
+.PHONY : TESTSystem.cpp.i
 
-Torus.s: Torus.cpp.s
-.PHONY : Torus.s
+TESTSystem.s: TESTSystem.cpp.s
+.PHONY : TESTSystem.s
 
 # target to generate assembly for a file
-Torus.cpp.s:
-	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/Torus.cpp.s
-.PHONY : Torus.cpp.s
+TESTSystem.cpp.s:
+	cd /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/TESTSystem.cpp.s
+.PHONY : TESTSystem.cpp.s
 
 # Help Target
 help:
@@ -240,16 +240,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TP_Proj_SDLtemplate"
 	@echo "... TP_Proj_SolarSystem"
-	@echo "... TP_Proj_Torus"
+	@echo "... TP_Proj_TESTSystem"
 	@echo "... SDLtemplate.o"
 	@echo "... SDLtemplate.i"
 	@echo "... SDLtemplate.s"
 	@echo "... SolarSystem.o"
 	@echo "... SolarSystem.i"
 	@echo "... SolarSystem.s"
-	@echo "... Torus.o"
-	@echo "... Torus.i"
-	@echo "... Torus.s"
+	@echo "... TESTSystem.o"
+	@echo "... TESTSystem.i"
+	@echo "... TESTSystem.s"
 .PHONY : help
 
 

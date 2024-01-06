@@ -85,5 +85,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "TP4/CMakeFiles/TP4_exo1_camera.dir/DependInfo.cmake"
   "TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/DependInfo.cmake"
   "TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/DependInfo.cmake"
-  "TP_Proj/CMakeFiles/TP_Proj_Torus.dir/DependInfo.cmake"
+  "TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/DependInfo.cmake"
   )

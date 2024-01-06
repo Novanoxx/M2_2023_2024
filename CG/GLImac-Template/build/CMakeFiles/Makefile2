@@ -183,7 +183,7 @@ TP4/clean: TP4/CMakeFiles/TP4_exo1_camera.dir/clean
 # Recursive "all" directory target.
 TP_Proj/all: TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/all
 TP_Proj/all: TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/all
-TP_Proj/all: TP_Proj/CMakeFiles/TP_Proj_Torus.dir/all
+TP_Proj/all: TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/all
 .PHONY : TP_Proj/all
 
 # Recursive "preinstall" directory target.
@@ -193,7 +193,7 @@ TP_Proj/preinstall:
 # Recursive "clean" directory target.
 TP_Proj/clean: TP_Proj/CMakeFiles/TP_Proj_SDLtemplate.dir/clean
 TP_Proj/clean: TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/clean
-TP_Proj/clean: TP_Proj/CMakeFiles/TP_Proj_Torus.dir/clean
+TP_Proj/clean: TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/clean
 .PHONY : TP_Proj/clean
 
 #=============================================================================
@@ -758,30 +758,30 @@ TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/clean:
 .PHONY : TP_Proj/CMakeFiles/TP_Proj_SolarSystem.dir/clean
 
 #=============================================================================
-# Target rules for target TP_Proj/CMakeFiles/TP_Proj_Torus.dir
+# Target rules for target TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir
 
 # All Build rule for target.
-TP_Proj/CMakeFiles/TP_Proj_Torus.dir/all: glimac/CMakeFiles/glimac.dir/all
-	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/depend
-	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles --progress-num=41,42 "Built target TP_Proj_Torus"
-.PHONY : TP_Proj/CMakeFiles/TP_Proj_Torus.dir/all
+TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/all: glimac/CMakeFiles/glimac.dir/all
+	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/depend
+	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles --progress-num=41,42 "Built target TP_Proj_TESTSystem"
+.PHONY : TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/all
 
 # Build rule for subdir invocation for target.
-TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule: cmake_check_build_system
+TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Proj/CMakeFiles/TP_Proj_Torus.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephanev/Documents/M2_2023_2024/CG/GLImac-Template/build/CMakeFiles 0
-.PHONY : TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule
+.PHONY : TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/rule
 
 # Convenience name for target.
-TP_Proj_Torus: TP_Proj/CMakeFiles/TP_Proj_Torus.dir/rule
-.PHONY : TP_Proj_Torus
+TP_Proj_TESTSystem: TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/rule
+.PHONY : TP_Proj_TESTSystem
 
 # clean rule for target.
-TP_Proj/CMakeFiles/TP_Proj_Torus.dir/clean:
-	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_Torus.dir/build.make TP_Proj/CMakeFiles/TP_Proj_Torus.dir/clean
-.PHONY : TP_Proj/CMakeFiles/TP_Proj_Torus.dir/clean
+TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/clean:
+	$(MAKE) $(MAKESILENT) -f TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/build.make TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/clean
+.PHONY : TP_Proj/CMakeFiles/TP_Proj_TESTSystem.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
