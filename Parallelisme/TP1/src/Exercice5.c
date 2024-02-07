@@ -4,7 +4,7 @@
 #include <math.h>
 #include <complex.h>
 
-const int OMP_NUM_THREADS = 1;
+const int OMP_NUM_THREADS = 4;  // Adjust the number of threads as needed
 
 int main()
 {
@@ -22,13 +22,18 @@ int main()
     fprintf(file, "%d %d\n", width, height);
     fprintf(file, "255\n");
 
+    double begin = omp_get_wtime();
     int l = width < height ? width : height;
+
+    int *pixelValues = (int *)malloc(width * height * sizeof(int));
+
+    #pragma omp parallel for collapse(2)
     for (int y = 0; y < height; y++)
     {
         for (int x = 0; x < width; x++)
         {
-            double normalizedX = 1.5 * (x - width / 2)/ l;
-            double normalizedY = 1.5 * (y - height / 2)/ l;
+            double normalizedX = 1.5 * (x - width / 2) / l;
+            double normalizedY = 1.5 * (y - height / 2) / l;
 
             double complex Z = normalizedX + I * normalizedY;
             double complex Zi = 0;
@@ -40,19 +45,23 @@ int main()
             }
             double val = sqrt(pow(creal(Zi), 2.0) + pow(cimag(Zi), 2.0));
 
-            if (val < 200)
-            {
-                fprintf(file, "255 ");
-            } else
-            {
-                fprintf(file, "0 ");
-            }
-            
+            pixelValues[y * width + x] = (val < 200) ? 255 : 0;
+        }
+    }
+
+    for (int y = 0; y < height; y++)
+    {
+        for (int x = 0; x < width; x++)
+        {
+            fprintf(file, "%d ", pixelValues[y * width + x]);
         }
         fprintf(file, "\n");
     }
+    double end = omp_get_wtime();
+    printf("Time : %f \n", end - begin);
 
     fclose(file);
+    free(pixelValues);
 
     return 0;
 }
