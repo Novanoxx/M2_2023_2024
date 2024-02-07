@@ -11,7 +11,6 @@
 #include "PMat.h"
 #include "Link.h"
 
-
 /* -----------------------------------------------------------------------
  * ici, en général pas mal de variables GLOBALES
  * - les variables de données globales (points, vecteurs....)
@@ -38,9 +37,6 @@ static PMat *tabM = NULL;
 static int nbl = 0;
 static Link *tabL = NULL;
 
-static G2Xpoint ctr; /* un point : centre du cercle */
-static double   ray; /* un réel  : rayon du cercle  */
-
 void Modeleur(void) {
     nbm = 10;
     if (!(tabM = (PMat *)calloc(nbm, sizeof(PMat))))
@@ -59,11 +55,11 @@ void Modeleur(void) {
 
     /* les particules */
     PMat* M = tabM;
-    M_builder(M++, 0, m, (G2Xpoint){0, 0}, (G2Xvector){0, 0});
+    M_builder(M++, 0, m, (G2Xpoint){0, 0}, 0.);
     for(int i = 1; i < nbm - 1; i++) {
-        M_builder(M++, 1, m, (G2Xpoint){0, 0}, (G2Xvector){0, 0});
+        M_builder(M++, 1, m, (G2Xpoint){i, 0}, 0.);
     }
-    M_builder(M++, 0, 0., (G2Xpoint){0, 0}, (G2Xvector){0, 0});
+    M_builder(M++, 0, 0., (G2Xpoint){nbm-1, 0}, 0.);
 
     /* les liaisons */
     Link *L;
@@ -141,6 +137,23 @@ static void draw(void)
    *  - si la fonction <anim()> (calcul) est activée
    *  ATTENTION : surtout pas d'alloc. mémoire ici !!!
   !*/
+  for (Link* L = tabL; L < tabL + nbl; L++)
+  {
+    if (L == tabL)
+    {
+      g2x_DrawFillCircle(g2x_Point2d(L->M1->pos.x, L->M1->pos.y), 0.5, G2Xy);
+    }
+    else if (L == tabL + nbl - 1)
+    {
+      g2x_DrawFillCircle(g2x_Point2d(L->M1->pos.x, L->M1->pos.y), 0.5, G2Xr);
+      g2x_DrawFillCircle(g2x_Point2d(L->M2->pos.x, L->M2->pos.y), 0.5, G2Xy);
+    }
+    else
+    {
+      g2x_DrawFillCircle(g2x_Point2d(L->M1->pos.x, L->M1->pos.y), 0.5, G2Xr);
+    }
+    g2x_DrawLine(g2x_Point2d(L->M1->pos.x, L->M1->pos.y), g2x_Point2d(L->M2->pos.x, L->M2->pos.y), G2Xb, 1);
+  }
 }
 
 /* la fonction de sortie  (facultatif) */
