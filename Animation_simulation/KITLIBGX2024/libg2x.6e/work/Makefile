@@ -30,7 +30,8 @@ PFLAGS = $(incG2X) -I./include
 src = src/
 
 all : g2x_00_squelette g2x_01_control g2x_02_cercle g2x_03_drawfunction\
-      g2x_04_hsvflower g2x_05_hsvcolor g2x_06_image g2x_REFERENCE
+      g2x_04_hsvflower g2x_05_hsvcolor g2x_06_image g2x_REFERENCE \
+	  JuliaSet.0 JuliaSet Corde g2x_REFERENCE
 
 # règle générique de création de xxx.o à partir de src/xxx.c
 %.o : $(src)%.c
@@ -40,6 +41,11 @@ all : g2x_00_squelette g2x_01_control g2x_02_cercle g2x_03_drawfunction\
 
 # règle générique de création de l'executable xxx à partir de src/xxx.c (1 seul module)
 % : %.o
+	@echo "assemblage [$^]->$@"
+	@$(CC) $^ $(LFLAGS) -o $@
+	@echo "------------------------"
+
+Corde : Corde.o Link.o PMat.o
 	@echo "assemblage [$^]->$@"
 	@$(CC) $^ $(LFLAGS) -o $@
 	@echo "------------------------"
@@ -60,4 +66,3 @@ clean :
 
 cleanall :
 	@rm -f *.o g2x_*
-

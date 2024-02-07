@@ -8,6 +8,9 @@
 /* le seul #include nécessaire a priori
  * contient les libs C standards et OpenGl */
 #include <g2x.h>
+#include "PMat.h"
+#include "Link.h"
+
 
 /* -----------------------------------------------------------------------
  * ici, en général pas mal de variables GLOBALES
@@ -17,6 +20,66 @@
  * - ......
  * Pas trop le choix, puisque TOUT passe par des fonctions <void f(void)>
  * ----------------------------------------------------------------------- */
+
+/* Paramètres de la fenêtre graphique */
+static int pixwidth = 640, pixheight = 640;
+static double xmin = -6., ymin = -6., xmax = +6., ymax = +6.;
+
+/* Variables de simulation */
+static double h; /* Pas d'échantillonnage 1./Fech */
+static int Fe; /* Fréquence d'échantillonnage */
+static double m, k, z; /* Paramètres physiques */
+static char PouF = 'f'; /* Type de perturbation initiale */
+static int tempo = 0; /* Temporisation de la simulation */
+
+/* Système "Masses-Ressorts" : les particules et les liaisons */
+static int nbm = 0;
+static PMat *tabM = NULL;
+static int nbl = 0;
+static Link *tabL = NULL;
+
+static G2Xpoint ctr; /* un point : centre du cercle */
+static double   ray; /* un réel  : rayon du cercle  */
+
+void Modeleur(void) {
+    nbm = 10;
+    if (!(tabM = (PMat *)calloc(nbm, sizeof(PMat))))
+      g2x_Quit();
+    nbl = nbm - 1;
+    if (!(tabL = (Link *)calloc(nbm, sizeof(Link))))
+      g2x_Quit();
+
+    Fe = 100; // Paramètre du simulateur Fe = 1/h
+    h = 1./Fe; 
+    m = 1.; // La plupart du temps, toutes les masses sont à 1
+
+    k = 0.001;  // raideurs -> à multiplier par Fe² (k * Fe² ~= 10.)
+    z = 0.0001; // viscosités -> à multiplier par Fe (z * Fe ~= 0.01)
+                // k/z ~= 10 => (k * Fe²) / (z * Fe) ~= 1000
+
+    /* les particules */
+    PMat* M = tabM;
+    M_builder(M++, 0, m, (G2Xpoint){0, 0}, (G2Xvector){0, 0});
+    for(int i = 1; i < nbm - 1; i++) {
+        M_builder(M++, 1, m, (G2Xpoint){0, 0}, (G2Xvector){0, 0});
+    }
+    M_builder(M++, 0, 0., (G2Xpoint){0, 0}, (G2Xvector){0, 0});
+
+    /* les liaisons */
+    Link *L;
+    for(L = tabL; L < tabL + nbl; L++) {
+        /* param. k et z ajustés en fonction de Fe
+         * k -> k * Fe²
+         * z -> z * Fe
+         * cf. <M2.Mot.Phys.2024-03.pdf> page 4
+         * */
+        Damped_Hook(L, k * SQR(Fe), z * Fe);
+    }
+
+    for((L = tabL, M = tabM); L < tabL + nbl; (L++, M++))
+      Connect(M, L, M + 1);
+
+}
 
 /* la fonction d'initialisation : appelée 1 seule fois, au début (facultatif) */
 static void init(void)
@@ -29,6 +92,7 @@ static void init(void)
    *   Tout ce qu'il y a ici pourrait être écrit directement dans le main()
    *   juste après l'appel à g2x_InitWindow()
   !*/
+  Modeleur();
 }
 
 /* la fonction de contrôle : appelée 1 seule fois, juste APRES <init> (facultatif) */
@@ -57,6 +121,14 @@ static void anim(void)
    *  Si elle n'est pas définie, c'est qu'il n'y a pas d'animation.
    *  ATTENTION : surtout pas d'alloc. mémoire ici !!!
   !*/
+  for (Link* L = tabL; L < tabL + nbl; L++)
+  {
+    L->update(L);
+  }
+  for(PMat* M = tabM; M < tabM + nbm; M++)
+  {
+    M->update(M, h);
+  }
 }
 
 

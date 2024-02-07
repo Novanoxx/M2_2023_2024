@@ -2,29 +2,30 @@
 
 // Les "moteurs" : mise à jour de l’état
 // intégrateur Leapfrog
+
 static void update_leapfrog(PMat *M, float h)
 {
-M->vit += h*M->frc/M->m;// intégration 1 : vitesse m.F(n) = (V(n+1)-V(n))/h -EXplicite
-M->pos.x += h*M->vit; // intégration 2 : position V(n+1) = (X(n+1)-X(n))/h -IMplicite
-M->frc = 0.; // on vide le buffer de force
+    M->vit += h*M->frc/M->m;// intégration 1 : vitesse m.F(n) = (V(n+1)-V(n))/h -EXplicite
+    M->pos += h*M->vit; // intégration 2 : position V(n+1) = (X(n+1)-X(n))/h -IMplicite
+    M->frc = 0.; // on vide le buffer de force
 }
 // intégrateur Euler Explicite
 // juste pour l’exemple : méthode très instable -> à éviter
 // simple échange des 2 premières lignes par rapport à Leapfrog -> ça change tout
 static void update_euler_exp(PMat *M, float h)
 {
-M->pos.x += h*M->vit; // intégration 1 : position V(n) = (X(n+1)-X(n-1))/h -EXplicite
-M->vit += h*M->frc/M->m;// intégration 2 : vitesse m.F(n) = (V(n+1)-V(n))/h -EXplicite
-M->frc = 0.; // on vide le buffer de force
+    M->pos += h*M->vit; // intégration 1 : position V(n) = (X(n+1)-X(n-1))/h -EXplicite
+    M->vit += h*M->frc/M->m;// intégration 2 : vitesse m.F(n) = (V(n+1)-V(n))/h -EXplicite
+    M->frc = 0.; // on vide le buffer de force
 }
 // mise à jour point fixe : ne fait rien
 static void update_fixe(PMat *M, float h)
 {
-// position et vitesse restent inchangées
-M->frc = 0.; // on vide le buffer de force (par sécurité)
+    // position et vitesse restent inchangées
+    M->frc = 0.; // on vide le buffer de force (par sécurité)
 }
 
-extern void M_builder(PMat *M, int type, float m, G2Xpoint P0, double V0)
+extern void M_builder(PMat *M, int type, float m, G2Xpoint P0, G2Xvector V0)
 {
     M->m = m; // masse
     M->pos = P0; // position initiale
