@@ -43,6 +43,7 @@ int main(int argc, char** argv )
         std::vector<String> filenames;
         cv::glob(folder, filenames, false);
 
+        fs::remove_all("../img_normalized");
         fs::create_directories("../img_normalized");
         for(size_t i = 0; i < filenames.size(); ++i)
         {
@@ -52,8 +53,8 @@ int main(int argc, char** argv )
                 std::cerr << "Problem loading image" << std::endl;
                 return -1;
             }
-            normalize(img, img, 0, 65535.0, NORM_MINMAX, CV_16U);
-            imwrite("../img_normalized/Normalized_" + std::to_string(i) + ".png", img);
+            equalizeHist(img, img);
+            imwrite("../img_normalized/" + std::to_string(i) + ".png", img);
 
             // // to see the image with opencv
             // namedWindow("Display Image", WINDOW_AUTOSIZE );
@@ -61,6 +62,8 @@ int main(int argc, char** argv )
             // waitKey(0);
         }
     }
+
+    std::cout << "done" << std::endl;
     
     return 0;
 }
