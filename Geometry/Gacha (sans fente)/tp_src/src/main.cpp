@@ -150,7 +150,7 @@ void ballCollision(Ball &a, Ball& b)
 
     // Move second ball outside of first ball's radius
     c3ga::Mvec<float> fpos = c3ga::point<float>(a.centre[c3ga::E1], a.centre[c3ga::E2], a.centre[c3ga::E3]);
-    t *= (a.radius + b.radius + 0.000001);
+    t *= (a.radius + b.radius);
     fpos += t;
     b.centre = fpos;
 }

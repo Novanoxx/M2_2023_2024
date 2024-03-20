@@ -23,7 +23,6 @@ public:
     float green;
     float blue;
     float radius = 0.3;
-    float mass = radius * radius * radius;
     
     Ball& operator=(const Ball& a);
     
