@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -O2 -std=c++14 CMakeFiles/ga_view.dir/src/Directory.cpp.o CMakeFiles/ga_view.dir/src/Entry.cpp.o CMakeFiles/ga_view.dir/src/Geogebra_c3ga.cpp.o CMakeFiles/ga_view.dir/src/main.cpp.o -o ../bin/ga_view 
