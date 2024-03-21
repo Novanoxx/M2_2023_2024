@@ -24,7 +24,7 @@ ABBREVIATE_BRIEF       = "The $name class" \
 ALWAYS_DETAILED_SEC    = YES
 INLINE_INHERITED_MEMB  = NO
 FULL_PATH_NAMES        = YES
-STRIP_FROM_PATH        = /home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/
+STRIP_FROM_PATH        = /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/
 STRIP_FROM_INC_PATH    =
 SHORT_NAMES            = NO
 JAVADOC_AUTOBRIEF      = NO
@@ -92,7 +92,7 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = /home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src
+INPUT                  = /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.c \
                          *.cc \
@@ -151,7 +151,7 @@ EXCLUDE_SYMBOLS        =
 EXAMPLE_PATH           =
 EXAMPLE_PATTERNS       = *
 EXAMPLE_RECURSIVE      = NO
-IMAGE_PATH             = /home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/doc/images/
+IMAGE_PATH             = /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/doc/images/
 INPUT_FILTER           = 
 FILTER_PATTERNS        = 
 FILTER_SOURCE_FILES    = NO

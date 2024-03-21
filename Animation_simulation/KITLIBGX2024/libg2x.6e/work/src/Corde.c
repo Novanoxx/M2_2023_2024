@@ -49,17 +49,17 @@ void Modeleur(void) {
     h = 1./Fe; 
     m = 1.; // La plupart du temps, toutes les masses sont à 1
 
-    k = 0.001;  // raideurs -> à multiplier par Fe² (k * Fe² ~= 10.)
-    z = 0.0001; // viscosités -> à multiplier par Fe (z * Fe ~= 0.01)
+    k = 0.01;  // raideurs -> à multiplier par Fe² (k * Fe² ~= 10.)
+    z = 0.001; // viscosités -> à multiplier par Fe (z * Fe ~= 0.01)
                 // k/z ~= 10 => (k * Fe²) / (z * Fe) ~= 1000
 
     /* les particules */
     PMat* M = tabM;
-    M_builder(M++, 0, m, (G2Xpoint){0, 0}, 0.);
+    M_builder(M++, 0, m, (G2Xpoint){0, 0}, g2x_Vector2d(0., 0.));
     for(int i = 1; i < nbm - 1; i++) {
-        M_builder(M++, 1, m, (G2Xpoint){i, 0}, 0.);
+        M_builder(M++, 1, m, (G2Xpoint){i, 0}, g2x_Vector2d(0., 0.));
     }
-    M_builder(M++, 0, 0., (G2Xpoint){nbm-1, 0}, 0.);
+    M_builder(M++, 0, 0., (G2Xpoint){nbm-1, 0}, g2x_Vector2d(0., 0.));
 
     /* les liaisons */
     Link *L;
@@ -75,6 +75,7 @@ void Modeleur(void) {
     for((L = tabL, M = tabM); L < tabL + nbl; (L++, M++))
       Connect(M, L, M + 1);
 
+    tabM[1].pos.y = 1;
 }
 
 /* la fonction d'initialisation : appelée 1 seule fois, au début (facultatif) */
@@ -98,6 +99,9 @@ static void ctrl(void)
    *  Tout ce qu'il y a ici pourrait être directement écrit dans la fonction init(),
    *  mais c'est plus 'propre' et plus pratique de séparer.
   !*/
+  g2x_CreateScrollv_d("h", &h, 1./Fe, (1./Fe)*5, "raideur");
+  g2x_CreateScrollv_d("z", &z, 0, 10, "viscosité");
+  g2x_CreateScrollv_d("force", &tabM[1].pos.y, 0, 4, "bouger un point pour donner de la force");
 }
 
 /* la fonction de contrôle : appelée 1 seule fois, juste APRES <init> (facultatif) */
@@ -120,6 +124,7 @@ static void anim(void)
   for (Link* L = tabL; L < tabL + nbl; L++)
   {
     L->update(L);
+    L->z = z;
   }
   for(PMat* M = tabM; M < tabM + nbm; M++)
   {

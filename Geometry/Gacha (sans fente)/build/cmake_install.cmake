@@ -1,4 +1,4 @@
-# Install script for directory: /home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)
+# Install script for directory: /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/INTERFACE/cmake_install.cmake")
-  include("/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/tp_src/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/INTERFACE/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/tp_src/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

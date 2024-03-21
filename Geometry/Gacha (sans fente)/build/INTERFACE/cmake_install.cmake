@@ -1,4 +1,4 @@
-# Install script for directory: /home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga
+# Install script for directory: /home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,7 +42,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/usr/local/include/c3ga/BasisTransformations.hpp;/usr/local/include/c3ga/Constants.hpp;/usr/local/include/c3ga/DualCoefficients.hpp;/usr/local/include/c3ga/Geometric.hpp;/usr/local/include/c3ga/GeometricExplicit.hpp;/usr/local/include/c3ga/Inner.hpp;/usr/local/include/c3ga/InnerExplicit.hpp;/usr/local/include/c3ga/Mvec.hpp;/usr/local/include/c3ga/Outer.hpp;/usr/local/include/c3ga/OuterExplicit.hpp;/usr/local/include/c3ga/Utility.hpp;/usr/local/include/c3ga/Mvec.cpp")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -52,22 +52,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/usr/local/include/c3ga" TYPE FILE FILES
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/BasisTransformations.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Constants.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/DualCoefficients.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Geometric.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/GeometricExplicit.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Inner.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/InnerExplicit.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Mvec.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Outer.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/OuterExplicit.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Utility.hpp"
-    "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Mvec.cpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/BasisTransformations.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Constants.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/DualCoefficients.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Geometric.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/GeometricExplicit.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Inner.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/InnerExplicit.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Mvec.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Outer.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/OuterExplicit.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Utility.hpp"
+    "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/lib/garamon_c3ga/src/c3ga/Mvec.cpp"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libc3ga.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libc3ga.so")
     file(RPATH_CHECK
@@ -82,7 +82,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/INTERFACE/libc3ga.so")
+  file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/INTERFACE/libc3ga.so")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libc3ga.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libc3ga.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -91,12 +91,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/stephanev/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/INTERFACE/doc/cmake_install.cmake")
+  include("/home/2ing2/stephane.vong/Documents/M2_2023_2024/Geometry/Gacha (sans fente)/build/INTERFACE/doc/cmake_install.cmake")
 
 endif()
 
