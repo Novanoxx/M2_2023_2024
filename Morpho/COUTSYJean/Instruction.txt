@@ -1,0 +1,42 @@
+    Problem 1.
+    
+    1.    Segment all the cells of the attached uranium oxide image
+    2.    Remove the cells that touch the frame of the image
+    3.    Give some statistics about the cells (number, average size, etc.)
+    
+    Hint: you can use the howto below to find some useful pink commands
+
+    Problem 2. (Segmentation of red blood cells)
+
+    Based on what you have seen in the course :
+
+    1.    Segment all the red blood cells in the atteched bloodCells image.
+    2.    Remove the ones that touch the edge of the image.
+    3.    Separate the cells that are touching each other.
+    4.    Give some statistics about the globules (number, average size).
+    
+    Hint: step 3 is tricky. It needs the notion of a distance map* of a binary object.
+    
+# Pour seuiller une image, en interactif : seuil.tcl
+
+# Pour transformer une image en un graphe à arêtes pondérés :
+pgm2GA $PINK/images/2d/im.pgm 0 /tmp/out.ga
+
+# Le deuxième argument [ici 0] indique comment l'on procède pour pondérer les arêtes (maximum / minimum ou différence d'intensité entre pixels extrémités de chaque arête)
+
+# Pour calculer une Ligne de Partage des Eaux d'un graphe à arêtes pondérées
+GAwatershed /tmp/relief.ga /tmp/watershed.ga
+
+# Pour visualiser le résultat, on passe dans la grille de Khalimsky
+GA2khalimsky /tmp/watershed.ga 0 /tmp/watershed.pgm
+
+# Pour superposer une segmentation (sous forme d'une image binaire) à une image en niveau de gris, on peut utiliser surimp [attention les deux images doivent être de la même taille]
+
+# pour remettre une image à la taille souhaitée, on peut utiliser zoom ou alors faire subir à l'image img.pgm  un passage en graphe pondéré puis en grille de Khalimsky ("pgm2GA img.pgm 0 /tmp/img.ga" puis "GA2khalimsky /tmp/img.ga 0  imgALaBonneTaille.pgm")
+
+#Pour filtrer une image avec une fermeture par aire: areaclosing
+# avec une fermeture par dynamique (profondeur): heightminima
+# avec un fermeture par volume: volmaxima et inverse
+# Pour obtenir une image noire avec un bord blanc : frame 
+# Pour compter le nombre de pixels blancs d'une image binaire: area
+# Pour compter le nombre de composantes connexes d'une image binaire: nbcomp
