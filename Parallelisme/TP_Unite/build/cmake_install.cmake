@@ -1,4 +1,4 @@
-# Install script for directory: /home/2ing2/stephane.vong/Documents/M2_2023_2024/Parallelisme/TP_Unite
+# Install script for directory: /home/stephanev/Documents/M2_2023_2024/Parallelisme/TP_Unite
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/2ing2/stephane.vong/Documents/M2_2023_2024/Parallelisme/TP_Unite/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/stephanev/Documents/M2_2023_2024/Parallelisme/TP_Unite/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

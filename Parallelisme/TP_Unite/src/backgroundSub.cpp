@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <filesystem>
+#include <sys/time.h>
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -50,11 +51,12 @@ int main(int argc, char** argv )
         imgVector.push_back(img);
     }
 
+    timeval time;
+    gettimeofday(&time, nullptr);
     // Create Background Subtractor objects
-    Ptr<BackgroundSubtractor> pBackSubMOG2 = createBackgroundSubtractorMOG2();
     Ptr<BackgroundSubtractor> pBackSubKNN = createBackgroundSubtractorKNN();
 
-    Mat fgMask, fgMask2, labels, stats, centroids;
+    Mat fgMask, labels, stats, centroids;
     int type = MORPH_ELLIPSE;
     Mat erodeElement = getStructuringElement( type,
                        Size( 5, 5 ));
@@ -65,50 +67,40 @@ int main(int argc, char** argv )
     for (Mat imgSrc : imgVector)
     {
         //update the background model
-        pBackSubMOG2->apply(imgSrc, fgMask);
-        pBackSubKNN->apply(imgSrc, fgMask2);
+        pBackSubKNN->apply(imgSrc, fgMask);
     }
 
     for (Mat imgSrc : imgVector)
     {
         //update the background model
-        pBackSubMOG2->apply(imgSrc, fgMask);
-        pBackSubKNN->apply(imgSrc, fgMask2);
+        pBackSubKNN->apply(imgSrc, fgMask);
 
         erode(fgMask, fgMask, erodeElement);
         dilate(fgMask, fgMask, dilateElement);
-
         // threshold(fgMask, fgMask, 200, 0, THRESH_TOZERO);
 
-        erode(fgMask2, fgMask2, erodeElement);
-        dilate(fgMask2, fgMask2, dilateElement);
-
-        // threshold(fgMask2, fgMask2, 200, 0, THRESH_TOZERO);
-
-        int nbLabel = connectedComponentsWithStats(fgMask2, labels, stats, centroids, 8, CV_16U);
-        // std::cout << nbLabel << std::endl;
-        //Mat tmp = Mat(fgMask2.size(), , ); //init with scalar 00 fgmask2.size;
+        int nbLabel = connectedComponentsWithStats(fgMask, labels, stats, centroids, 8, CV_16U);        int nbPerson = 0;
 
         for (int i = 0; i < nbLabel; i++)
         {
-            if (stats.at<int>(i, 4) > 400)
+            if (stats.at<int>(i, 4) > 800)
             {
                 nbPerson += 1;
-                //tmp = tmp | labels.at<int>(i);
             }
         }
 
         //show the current frame and the fg masks
         std::cout << nbPerson << std::endl;
         imshow("Frame", imgSrc);
-        imshow("FG Mask MOG2", fgMask);
-        imshow("FG Mask KNN", fgMask2);
+        imshow("FG Mask KNN", fgMask);
 
         //get the input from the keyboard
         int keyboard = waitKey(100);
         if (keyboard == 'q' || keyboard == 27)
             break;
     }
+    std::cout << "Seconds : " << time.tv_sec << std::endl;
+    std::cout << "Microseconds : " << time.tv_usec << std::endl;
     
     return 0;
 }
