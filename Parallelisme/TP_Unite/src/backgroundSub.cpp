@@ -51,8 +51,7 @@ int main(int argc, char** argv )
         imgVector.push_back(img);
     }
 
-    timeval time;
-    gettimeofday(&time, nullptr);
+    timeval begin, end;
     // Create Background Subtractor objects
     Ptr<BackgroundSubtractor> pBackSubKNN = createBackgroundSubtractorKNN();
 
@@ -72,6 +71,7 @@ int main(int argc, char** argv )
 
     for (Mat imgSrc : imgVector)
     {
+        gettimeofday(&begin, nullptr);
         //update the background model
         pBackSubKNN->apply(imgSrc, fgMask);
 
@@ -79,7 +79,8 @@ int main(int argc, char** argv )
         dilate(fgMask, fgMask, dilateElement);
         // threshold(fgMask, fgMask, 200, 0, THRESH_TOZERO);
 
-        int nbLabel = connectedComponentsWithStats(fgMask, labels, stats, centroids, 8, CV_16U);        int nbPerson = 0;
+        int nbLabel = connectedComponentsWithStats(fgMask, labels, stats, centroids, 8, CV_16U);
+        int nbPerson = 0;
 
         for (int i = 0; i < nbLabel; i++)
         {
@@ -88,19 +89,22 @@ int main(int argc, char** argv )
                 nbPerson += 1;
             }
         }
+        gettimeofday(&end, nullptr);
+        std::cout << "MicroSeconds : " << end.tv_usec - begin.tv_usec << std::endl;
 
         //show the current frame and the fg masks
-        std::cout << nbPerson << std::endl;
+        auto nbPersonString = std::to_string(nbPerson-1);
+        auto font = FONT_HERSHEY_SIMPLEX;
+        putText(imgSrc, "Nombre de composantes connexes: " + nbPersonString, Point(20, 50), font, 0.75, Scalar(255., 255., 255.), 1.5, LINE_AA);
+        putText(fgMask, "Nombre de composantes connexes: " + nbPersonString, Point(20, 50), font, 0.75, Scalar(255., 255., 255.), 1.5, LINE_AA);
         imshow("Frame", imgSrc);
         imshow("FG Mask KNN", fgMask);
 
         //get the input from the keyboard
-        int keyboard = waitKey(100);
+        int keyboard = waitKey(10);
         if (keyboard == 'q' || keyboard == 27)
             break;
     }
-    std::cout << "Seconds : " << time.tv_sec << std::endl;
-    std::cout << "Microseconds : " << time.tv_usec << std::endl;
     
     return 0;
 }
